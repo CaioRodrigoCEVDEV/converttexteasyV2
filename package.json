@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p ${PORT:-3000}",
+    "dev": "dotenv -e .env -- sh -c 'next dev -p ${PORT:-3000}'",
     "build": "next build",
-    "start": "next start -p ${PORT:-3000}",
+    "start": "dotenv -e .env -- sh -c 'next start -p ${PORT:-3000}'",
     "lint": "eslint",
     "test": "vitest run",
     "test:watch": "vitest"
@@ -21,6 +21,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@vitest/runner": "^4.1.9",
+    "dotenv-cli": "^11.0.0",
     "eslint": "^9",
     "eslint-config-next": "16.2.9",
     "tailwindcss": "^4",
