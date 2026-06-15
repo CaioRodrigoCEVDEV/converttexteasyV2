@@ -1,0 +1,258 @@
+export type ToolStatus = "available" | "coming_soon";
+
+export interface Tool {
+  slug: string;
+  name: string;
+  description: string;
+  status: ToolStatus;
+  category: string;
+  icon: string;
+}
+
+export const tools: Tool[] = [
+  {
+    slug: "uppercase",
+    name: "Uppercase Converter",
+    description:
+      "Convert any text to UPPERCASE instantly. Paste, click, copy — done.",
+    status: "available",
+    category: "Case",
+    icon: "UC",
+  },
+  {
+    slug: "lowercase",
+    name: "Lowercase Converter",
+    description: "Convert text to lowercase in one click.",
+    status: "available",
+    category: "Case",
+    icon: "lc",
+  },
+  {
+    slug: "capitalize",
+    name: "Capitalize Text",
+    description: "Capitalize the first letter of each word or sentence.",
+    status: "available",
+    category: "Case",
+    icon: "CC",
+  },
+  {
+    slug: "sentence-case",
+    name: "Sentence Case",
+    description: "Capitalize the first letter of each sentence.",
+    status: "available",
+    category: "Case",
+    icon: "Sc",
+  },
+  {
+    slug: "title-case",
+    name: "Title Case",
+    description: "Capitalize major words following title rules.",
+    status: "available",
+    category: "Case",
+    icon: "TC",
+  },
+  {
+    slug: "alternating-case",
+    name: "Alternating Case",
+    description: "Alternate between uppercase and lowercase letters.",
+    status: "available",
+    category: "Case",
+    icon: "aC",
+  },
+  {
+    slug: "inverse-case",
+    name: "Inverse Case",
+    description: "Invert the case of each letter.",
+    status: "available",
+    category: "Case",
+    icon: "iC",
+  },
+  {
+    slug: "remove-extra-spaces",
+    name: "Remove Extra Spaces",
+    description: "Clean up messy whitespace and normalize line breaks.",
+    status: "available",
+    category: "Cleaning",
+    icon: "Sp",
+  },
+  {
+    slug: "strikethrough",
+    name: "Strikethrough Text",
+    description: "Add strikethrough effect using Unicode.",
+    status: "available",
+    category: "Style",
+    icon: "ST",
+  },
+  {
+    slug: "italic",
+    name: "Italic Text",
+    description: "Convert text to Unicode italic format.",
+    status: "available",
+    category: "Style",
+    icon: "It",
+  },
+  {
+    slug: "bold",
+    name: "Bold Text",
+    description: "Convert text to Unicode bold format.",
+    status: "available",
+    category: "Style",
+    icon: "Bd",
+  },
+  {
+    slug: "underline",
+    name: "Underline Text",
+    description: "Add underline effect using Unicode.",
+    status: "available",
+    category: "Style",
+    icon: "Un",
+  },
+  {
+    slug: "wide",
+    name: "Wide Text",
+    description: "Convert text to fullwidth Unicode characters.",
+    status: "available",
+    category: "Style",
+    icon: "Wd",
+  },
+  {
+    slug: "small-caps",
+    name: "Small Text",
+    description: "Convert text to small caps Unicode characters.",
+    status: "available",
+    category: "Style",
+    icon: "Sm",
+  },
+  {
+    slug: "reverse",
+    name: "Reverse Text",
+    description: "Reverse the character order of your text.",
+    status: "available",
+    category: "Utility",
+    icon: "Rv",
+  },
+  {
+    slug: "mirror",
+    name: "Mirror Text",
+    description: "Reverse and mirror each character.",
+    status: "available",
+    category: "Utility",
+    icon: "Mr",
+  },
+  {
+    slug: "upside-down",
+    name: "Upside Down Text",
+    description: "Flip your text upside down.",
+    status: "available",
+    category: "Utility",
+    icon: "UD",
+  },
+  {
+    slug: "morse-auto",
+    name: "Morse Code",
+    description: "Convert text to/from Morse code.",
+    status: "available",
+    category: "Utility",
+    icon: "Mc",
+  },
+  {
+    slug: "binary-auto",
+    name: "Binary Code",
+    description: "Convert text to/from binary code.",
+    status: "available",
+    category: "Utility",
+    icon: "Bn",
+  },
+  {
+    slug: "invisible",
+    name: "Invisible Text",
+    description: "Generate invisible Unicode characters.",
+    status: "available",
+    category: "Utility",
+    icon: "Iv",
+  },
+  {
+    slug: "camelcase",
+    name: "camelCase",
+    description: "Convert text to camelCase format.",
+    status: "available",
+    category: "Developer",
+    icon: "cC",
+  },
+  {
+    slug: "pascalcase",
+    name: "PascalCase",
+    description: "Convert text to PascalCase format.",
+    status: "available",
+    category: "Developer",
+    icon: "PC",
+  },
+  {
+    slug: "snakecase",
+    name: "snake_case",
+    description: "Convert text to snake_case format.",
+    status: "available",
+    category: "Developer",
+    icon: "sC",
+  },
+  {
+    slug: "constantcase",
+    name: "CONSTANT_CASE",
+    description: "Convert text to CONSTANT_CASE format.",
+    status: "available",
+    category: "Developer",
+    icon: "CN",
+  },
+  {
+    slug: "kebabcase",
+    name: "kebab-case / slugify",
+    description: "Convert text to kebab-case URL slug.",
+    status: "available",
+    category: "Developer",
+    icon: "Sl",
+  },
+  {
+    slug: "dotcase",
+    name: "dot.case",
+    description: "Convert text to dot.case format.",
+    status: "available",
+    category: "Developer",
+    icon: "Dt",
+  },
+  {
+    slug: "pathcase",
+    name: "path/case",
+    description: "Convert text to path/case format.",
+    status: "available",
+    category: "Developer",
+    icon: "Pt",
+  },
+  {
+    slug: "word-counter",
+    name: "Word Counter",
+    description: "Count words, characters, sentences, and paragraphs.",
+    status: "coming_soon",
+    category: "Analysis",
+    icon: "∑",
+  },
+  {
+    slug: "json-formatter",
+    name: "JSON Formatter",
+    description: "Pretty-print or minify JSON with syntax highlighting.",
+    status: "coming_soon",
+    category: "Developer",
+    icon: "{ }",
+  },
+];
+
+export function getTool(slug: string): Tool | undefined {
+  return tools.find((t) => t.slug === slug);
+}
+
+export function getAvailableTools(): Tool[] {
+  return tools.filter((t) => t.status === "available");
+}
+
+export function getComingSoonTools(): Tool[] {
+  return tools.filter((t) => t.status === "coming_soon");
+}

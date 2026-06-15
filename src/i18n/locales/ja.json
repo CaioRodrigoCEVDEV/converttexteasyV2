@@ -1,0 +1,436 @@
+{
+  "common": {
+    "siteName": "ConvertTextEasy",
+    "siteDescription": "シンプルで高速なテキストツール — ブラウザで直接。",
+    "tagline": "シンプルで高速なテキストツール — ブラウザで直接。",
+    "chars": "文字",
+    "words": "単語",
+    "lines": "行",
+    "letters": "文字数",
+    "copy": "コピー",
+    "copied": "コピーしました！",
+    "clear": "クリア",
+    "clearAll": "すべてクリア",
+    "download": "ダウンロード",
+    "placeholder": "ここにテキストを入力または貼り付け...",
+    "soon": "近日公開",
+    "available": "利用可能",
+    "comingSoon": "近日公開",
+    "freePrivate": "無料 • プライベート • 登録不要",
+    "allRightsReserved": "全著作権所有。",
+    "switchTheme": "{theme}モードに切り替え",
+    "switchLang": "言語を変更",
+    "errorCopy": "クリップボードへのコピーに失敗しました",
+    "errorTransform": "テキスト変換に失敗しました",
+    "theme": "テーマ",
+    "language": "言語",
+    "textConverted": "テキストが正常に変換されました。"
+  },
+  "nav": {
+    "home": "ホーム",
+    "tools": "ツール",
+    "blog": "ブログ",
+    "about": "概要",
+    "contact": "お問い合わせ",
+    "openConverter": "コンバーターを開く"
+  },
+  "header": {
+    "tagline": "大文字と小文字をオンラインで無料変換。"
+  },
+  "home": {
+    "editor": {
+      "label": "エディター",
+      "placeholder": "ここにテキストを貼り付けて開始..."
+    },
+    "counts": {
+      "letters": "文字",
+      "words": "単語",
+      "lines": "行"
+    },
+    "actions": {
+      "copy": "コピー",
+      "clear": "クリア",
+      "download": "ダウンロード"
+    },
+    "groups": {
+      "essentials": "基本",
+      "styles": "スタイル",
+      "utilities": "ユーティリティ",
+      "developer": "開発者向け"
+    },
+    "transforms": {
+      "upper": "大文字",
+      "lower": "小文字",
+      "sentenceCase": "文の大文字化",
+      "capitalize": "先頭大文字",
+      "titleCase": "タイトルケース",
+      "alternatingCase": "交互大文字",
+      "inverseCase": "大文字小文字反転",
+      "removeSpaces": "余分なスペースを削除",
+      "strikethrough": "取り消し線",
+      "italic": "イタリック体",
+      "bold": "太字",
+      "underline": "下線付きテキスト",
+      "wide": "ワイドテキスト",
+      "small": "小さなテキスト",
+      "reverse": "逆順テキスト",
+      "mirror": "ミラーテキスト",
+      "upsideDown": "逆さまテキスト",
+      "morse": "モールス信号",
+      "morseDecode": "モールス → テキスト",
+      "binary": "バイナリコード",
+      "invisible": "不可視テキスト",
+      "camelCase": "camelCase",
+      "pascalCase": "PascalCase",
+      "snakeCase": "snake_case",
+      "constantCase": "CONSTANT_CASE",
+      "kebabCase": "kebab-case",
+      "dotCase": "dot.case",
+      "pathCase": "path/case"
+    },
+    "sidebar": {
+      "summary": "概要",
+      "instantConversion": "即時変換",
+      "instantConversionDesc": "入力しながらリアルタイムで結果を確認。",
+      "languagesReady": "多言語対応",
+      "languagesReadyDesc": "日本語、英語など多言語を完全サポート。",
+      "simpleFlow": "シンプルなワークフロー",
+      "simpleFlowDesc": "複雑なメニュー不要。書いて、変換して、完了。",
+      "quickTips": "クイックヒント",
+      "tipStandardize": "大文字でタイトルを統一して目立たせましょう。",
+      "tipClean": "ウェブから貼り付けたテキストはスペース削除でクリーンアップ。",
+      "tipCount": "文字数カウンターで正確なテキスト長を確認。",
+      "chooseTransform": "上記のオプションから選択してテキストを変換してください。"
+    },
+    "feedback": {
+      "label": "フィードバック"
+    },
+    "hero": {
+      "title": "オンラインテキスト変換ツール",
+      "subtitle": "下にテキストを貼り付け、希望の形式を選択してください。",
+      "tagline": "無料、プライベート、即時。テキストがブラウザから出ることはありません。"
+    },
+    "toolGrid": {
+      "title": "その他のツール",
+      "description": "追加の変換・フォーマットツールが利用可能です。"
+    },
+    "benefits": {
+      "free": { "title": "永久無料", "description": "有料プランなし、試用期間なし。すべてのツールが無料です。" },
+      "private": { "title": "100% プライベート", "description": "テキストがデバイスから出ることはありません。" },
+      "noSignUp": { "title": "登録不要", "description": "すぐにツールを使い始められます。" },
+      "browser": { "title": "ブラウザで動作", "description": "サーバー不要。即座に結果を表示。" }
+    }
+  },
+  "tools": {
+    "title": "すべてのツール",
+    "description": "利用可能なすべてのテキスト変換ツールを閲覧。無料、プライベート、即時。",
+    "everyToolRunsLocally": "すべてのツールはブラウザ内でローカルに動作します。アップロードは一切ありません。",
+    "uppercase": {
+      "name": "大文字コンバーター",
+      "description": "任意のテキストを即座に大文字に変換。貼り付け、クリック、コピー — 完了。",
+      "label": "大文字に変換",
+      "placeholder": "ここにテキストを入力または貼り付け..."
+    },
+    "lowercase": {
+      "name": "小文字コンバーター",
+      "description": "ワンクリックでテキストを小文字に変換。"
+    },
+    "capitalize": {
+      "name": "先頭大文字化",
+      "description": "各単語または文の先頭文字を大文字にします。"
+    },
+    "remove-extra-spaces": {
+      "name": "余分なスペースを削除",
+      "description": "不要な空白をクリーンアップし、改行を正規化します。"
+    },
+    "word-counter": {
+      "name": "単語カウンター",
+      "description": "単語、文字、文、段落をカウントします。"
+    },
+    "json-formatter": {
+      "name": "JSON フォーマッター",
+      "description": "シンタックスハイライト付きで JSON を整形または最小化します。"
+    },
+    "base64-encode": {
+      "name": "Base64 エンコード",
+      "description": "テキストを Base64 形式にエンコード/デコードします。"
+    },
+    "url-encode": {
+      "name": "URL エンコード",
+      "description": "安全な Web 使用のためにテキストを URL エンコード/デコードします。"
+    },
+    "strikethrough": {
+      "name": "取り消し線テキスト",
+      "description": "テキストに取り消し線効果を追加します。"
+    },
+    "reverse": {
+      "name": "逆順テキスト",
+      "description": "テキストの文字順を逆にします。"
+    },
+    "toggle-case": {
+      "name": "大文字/小文字切替",
+      "description": "大文字と小文字を切り替えます。"
+    },
+    "italic": {
+      "name": "イタリック体テキスト",
+      "description": "テキストを Unicode イタリック形式に変換します。"
+    },
+    "to-morse": {
+      "name": "モールス信号",
+      "description": "テキストをモールス信号に変換します。"
+    },
+    "from-morse": {
+      "name": "モールスデコーダー",
+      "description": "モールス信号をテキストに戻します。"
+    },
+    "bold": {
+      "name": "太字テキスト",
+      "description": "テキストを Unicode 太字形式に変換します。"
+    },
+    "underline": {
+      "name": "下線付きテキスト",
+      "description": "Unicode でテキストに下線効果を追加します。"
+    },
+    "wide": {
+      "name": "ワイドテキスト",
+      "description": "テキストを全角 Unicode 文字に変換します。"
+    },
+    "small-caps": {
+      "name": "小さなテキスト",
+      "description": "テキストをスモールキャップス Unicode 文字に変換します。"
+    },
+    "mirror": {
+      "name": "ミラーテキスト",
+      "description": "各文字を反転・ミラーリングします。"
+    },
+    "upside-down": {
+      "name": "逆さまテキスト",
+      "description": "テキストを上下逆さまにします。"
+    },
+    "binary": {
+      "name": "バイナリコード",
+      "description": "テキストをバイナリコードに/から変換します。"
+    },
+    "invisible": {
+      "name": "不可視テキスト",
+      "description": "不可視の Unicode 文字を生成します。"
+    },
+    "camelcase": {
+      "name": "camelCase",
+      "description": "テキストを camelCase 形式に変換します。"
+    },
+    "pascalcase": {
+      "name": "PascalCase",
+      "description": "テキストを PascalCase 形式に変換します。"
+    },
+    "snakecase": {
+      "name": "snake_case",
+      "description": "テキストを snake_case 形式に変換します。"
+    },
+    "constantcase": {
+      "name": "CONSTANT_CASE",
+      "description": "テキストを CONSTANT_CASE 形式に変換します。"
+    },
+    "kebabcase": {
+      "name": "kebab-case / slugify",
+      "description": "テキストを kebab-case URL スラッグに変換します。"
+    },
+    "dotcase": {
+      "name": "dot.case",
+      "description": "テキストを dot.case 形式に変換します。"
+    },
+    "pathcase": {
+      "name": "path/case",
+      "description": "テキストを path/case 形式に変換します。"
+    },
+    "transforms": {
+      "sentenceCase": "文頭大文字",
+      "lowercase": "小文字",
+      "uppercase": "大文字",
+      "capitalizeEachWord": "各単語先頭大文字",
+      "removeExtraSpaces": "スペース削除",
+      "titleCase": "タイトル形式",
+      "wordCounter": "単語カウント"
+    }
+  },
+  "blog": {
+    "title": "ブログ",
+    "subtitle": "オンラインテキスト変換とフォーマットに関するヒントとガイド。",
+    "readMore": "続きを読む",
+    "publishedOn": "公開日",
+    "posts": {
+      "uppercase-guide": {
+        "title": "オンラインでテキストを大文字に変換する方法",
+        "excerpt": "無料のオンラインツールを使って任意のテキストを素早く大文字に変換する方法を学びます。ライター、開発者、コンテンツクリエイター向けのステップバイステップガイド。",
+        "date": "2025-06-01"
+      },
+      "remove-spaces-guide": {
+        "title": "テキストから余分なスペースを削除する方法",
+        "excerpt": "乱れた空白はフォーマットを台無しにします。テキストから余分なスペース、タブ、改行を即座にクリーンアップする方法を見つけましょう。",
+        "date": "2025-05-20"
+      },
+      "free-text-tools": {
+        "title": "オンラインでテキストをフォーマットする無料ツール",
+        "excerpt": "テキストのフォーマット、変換、クリーンアップのための厳選された無料ブラウザベースツール — 登録不要、完全プライベート。",
+        "date": "2025-05-10"
+      }
+    }
+  },
+  "about": {
+    "title": "ConvertTextEasy について",
+    "description": "ConvertTextEasy — 無料でプライベートなテキストツールプラットフォームについて。",
+    "p1": "ConvertTextEasy は、シンプル、高速、プライベートに設計された無料のオンラインテキストツールのコレクションです。各ツールは JavaScript を使用してブラウザ内で完全に動作し、データがサーバーに送信されることはありません。",
+    "p2": "登録が必要だったり、広告を表示したり、データをクラウドにアップロードしたりする肥大化したテキストツールにうんざりして ConvertTextEasy を作りました。テキスト変換は、入力したその場で即座に行われるべきです。",
+    "principlesTitle": "私たちの原則",
+    "principle1": "プライバシー第一。",
+    "principle1Desc": "あなたのテキストがデバイスから出ることはありません。以上。",
+    "principle2": "登録不要。",
+    "principle2Desc": "ツールを開いてすぐに使い始められます。",
+    "principle3": "高速で集中。",
+    "principle3Desc": "各ツールは一つのことを上手くやります。",
+    "principle4": "オープンソース。",
+    "principle4Desc": "私たちのコードは誰でも検査・貢献できるように公開されています。",
+    "closing": "新しいツールを積極的に開発中です。提案があれば、ぜひお聞かせください。"
+  },
+  "privacy": {
+    "title": "プライバシーポリシー",
+    "lastUpdated": "最終更新日: 2025年6月",
+    "dataCollection": {
+      "title": "データ収集",
+      "body": "ConvertTextEasy は、お客様がツールに入力したテキストを収集、保存、送信することはありません。すべてのテキスト処理は JavaScript を使用してブラウザ内で完全に行われます。当社のサーバーや第三者にデータが送信されることはありません。"
+    },
+    "cookies": {
+      "title": "Cookie",
+      "body": "当社はトラッキング Cookie を使用しません。基本的なサイト機能（テーマや言語設定の記憶など）に必要な Cookie を使用する場合がありますが、これらはお客様を追跡したり個人情報を収集したりするものではありません。"
+    },
+    "analytics": {
+      "title": "分析",
+      "body": "個人ユーザーを追跡しない、プライバシー重視の分析ツールを使用する場合があります。分析を通じて個人を特定できる情報が収集されることはありません。"
+    },
+    "thirdParty": {
+      "title": "サードパーティサービス",
+      "body": "ConvertTextEasy は、そもそもデータを収集していないため、サードパーティサービスとデータを共有することはありません。"
+    },
+    "contactForm": {
+      "title": "お問い合わせフォーム",
+      "body": "お問い合わせフォームをご利用の場合、お客様の名前、メールアドレス、メッセージをお問い合わせへの回答目的のみで収集する場合があります。これらのデータは共有、販売、マーケティング目的で使用されることはありません。お客様はいつでも連絡先データの削除をリクエストできます。"
+    },
+    "userRights": {
+      "title": "お客様の権利",
+      "body": "お客様は、お問い合わせフォームを通じて送信された個人データへのアクセス、訂正、削除をリクエストできます。その際は、お問い合わせページからご連絡ください。"
+    },
+    "contact": {
+      "title": "お問い合わせ",
+      "body": "このプライバシーポリシーについてご質問がある場合は、お問い合わせページからご連絡ください。"
+    }
+  },
+  "terms": {
+    "title": "利用規約",
+    "lastUpdated": "最終更新日: 2025年6月",
+    "acceptance": {
+      "title": "規約の承諾",
+      "body": "ConvertTextEasy を利用することにより、これらの利用規約に同意したことになります。同意しない場合は、サービスをご利用いただけません。"
+    },
+    "useOfService": {
+      "title": "サービスの利用",
+      "body": "ConvertTextEasy は、個人および商用利用のための無料オンラインテキストツールを提供します。アカウントを作成せずにツールをご利用いただけます。サービスの悪用や運用妨害を試みないことに同意するものとします。"
+    },
+    "userContent": {
+      "title": "ユーザーコンテンツ",
+      "body": "お客様は、当社のツールに入力するテキストに対して単独で責任を負います。違法、有害、または虐待的なコンテンツを処理するためにサービスを使用しないでください。すべての処理はブラウザ内でローカルに行われるため、当社はお客様のコンテンツにアクセスできません。"
+    },
+    "intellectualProperty": {
+      "title": "知的財産権",
+      "body": "ConvertTextEasy の名前、ロゴ、ウェブサイトデザインは ConvertTextEasy の財産です。ツールとコードは寛容なライセンスの下でオープンソースである場合があります — 詳細はプロジェクトリポジトリをご確認ください。"
+    },
+    "disclaimer": {
+      "title": "保証の免責",
+      "body": "ConvertTextEasy は「現状有姿」で提供され、明示または黙示を問わず、いかなる種類の保証もありません。当社は、中断のない可用性、エラーのない動作、または特定の目的への適合性を保証しません。"
+    },
+    "limitation": {
+      "title": "責任の制限",
+      "body": "いかなる場合も、ConvertTextEasy はサービスの利用または利用不能から生じる損害について責任を負いません。これには、直接的、間接的、偶発的、または結果的な損害が含まれますが、これらに限定されません。"
+    },
+    "changes": {
+      "title": "規約の変更",
+      "body": "当社は随時これらの規約を更新する場合があります。変更後もサービスの利用を継続することは、新しい規約への同意を構成します。重要な変更については、合理的な努力をもってユーザーに通知します。"
+    }
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "subtitle": "質問や提案、または単に挨拶したい場合も、ぜひお聞かせください。",
+    "name": "お名前",
+    "email": "メールアドレス",
+    "message": "メッセージ",
+    "namePlaceholder": "お名前",
+    "emailPlaceholder": "you@example.com",
+    "messagePlaceholder": "お考えをお聞かせください...",
+    "send": "メッセージを送信",
+    "sending": "送信中...",
+    "successTitle": "メッセージ送信完了！",
+    "successMessage": "お問い合わせいただきありがとうございます。できるだけ早くご返信いたします。",
+    "validation": {
+      "nameRequired": "お名前を入力してください。",
+      "emailRequired": "メールアドレスを入力してください。",
+      "emailInvalid": "有効なメールアドレスを入力してください。",
+      "messageRequired": "メッセージを入力してください。"
+    }
+  },
+  "footer": {
+    "product": {
+      "title": "製品",
+      "tools": "ツール",
+      "about": "概要",
+      "blog": "ブログ"
+    },
+    "support": {
+      "title": "サポート",
+      "contact": "お問い合わせ",
+      "privacy": "プライバシーポリシー",
+      "terms": "利用規約"
+    },
+    "brand": {
+      "description": "Simple, fast text tools — right in your browser."
+    },
+    "highlight": {
+      "title": "ConvertTextEasy",
+      "description": "Convert texts online for free, with no sign-up and support for multiple languages.",
+      "badges": {
+        "free": "Free",
+        "private": "Private",
+        "noSignup": "No Sign-Up"
+      }
+    },
+    "copyright": "© {year} ConvertTextEasy. All rights reserved."
+  },
+  "seo": {
+    "home": {
+      "title": "オンラインテキスト変換ツール - ConvertTextEasy",
+      "description": "無料のオンラインテキスト変換ツール。大文字、小文字、先頭大文字、Unicode スタイル、開発者向けフォーマットに対応。"
+    },
+    "tools": {
+      "title": "すべてのツール - ConvertTextEasy",
+      "description": "利用可能なすべてのテキスト変換ツールを閲覧。無料、プライベート、即時。"
+    },
+    "blog": {
+      "title": "ブログ - ConvertTextEasy",
+      "description": "オンラインテキスト変換とフォーマットに関するヒントとガイド。"
+    },
+    "about": {
+      "title": "概要 - ConvertTextEasy",
+      "description": "ConvertTextEasy と無料のブラウザベーステキストツールについて詳しく知る。"
+    },
+    "privacy": {
+      "title": "プライバシーポリシー - ConvertTextEasy",
+      "description": "ConvertTextEasy がプライバシーとユーザーデータをどのように扱うかを理解する。"
+    },
+    "terms": {
+      "title": "利用規約 - ConvertTextEasy",
+      "description": "ConvertTextEasy の利用規約をお読みください。"
+    },
+    "contact": {
+      "title": "お問い合わせ - ConvertTextEasy",
+      "description": "ConvertTextEasy へのお問い合わせ。"
+    }
+  }
+}

@@ -1,0 +1,436 @@
+{
+  "common": {
+    "siteName": "ConvertTextEasy",
+    "siteDescription": "Strumenti di testo semplici e veloci — direttamente nel tuo browser.",
+    "tagline": "Strumenti di testo semplici e veloci — direttamente nel tuo browser.",
+    "chars": "Caratteri",
+    "words": "Parole",
+    "lines": "Linee",
+    "letters": "Lettere",
+    "copy": "Copia",
+    "copied": "Copiato!",
+    "clear": "Cancella",
+    "clearAll": "Cancella tutto",
+    "download": "Scarica",
+    "placeholder": "Digita o incolla il tuo testo qui...",
+    "soon": "Presto",
+    "available": "disponibile",
+    "comingSoon": "in arrivo",
+    "freePrivate": "Gratis • Privato • Senza registrazione",
+    "allRightsReserved": "Tutti i diritti riservati.",
+    "switchTheme": "Passa alla modalità {theme}",
+    "switchLang": "Cambia lingua",
+    "errorCopy": "Impossibile copiare negli appunti",
+    "errorTransform": "Impossibile trasformare il testo",
+    "theme": "Tema",
+    "language": "Lingua",
+    "textConverted": "Testo convertito con successo."
+  },
+  "nav": {
+    "home": "Home",
+    "tools": "Strumenti",
+    "blog": "Blog",
+    "about": "Chi siamo",
+    "contact": "Contatti",
+    "openConverter": "Apri convertitore"
+  },
+  "header": {
+    "tagline": "Converti lettere maiuscole e minuscole online gratuitamente."
+  },
+  "home": {
+    "editor": {
+      "label": "Editor",
+      "placeholder": "Incolla il tuo testo qui per iniziare..."
+    },
+    "counts": {
+      "letters": "Lettere",
+      "words": "Parole",
+      "lines": "Linee"
+    },
+    "actions": {
+      "copy": "copia",
+      "clear": "cancella",
+      "download": "scarica"
+    },
+    "groups": {
+      "essentials": "Essenziali",
+      "styles": "Stili",
+      "utilities": "Utilità",
+      "developer": "Sviluppatore"
+    },
+    "transforms": {
+      "upper": "MAIUSCOLO",
+      "lower": "minuscolo",
+      "sentenceCase": "Frase",
+      "capitalize": "Iniziali Maiuscole",
+      "titleCase": "Titolo",
+      "alternatingCase": "Alternato",
+      "inverseCase": "Inverti maiuscole",
+      "removeSpaces": "Rimuovi spazi extra",
+      "strikethrough": "Barrato",
+      "italic": "Testo in corsivo",
+      "bold": "Testo in grassetto",
+      "underline": "Testo sottolineato",
+      "wide": "Testo largo",
+      "small": "Testo piccolo",
+      "reverse": "Testo invertito",
+      "mirror": "Testo specchiato",
+      "upsideDown": "Testo sottosopra",
+      "morse": "Codice Morse",
+      "morseDecode": "Morse → Testo",
+      "binary": "Codice binario",
+      "invisible": "Testo invisibile",
+      "camelCase": "camelCase",
+      "pascalCase": "PascalCase",
+      "snakeCase": "snake_case",
+      "constantCase": "CONSTANT_CASE",
+      "kebabCase": "kebab-case",
+      "dotCase": "dot.case",
+      "pathCase": "path/case"
+    },
+    "sidebar": {
+      "summary": "Riepilogo",
+      "instantConversion": "Conversione istantanea",
+      "instantConversionDesc": "Visualizza il risultato in tempo reale mentre digiti.",
+      "languagesReady": "Più lingue",
+      "languagesReadyDesc": "Supporto completo per italiano, inglese e altre lingue.",
+      "simpleFlow": "Flusso semplice",
+      "simpleFlowDesc": "Nessun menu complicato. Scrivi, converti, fatto.",
+      "quickTips": "Consigli rapidi",
+      "tipStandardize": "Standardizza i titoli con MAIUSCOLO per farli risaltare.",
+      "tipClean": "Pulisci il testo incollato dal web con Rimuovi spazi.",
+      "tipCount": "Usa il contatore lettere per sapere la lunghezza esatta del testo.",
+      "chooseTransform": "Scegli una delle opzioni sopra per trasformare il tuo testo."
+    },
+    "feedback": {
+      "label": "Feedback"
+    },
+    "hero": {
+      "title": "Convertitore di Testo Online",
+      "subtitle": "Incolla il tuo testo qui sotto e scegli il formato desiderato.",
+      "tagline": "Gratis, privato e istantaneo. Il tuo testo non lascia mai il browser."
+    },
+    "toolGrid": {
+      "title": "Altri strumenti",
+      "description": "Strumenti aggiuntivi di conversione e formattazione disponibili."
+    },
+    "benefits": {
+      "free": { "title": "Gratuito per sempre", "description": "Nessun paywall, nessuna prova. Ogni strumento è gratuito." },
+      "private": { "title": "100% Privato", "description": "Il tuo testo non lascia mai il tuo dispositivo." },
+      "noSignUp": { "title": "Senza registrazione", "description": "Inizia subito a usare gli strumenti." },
+      "browser": { "title": "Funziona nel browser", "description": "Nessun server. Risultati immediati." }
+    }
+  },
+  "tools": {
+    "title": "Tutti gli strumenti",
+    "description": "Sfoglia tutti gli strumenti di trasformazione del testo disponibili. Gratis, privato e istantaneo.",
+    "everyToolRunsLocally": "Ogni strumento funziona localmente nel tuo browser. Nulla viene mai caricato.",
+    "uppercase": {
+      "name": "Convertitore in maiuscolo",
+      "description": "Converti qualsiasi testo in MAIUSCOLO istantaneamente. Incolla, clicca, copia — fatto.",
+      "label": "Converti in MAIUSCOLO",
+      "placeholder": "Digita o incolla il tuo testo qui..."
+    },
+    "lowercase": {
+      "name": "Convertitore in minuscolo",
+      "description": "Converti il testo in minuscolo con un clic."
+    },
+    "capitalize": {
+      "name": "Testo con iniziali maiuscole",
+      "description": "Rendi maiuscola la prima lettera di ogni parola o frase."
+    },
+    "remove-extra-spaces": {
+      "name": "Rimuovi spazi extra",
+      "description": "Pulisci gli spazi superflui e normalizza le interruzioni di riga."
+    },
+    "word-counter": {
+      "name": "Contatore di parole",
+      "description": "Conta parole, caratteri, frasi e paragrafi."
+    },
+    "json-formatter": {
+      "name": "Formattatore JSON",
+      "description": "Formatta o minimizza JSON con evidenziazione della sintassi."
+    },
+    "base64-encode": {
+      "name": "Codifica Base64",
+      "description": "Codifica o decodifica testo in formato Base64."
+    },
+    "url-encode": {
+      "name": "Codifica URL",
+      "description": "Codifica o decodifica testo per un uso sicuro nelle URL."
+    },
+    "strikethrough": {
+      "name": "Testo barrato",
+      "description": "Aggiungi l'effetto barrato al tuo testo."
+    },
+    "reverse": {
+      "name": "Testo invertito",
+      "description": "Inverti l'ordine dei caratteri del tuo testo."
+    },
+    "toggle-case": {
+      "name": "Inverti maiuscole/minuscole",
+      "description": "Alterna tra maiuscole e minuscole."
+    },
+    "italic": {
+      "name": "Testo in corsivo",
+      "description": "Converti il testo in formato corsivo Unicode."
+    },
+    "to-morse": {
+      "name": "Codice Morse",
+      "description": "Converti il testo in codice Morse."
+    },
+    "from-morse": {
+      "name": "Decodificatore Morse",
+      "description": "Converti il codice Morse in testo."
+    },
+    "bold": {
+      "name": "Testo in grassetto",
+      "description": "Converti il testo in formato grassetto Unicode."
+    },
+    "underline": {
+      "name": "Testo sottolineato",
+      "description": "Aggiungi l'effetto sottolineato al tuo testo in Unicode."
+    },
+    "wide": {
+      "name": "Testo largo",
+      "description": "Converti il testo in caratteri Unicode a larghezza intera."
+    },
+    "small-caps": {
+      "name": "Testo piccolo",
+      "description": "Converti il testo in caratteri Unicode small caps."
+    },
+    "mirror": {
+      "name": "Testo specchiato",
+      "description": "Inverti e rispecchia ogni carattere."
+    },
+    "upside-down": {
+      "name": "Testo sottosopra",
+      "description": "Capovolgi il tuo testo sottosopra."
+    },
+    "binary": {
+      "name": "Codice binario",
+      "description": "Converti il testo in/da codice binario."
+    },
+    "invisible": {
+      "name": "Testo invisibile",
+      "description": "Genera caratteri Unicode invisibili."
+    },
+    "camelcase": {
+      "name": "camelCase",
+      "description": "Converti il testo in formato camelCase."
+    },
+    "pascalcase": {
+      "name": "PascalCase",
+      "description": "Converti il testo in formato PascalCase."
+    },
+    "snakecase": {
+      "name": "snake_case",
+      "description": "Converti il testo in formato snake_case."
+    },
+    "constantcase": {
+      "name": "CONSTANT_CASE",
+      "description": "Converti il testo in formato CONSTANT_CASE."
+    },
+    "kebabcase": {
+      "name": "kebab-case / slugify",
+      "description": "Converti il testo in slug URL in kebab-case."
+    },
+    "dotcase": {
+      "name": "dot.case",
+      "description": "Converti il testo in formato dot.case."
+    },
+    "pathcase": {
+      "name": "path/case",
+      "description": "Converti il testo in formato path/case."
+    },
+    "transforms": {
+      "sentenceCase": "Frase",
+      "lowercase": "minuscolo",
+      "uppercase": "MAIUSCOLO",
+      "capitalizeEachWord": "Iniziali Maiuscole",
+      "removeExtraSpaces": "Rimuovi spazi",
+      "titleCase": "Formato titolo",
+      "wordCounter": "Conta parole"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Consigli e guide sulla conversione e formattazione del testo online.",
+    "readMore": "Leggi di più",
+    "publishedOn": "Pubblicato il",
+    "posts": {
+      "uppercase-guide": {
+        "title": "Come convertire il testo in maiuscolo online",
+        "excerpt": "Scopri come convertire rapidamente qualsiasi testo in maiuscolo usando strumenti online gratuiti. Una guida passo passo per scrittori, sviluppatori e creatori di contenuti.",
+        "date": "01/06/2025"
+      },
+      "remove-spaces-guide": {
+        "title": "Come rimuovere gli spazi extra da un testo",
+        "excerpt": "Gli spazi disordinati possono rovinare la formattazione. Scopri come pulire istantaneamente spazi extra, tabulazioni e interruzioni di riga dal tuo testo.",
+        "date": "20/05/2025"
+      },
+      "free-text-tools": {
+        "title": "Strumenti gratuiti per formattare il testo online",
+        "excerpt": "Una selezione di strumenti gratuiti basati su browser per la formattazione, conversione e pulizia del testo — senza registrazione, completamente privato.",
+        "date": "10/05/2025"
+      }
+    }
+  },
+  "about": {
+    "title": "Chi siamo - ConvertTextEasy",
+    "description": "Scopri ConvertTextEasy — la piattaforma gratuita e privata di strumenti di testo.",
+    "p1": "ConvertTextEasy è una raccolta di strumenti di testo online gratuiti progettati per essere semplici, veloci e privati. Ogni strumento funziona interamente nel tuo browser usando JavaScript — nessun dato viene inviato a un server.",
+    "p2": "Abbiamo creato ConvertTextEasy perché eravamo stanchi di strumenti di testo pieni di funzionalità superflue che richiedono registrazione, mostrano annunci o caricano i tuoi dati nel cloud. Le conversioni di testo dovrebbero avvenire istantaneamente, proprio dove le digiti.",
+    "principlesTitle": "I nostri principi",
+    "principle1": "Privacy al primo posto.",
+    "principle1Desc": "Il tuo testo non lascia mai il tuo dispositivo. Punto.",
+    "principle2": "Nessuna registrazione.",
+    "principle2Desc": "Apri uno strumento e inizia a usarlo.",
+    "principle3": "Veloce e focalizzato.",
+    "principle3Desc": "Ogni strumento fa una cosa, ma la fa bene.",
+    "principle4": "Open source.",
+    "principle4Desc": "Il nostro codice è disponibile per chiunque voglia ispezionarlo e contribuire.",
+    "closing": "Stiamo attivamente creando nuovi strumenti. Se hai un suggerimento, ci piacerebbe ascoltarlo."
+  },
+  "privacy": {
+    "title": "Informativa sulla privacy",
+    "lastUpdated": "Ultimo aggiornamento: giugno 2025",
+    "dataCollection": {
+      "title": "Raccolta dati",
+      "body": "ConvertTextEasy non raccoglie, memorizza né trasmette alcun testo inserito nei nostri strumenti. Tutta l'elaborazione del testo avviene interamente nel tuo browser tramite JavaScript. Nessun dato viene inviato ai nostri server o a terze parti."
+    },
+    "cookies": {
+      "title": "Cookie",
+      "body": "Non utilizziamo cookie di tracciamento. Possiamo utilizzare cookie essenziali per le funzionalità di base del sito (come ricordare le tue preferenze di tema o lingua), ma questi non ti tracciano né raccolgono informazioni personali."
+    },
+    "analytics": {
+      "title": "Analitiche",
+      "body": "Possiamo utilizzare strumenti di analisi incentrati sulla privacy che non tracciano i singoli utenti. Nessuna informazione personalmente identificabile viene raccolta tramite le analitiche."
+    },
+    "thirdParty": {
+      "title": "Servizi di terze parti",
+      "body": "ConvertTextEasy non condivide dati con servizi di terze parti perché non raccogliamo alcun dato."
+    },
+    "contactForm": {
+      "title": "Modulo di contatto",
+      "body": "Se utilizzi il nostro modulo di contatto, potremmo raccogliere il tuo nome, indirizzo email e messaggio esclusivamente per rispondere alla tua richiesta. Questi dati non vengono condivisi, venduti o utilizzati per scopi di marketing. Puoi richiedere la cancellazione dei tuoi dati di contatto in qualsiasi momento."
+    },
+    "userRights": {
+      "title": "I tuoi diritti",
+      "body": "Puoi richiedere l'accesso, la correzione o la cancellazione di qualsiasi dato personale che hai inviato tramite il nostro modulo di contatto. Per farlo, contattaci tramite la nostra pagina di contatto."
+    },
+    "contact": {
+      "title": "Contatto",
+      "body": "Se hai domande su questa informativa sulla privacy, contattaci tramite la nostra pagina di contatto."
+    }
+  },
+  "terms": {
+    "title": "Termini di utilizzo",
+    "lastUpdated": "Ultimo aggiornamento: giugno 2025",
+    "acceptance": {
+      "title": "Accettazione dei termini",
+      "body": "Utilizzando ConvertTextEasy, accetti questi termini di utilizzo. Se non sei d'accordo, ti preghiamo di non utilizzare il servizio."
+    },
+    "useOfService": {
+      "title": "Uso del servizio",
+      "body": "ConvertTextEasy fornisce strumenti di testo online gratuiti per uso personale e commerciale. Puoi utilizzare gli strumenti senza creare un account. Accetti di non fare un uso improprio del servizio né di tentare di interromperne il funzionamento."
+    },
+    "userContent": {
+      "title": "Contenuti dell'utente",
+      "body": "Sei l'unico responsabile del testo che inserisci nei nostri strumenti. Non utilizzare il servizio per elaborare contenuti illegali, dannosi o offensivi. Poiché tutta l'elaborazione è locale nel tuo browser, non abbiamo accesso ai tuoi contenuti."
+    },
+    "intellectualProperty": {
+      "title": "Proprietà intellettuale",
+      "body": "Il nome, il logo e il design del sito ConvertTextEasy sono di proprietà di ConvertTextEasy. Gli strumenti e il codice possono essere open source sotto una licenza permissiva — consulta il repository del progetto per i dettagli."
+    },
+    "disclaimer": {
+      "title": "Esclusione di garanzie",
+      "body": "ConvertTextEasy è fornito \"così com'è\" senza garanzie di alcun tipo, espresse o implicite. Non garantiamo disponibilità ininterrotta, funzionamento privo di errori o idoneità per uno scopo particolare."
+    },
+    "limitation": {
+      "title": "Limitazione di responsabilità",
+      "body": "In nessun caso ConvertTextEasy sarà responsabile per danni derivanti dall'uso o dall'impossibilità di utilizzare il servizio. Ciò include, senza limitazione, danni diretti, indiretti, incidentali o consequenziali."
+    },
+    "changes": {
+      "title": "Modifiche ai termini",
+      "body": "Potremmo aggiornare questi termini di tanto in tanto. L'uso continuato del servizio dopo le modifiche costituisce accettazione dei nuovi termini. Faremo sforzi ragionevoli per informare gli utenti di modifiche significative."
+    }
+  },
+  "contact": {
+    "title": "Contattaci",
+    "subtitle": "Hai una domanda, un suggerimento o vuoi semplicemente salutare? Ci piacerebbe sentirti.",
+    "name": "Nome",
+    "email": "Email",
+    "message": "Messaggio",
+    "namePlaceholder": "Il tuo nome",
+    "emailPlaceholder": "tu@esempio.com",
+    "messagePlaceholder": "Raccontaci cosa hai in mente...",
+    "send": "Invia messaggio",
+    "sending": "Invio in corso...",
+    "successTitle": "Messaggio inviato!",
+    "successMessage": "Grazie per averci contattato. Ti risponderemo il prima possibile.",
+    "validation": {
+      "nameRequired": "Inserisci il tuo nome.",
+      "emailRequired": "Inserisci la tua email.",
+      "emailInvalid": "Inserisci un'email valida.",
+      "messageRequired": "Inserisci un messaggio."
+    }
+  },
+  "footer": {
+    "product": {
+      "title": "Prodotto",
+      "tools": "Strumenti",
+      "about": "Chi siamo",
+      "blog": "Blog"
+    },
+    "support": {
+      "title": "Supporto",
+      "contact": "Contatti",
+      "privacy": "Informativa sulla privacy",
+      "terms": "Termini di utilizzo"
+    },
+    "brand": {
+      "description": "Simple, fast text tools — right in your browser."
+    },
+    "highlight": {
+      "title": "ConvertTextEasy",
+      "description": "Convert texts online for free, with no sign-up and support for multiple languages.",
+      "badges": {
+        "free": "Free",
+        "private": "Private",
+        "noSignup": "No Sign-Up"
+      }
+    },
+    "copyright": "© {year} ConvertTextEasy. Tutti i diritti riservati."
+  },
+  "seo": {
+    "home": {
+      "title": "Convertitore di Testo Online - ConvertTextEasy",
+      "description": "Converti testo in maiuscolo, minuscolo, capitalizzazione, stili Unicode e formati per sviluppatori gratuitamente."
+    },
+    "tools": {
+      "title": "Tutti gli strumenti - ConvertTextEasy",
+      "description": "Sfoglia tutti gli strumenti di trasformazione del testo disponibili. Gratis, privato e istantaneo."
+    },
+    "blog": {
+      "title": "Blog - ConvertTextEasy",
+      "description": "Consigli e guide sulla conversione e formattazione del testo online."
+    },
+    "about": {
+      "title": "Chi siamo - ConvertTextEasy",
+      "description": "Scopri di più su ConvertTextEasy e i nostri strumenti di testo gratuiti basati su browser."
+    },
+    "privacy": {
+      "title": "Informativa sulla privacy - ConvertTextEasy",
+      "description": "Comprendi come ConvertTextEasy gestisce la privacy e i dati degli utenti."
+    },
+    "terms": {
+      "title": "Termini di utilizzo - ConvertTextEasy",
+      "description": "Leggi i termini e le condizioni per l'utilizzo di ConvertTextEasy."
+    },
+    "contact": {
+      "title": "Contatti - ConvertTextEasy",
+      "description": "Mettiti in contatto con ConvertTextEasy."
+    }
+  }
+}

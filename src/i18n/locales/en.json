@@ -1,0 +1,483 @@
+{
+  "common": {
+    "siteName": "ConvertTextEasy",
+    "siteDescription": "Simple, fast text tools — right in your browser.",
+    "tagline": "Simple, fast text tools — right in your browser.",
+    "chars": "Characters",
+    "words": "Words",
+    "lines": "Lines",
+    "letters": "Letters",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "clear": "Clear",
+    "clearAll": "Clear all",
+    "download": "Download",
+    "placeholder": "Type or paste your text here...",
+    "soon": "Soon",
+    "available": "available",
+    "comingSoon": "coming soon",
+    "freePrivate": "Free • Private • No Sign-Up",
+    "allRightsReserved": "All rights reserved.",
+    "switchTheme": "Switch to {theme} mode",
+    "switchLang": "Change language",
+    "errorCopy": "Failed to copy to clipboard",
+    "errorTransform": "Failed to transform text",
+    "theme": "Theme",
+    "language": "Language",
+    "textConverted": "Text converted successfully."
+  },
+  "nav": {
+    "home": "Home",
+    "tools": "Tools",
+    "blog": "Blog",
+    "about": "About",
+    "contact": "Contact",
+    "openConverter": "Open Converter"
+  },
+  "header": {
+    "tagline": "Convert uppercase and lowercase letters online for free."
+  },
+  "home": {
+    "editor": {
+      "label": "Editor",
+      "placeholder": "Paste your text here to get started..."
+    },
+    "counts": {
+      "letters": "Letters",
+      "words": "Words",
+      "lines": "Lines"
+    },
+    "actions": {
+      "copy": "copy",
+      "clear": "clear",
+      "download": "download"
+    },
+    "groups": {
+      "essentials": "Essentials",
+      "styles": "Styles",
+      "utilities": "Utilities",
+      "developer": "Developer tools"
+    },
+    "transforms": {
+      "upper": "UPPERCASE",
+      "lower": "lowercase",
+      "sentenceCase": "Sentence case",
+      "capitalize": "Capitalized Case",
+      "titleCase": "Title Case",
+      "alternatingCase": "Alternating Case",
+      "inverseCase": "Inverse Case",
+      "removeSpaces": "Remove Extra Spaces",
+      "strikethrough": "Strikethrough",
+      "italic": "Italic Text",
+      "bold": "Bold Text",
+      "underline": "Underline Text",
+      "wide": "Wide Text",
+      "small": "Small Text",
+      "reverse": "Reverse Text",
+      "mirror": "Mirror Text",
+      "upsideDown": "Upside Down Text",
+      "morse": "Morse Code",
+      "morseDecode": "Morse → Text",
+      "binary": "Binary Code",
+      "invisible": "Invisible Text",
+      "camelCase": "camelCase",
+      "pascalCase": "PascalCase",
+      "snakeCase": "snake_case",
+      "constantCase": "CONSTANT_CASE",
+      "kebabCase": "kebab-case",
+      "dotCase": "dot.case",
+      "pathCase": "path/case"
+    },
+    "sidebar": {
+      "summary": "Summary",
+      "instantConversion": "Instant conversion",
+      "instantConversionDesc": "See the result in real time as you type.",
+      "languagesReady": "Multiple languages",
+      "languagesReadyDesc": "Full support for English, Portuguese, and Spanish.",
+      "simpleFlow": "Simple workflow",
+      "simpleFlowDesc": "No complex menus. Write, convert, done.",
+      "quickTips": "Quick tips",
+      "tipStandardize": "Standardize titles with UPPERCASE to make them stand out.",
+      "tipClean": "Clean up text pasted from the web with Remove Extra Spaces.",
+      "tipCount": "Use the letter counter to know the exact text length.",
+      "chooseTransform": "Choose one of the options above to transform your text."
+    },
+    "feedback": {
+      "label": "Feedback"
+    },
+    "hero": {
+      "title": "Online Text Converter",
+      "subtitle": "Paste your text below and choose the format you want.",
+      "tagline": "Free, private, and instant. Your text never leaves your browser."
+    },
+    "toolGrid": {
+      "title": "More tools",
+      "description": "Additional conversion and formatting tools available."
+    },
+    "benefits": {
+      "free": { "title": "Free Forever", "description": "No paywalls, no trials. Every tool is free." },
+      "private": { "title": "100% Private", "description": "Your text never leaves your device." },
+      "noSignUp": { "title": "No Sign-Up", "description": "Start using tools immediately." },
+      "browser": { "title": "Runs in Browser", "description": "No servers. Instant results." }
+    },
+    "features": {
+      "label": "QUICK GUIDE",
+      "title": "What you can do with ConvertTextEasy",
+      "description": "Convert, format and clean text in seconds. Use free tools to transform uppercase, lowercase, titles, reverse text, Morse code and other formats directly in your browser.",
+      "cards": {
+        "lowercase": {
+          "title": "Lowercase Converter",
+          "description": "Transform text into lowercase letters to standardize registrations, lists and content.",
+          "example": "text in lowercase"
+        },
+        "uppercase": {
+          "title": "Uppercase Converter",
+          "description": "Convert text to UPPERCASE online, free and with character counting.",
+          "example": "TEXT IN UPPERCASE"
+        },
+        "strikethrough": {
+          "title": "Strikethrough Text",
+          "description": "Apply the strikethrough effect to each character of your text.",
+          "example": "S̶t̶r̶i̶k̶e̶t̶h̶r̶o̶u̶g̶h̶ ̶t̶e̶x̶t̶"
+        },
+        "capitalize": {
+          "title": "Capitalize Text",
+          "description": "Capitalize the first letter of words to make titles, names and headlines more readable.",
+          "example": "This Is An Example"
+        },
+        "reverse": {
+          "title": "Reverse Text",
+          "description": "Reverse the characters of words and phrases in seconds.",
+          "example": "elpmaxe txet"
+        },
+        "alternating-case": {
+          "title": "Alternating Case",
+          "description": "Generate letters alternating between uppercase and lowercase automatically.",
+          "example": "tHiS Is aN ExAmPlE"
+        },
+        "italic": {
+          "title": "Unicode Italic Text",
+          "description": "Convert plain text into Unicode characters with italic appearance.",
+          "example": "𝐼𝑡𝑎𝑙𝑖𝑐 𝑒𝑥𝑎𝑚𝑝𝑙𝑒"
+        },
+        "morse": {
+          "title": "Morse Code Translator",
+          "description": "Convert common letters, numbers and signs to Morse code.",
+          "example": "... --- ..."
+        }
+      }
+    }
+  },
+  "tools": {
+    "title": "All Tools",
+    "description": "Browse all available text transformation tools. Free, private, and instant.",
+    "everyToolRunsLocally": "Every tool runs locally in your browser. Nothing is ever uploaded.",
+    "uppercase": {
+      "name": "Uppercase Converter",
+      "description": "Convert any text to UPPERCASE instantly. Paste, click, copy — done.",
+      "label": "Convert to UPPERCASE",
+      "placeholder": "Type or paste your text here..."
+    },
+    "lowercase": {
+      "name": "Lowercase Converter",
+      "description": "Convert text to lowercase in one click."
+    },
+    "capitalize": {
+      "name": "Capitalize Text",
+      "description": "Capitalize the first letter of each word or sentence."
+    },
+    "remove-extra-spaces": {
+      "name": "Remove Extra Spaces",
+      "description": "Clean up messy whitespace and normalize line breaks."
+    },
+    "word-counter": {
+      "name": "Word Counter",
+      "description": "Count words, characters, sentences, and paragraphs."
+    },
+    "json-formatter": {
+      "name": "JSON Formatter",
+      "description": "Pretty-print or minify JSON with syntax highlighting."
+    },
+    "base64-encode": {
+      "name": "Base64 Encode",
+      "description": "Encode or decode text to/from Base64 format."
+    },
+    "url-encode": {
+      "name": "URL Encode",
+      "description": "URL-encode or decode text for safe web usage."
+    },
+    "strikethrough": {
+      "name": "Strikethrough Text",
+      "description": "Add strikethrough effect to your text."
+    },
+    "reverse": {
+      "name": "Reverse Text",
+      "description": "Reverse the character order of your text."
+    },
+    "toggle-case": {
+      "name": "Toggle Case",
+      "description": "Switch between uppercase and lowercase letters."
+    },
+    "italic": {
+      "name": "Italic Text",
+      "description": "Convert text to Unicode italic format."
+    },
+    "to-morse": {
+      "name": "Morse Code",
+      "description": "Convert text to Morse code."
+    },
+    "from-morse": {
+      "name": "Morse Code Decoder",
+      "description": "Convert Morse code back to text."
+    },
+    "bold": {
+      "name": "Bold Text",
+      "description": "Convert text to Unicode bold format."
+    },
+    "underline": {
+      "name": "Underline Text",
+      "description": "Add underline effect to your text using Unicode."
+    },
+    "wide": {
+      "name": "Wide Text",
+      "description": "Convert text to fullwidth Unicode characters."
+    },
+    "small-caps": {
+      "name": "Small Text",
+      "description": "Convert text to small caps Unicode characters."
+    },
+    "mirror": {
+      "name": "Mirror Text",
+      "description": "Reverse and mirror each character."
+    },
+    "upside-down": {
+      "name": "Upside Down Text",
+      "description": "Flip your text upside down."
+    },
+    "binary": {
+      "name": "Binary Code",
+      "description": "Convert text to/from binary code."
+    },
+    "invisible": {
+      "name": "Invisible Text",
+      "description": "Generate invisible Unicode characters."
+    },
+    "camelcase": {
+      "name": "camelCase",
+      "description": "Convert text to camelCase format."
+    },
+    "pascalcase": {
+      "name": "PascalCase",
+      "description": "Convert text to PascalCase format."
+    },
+    "snakecase": {
+      "name": "snake_case",
+      "description": "Convert text to snake_case format."
+    },
+    "constantcase": {
+      "name": "CONSTANT_CASE",
+      "description": "Convert text to CONSTANT_CASE format."
+    },
+    "kebabcase": {
+      "name": "kebab-case / slugify",
+      "description": "Convert text to kebab-case URL slug."
+    },
+    "dotcase": {
+      "name": "dot.case",
+      "description": "Convert text to dot.case format."
+    },
+    "pathcase": {
+      "name": "path/case",
+      "description": "Convert text to path/case format."
+    },
+    "transforms": {
+      "sentenceCase": "Sentence case",
+      "lowercase": "lowercase",
+      "uppercase": "UPPERCASE",
+      "capitalizeEachWord": "Capitalize Each Word",
+      "removeExtraSpaces": "Remove Extra Spaces",
+      "titleCase": "Title Case",
+      "wordCounter": "Word Counter"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Tips and guides about online text conversion and formatting.",
+    "readMore": "Read more",
+    "publishedOn": "Published on",
+    "posts": {
+      "uppercase-guide": {
+        "title": "How to Convert Text to Uppercase Online",
+        "excerpt": "Learn how to quickly convert any text to uppercase using free online tools. A step-by-step guide for writers, developers, and content creators.",
+        "date": "2025-06-01"
+      },
+      "remove-spaces-guide": {
+        "title": "How to Remove Extra Spaces from Text",
+        "excerpt": "Messy whitespace can ruin formatting. Discover how to clean up extra spaces, tabs, and line breaks from your text instantly.",
+        "date": "2025-05-20"
+      },
+      "free-text-tools": {
+        "title": "Free Tools to Format Text Online",
+        "excerpt": "A curated list of free browser-based tools for text formatting, conversion, and cleanup — no sign-up required, completely private.",
+        "date": "2025-05-10"
+      }
+    }
+  },
+  "about": {
+    "title": "About ConvertTextEasy",
+    "description": "Learn about ConvertTextEasy — the free, private text tool platform.",
+    "p1": "ConvertTextEasy is a collection of free online text tools designed to be simple, fast, and private. Every tool runs entirely in your browser using client-side JavaScript — no data is ever sent to a server.",
+    "p2": "We built ConvertTextEasy because we were tired of bloated text tools that require sign-ups, show ads, or upload your data to the cloud. Text conversions should happen instantly, right where you type them.",
+    "principlesTitle": "Our Principles",
+    "principle1": "Privacy first.",
+    "principle1Desc": "Your text never leaves your device. Period.",
+    "principle2": "No sign-ups.",
+    "principle2Desc": "Just open a tool and start using it.",
+    "principle3": "Fast and focused.",
+    "principle3Desc": "Each tool does one thing well.",
+    "principle4": "Open source.",
+    "principle4Desc": "Our code is available for anyone to inspect and contribute.",
+    "closing": "We're actively building new tools. If you have a suggestion, we'd love to hear it."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: June 2025",
+    "dataCollection": {
+      "title": "Data Collection",
+      "body": "ConvertTextEasy does not collect, store, or transmit any of the text you enter into our tools. All text processing happens entirely in your browser using client-side JavaScript. No data is sent to our servers or any third party."
+    },
+    "cookies": {
+      "title": "Cookies",
+      "body": "We do not use tracking cookies. We may use essential cookies for basic site functionality (such as remembering your theme or language preference), but these do not track you or collect personal information."
+    },
+    "analytics": {
+      "title": "Analytics",
+      "body": "We may use privacy-focused analytics that do not track individual users. No personally identifiable information is collected through analytics."
+    },
+    "thirdParty": {
+      "title": "Third-Party Services",
+      "body": "ConvertTextEasy does not share any data with third-party services because we do not collect any data to begin with."
+    },
+    "contactForm": {
+      "title": "Contact Form",
+      "body": "If you use our contact form, we may collect your name, email address, and message solely to respond to your inquiry. This data is not shared, sold, or used for marketing purposes. You may request deletion of your contact data at any time."
+    },
+    "userRights": {
+      "title": "Your Rights",
+      "body": "You may request access to, correction of, or deletion of any personal data you have submitted through our contact form. To do so, please reach out via our contact page."
+    },
+    "contact": {
+      "title": "Contact",
+      "body": "If you have questions about this privacy policy, please contact us through our contact page."
+    }
+  },
+  "terms": {
+    "title": "Terms of Use",
+    "lastUpdated": "Last updated: June 2025",
+    "acceptance": {
+      "title": "Acceptance of Terms",
+      "body": "By using ConvertTextEasy, you agree to these terms of use. If you do not agree, please do not use the service."
+    },
+    "useOfService": {
+      "title": "Use of the Service",
+      "body": "ConvertTextEasy provides free online text tools for personal and commercial use. You may use the tools without creating an account. You agree not to misuse the service or attempt to disrupt its operation."
+    },
+    "userContent": {
+      "title": "User Content",
+      "body": "You are solely responsible for the text you enter into our tools. Do not use the service to process illegal, harmful, or abusive content. Since all processing is local to your browser, we do not have access to your content."
+    },
+    "intellectualProperty": {
+      "title": "Intellectual Property",
+      "body": "The ConvertTextEasy name, logo, and website design are the property of ConvertTextEasy. The tools and codebase may be open source under a permissive license — please check the project repository for details."
+    },
+    "disclaimer": {
+      "title": "Disclaimer of Warranties",
+      "body": "ConvertTextEasy is provided \"as is\" without warranties of any kind, either express or implied. We do not guarantee uninterrupted availability, error-free operation, or fitness for any particular purpose."
+    },
+    "limitation": {
+      "title": "Limitation of Liability",
+      "body": "In no event shall ConvertTextEasy be liable for any damages arising from the use of or inability to use the service. This includes, without limitation, direct, indirect, incidental, or consequential damages."
+    },
+    "changes": {
+      "title": "Changes to Terms",
+      "body": "We may update these terms from time to time. Continued use of the service after changes constitutes acceptance of the new terms. We will make reasonable efforts to notify users of significant changes."
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Have a question, suggestion, or just want to say hi? We'd love to hear from you.",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "namePlaceholder": "Your name",
+    "emailPlaceholder": "you@example.com",
+    "messagePlaceholder": "Tell us what's on your mind...",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "successTitle": "Message Sent!",
+    "successMessage": "Thank you for reaching out. We'll get back to you as soon as possible.",
+    "validation": {
+      "nameRequired": "Please enter your name.",
+      "emailRequired": "Please enter your email.",
+      "emailInvalid": "Please enter a valid email.",
+      "messageRequired": "Please enter a message."
+    }
+  },
+  "footer": {
+    "product": {
+      "title": "Product",
+      "tools": "Tools",
+      "about": "About Us",
+      "blog": "Blog"
+    },
+    "support": {
+      "title": "Support",
+      "contact": "Contact",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Use"
+    },
+    "brand": {
+      "description": "Simple, fast text tools — right in your browser."
+    },
+    "highlight": {
+      "title": "ConvertTextEasy",
+      "description": "Convert texts online for free, with no sign-up and support for multiple languages.",
+      "badges": {
+        "free": "Free",
+        "private": "Private",
+        "noSignup": "No Sign-Up"
+      }
+    },
+    "copyright": "© {year} ConvertTextEasy. All rights reserved."
+  },
+  "seo": {
+    "home": {
+      "title": "Online Text Converter - ConvertTextEasy",
+      "description": "Free online text converter for uppercase, lowercase, capitalization, Unicode styles and developer formats."
+    },
+    "tools": {
+      "title": "All Tools - ConvertTextEasy",
+      "description": "Browse all available text transformation tools. Free, private, and instant."
+    },
+    "blog": {
+      "title": "Blog - ConvertTextEasy",
+      "description": "Tips and guides about online text conversion and formatting."
+    },
+    "about": {
+      "title": "About Us - ConvertTextEasy",
+      "description": "Learn more about ConvertTextEasy and our free browser-based text tools."
+    },
+    "privacy": {
+      "title": "Privacy Policy - ConvertTextEasy",
+      "description": "Understand how ConvertTextEasy handles privacy and user data."
+    },
+    "terms": {
+      "title": "Terms of Use - ConvertTextEasy",
+      "description": "Read the terms and conditions for using ConvertTextEasy."
+    },
+    "contact": {
+      "title": "Contact - ConvertTextEasy",
+      "description": "Get in touch with ConvertTextEasy."
+    }
+  }
+}

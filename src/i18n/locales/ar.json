@@ -1,0 +1,436 @@
+{
+  "common": {
+    "siteName": "ConvertTextEasy",
+    "siteDescription": "أدوات نصية بسيطة وسريعة — مباشرة في متصفحك.",
+    "tagline": "أدوات نصية بسيطة وسريعة — مباشرة في متصفحك.",
+    "chars": "حروف",
+    "words": "كلمات",
+    "lines": "أسطر",
+    "letters": "أحرف",
+    "copy": "نسخ",
+    "copied": "تم النسخ!",
+    "clear": "مسح",
+    "clearAll": "مسح الكل",
+    "download": "تحميل",
+    "placeholder": "اكتب أو الصق النص هنا...",
+    "soon": "قريباً",
+    "available": "متاح",
+    "comingSoon": "قريباً",
+    "freePrivate": "مجاني • خاص • بدون تسجيل",
+    "allRightsReserved": "جميع الحقوق محفوظة.",
+    "switchTheme": "التبديل إلى وضع {theme}",
+    "switchLang": "تغيير اللغة",
+    "errorCopy": "فشل النسخ إلى الحافظة",
+    "errorTransform": "فشل تحويل النص",
+    "theme": "المظهر",
+    "language": "اللغة",
+    "textConverted": "تم تحويل النص بنجاح."
+  },
+  "nav": {
+    "home": "الرئيسية",
+    "tools": "الأدوات",
+    "blog": "المدونة",
+    "about": "من نحن",
+    "contact": "اتصل بنا",
+    "openConverter": "فتح المحول"
+  },
+  "header": {
+    "tagline": "تحويل الأحرف الكبيرة والصغيرة عبر الإنترنت مجاناً."
+  },
+  "home": {
+    "editor": {
+      "label": "المحرر",
+      "placeholder": "الصق النص هنا للبدء..."
+    },
+    "counts": {
+      "letters": "حرف",
+      "words": "كلمة",
+      "lines": "سطر"
+    },
+    "actions": {
+      "copy": "نسخ",
+      "clear": "مسح",
+      "download": "تحميل"
+    },
+    "groups": {
+      "essentials": "أساسية",
+      "styles": "أنماط",
+      "utilities": "أدوات مساعدة",
+      "developer": "للمطورين"
+    },
+    "transforms": {
+      "upper": "أحرف كبيرة",
+      "lower": "أحرف صغيرة",
+      "sentenceCase": "حالة الجملة",
+      "capitalize": "أول حرف كبير",
+      "titleCase": "عنوان",
+      "alternatingCase": "حالة متناوبة",
+      "inverseCase": "عكس الحالة",
+      "removeSpaces": "إزالة المسافات",
+      "strikethrough": "نص مشطوب",
+      "italic": "نص مائل",
+      "bold": "نص غامق",
+      "underline": "نص مسطر",
+      "wide": "نص عريض",
+      "small": "نص صغير",
+      "reverse": "نص معكوس",
+      "mirror": "نص معكوس بالمرآة",
+      "upsideDown": "نص مقلوب",
+      "morse": "شفرة مورس",
+      "morseDecode": "مورس → نص",
+      "binary": "شفرة ثنائية",
+      "invisible": "نص غير مرئي",
+      "camelCase": "camelCase",
+      "pascalCase": "PascalCase",
+      "snakeCase": "snake_case",
+      "constantCase": "CONSTANT_CASE",
+      "kebabCase": "kebab-case",
+      "dotCase": "dot.case",
+      "pathCase": "path/case"
+    },
+    "sidebar": {
+      "summary": "ملخص",
+      "instantConversion": "تحويل فوري",
+      "instantConversionDesc": "شاهد النتيجة في الوقت الفعلي أثناء الكتابة.",
+      "languagesReady": "لغات متعددة",
+      "languagesReadyDesc": "دعم كامل للعربية والإنجليزية ولغات أخرى.",
+      "simpleFlow": "سير عمل بسيط",
+      "simpleFlowDesc": "بدون قوائم معقدة. اكتب، حول، انتهيت.",
+      "quickTips": "نصائح سريعة",
+      "tipStandardize": "وحّد العناوين بالأحرف الكبيرة لجعلها بارزة.",
+      "tipClean": "نظف النصوص المنسوخة من الويب باستخدام إزالة المسافات.",
+      "tipCount": "استخدم عداد الأحرف لمعرفة الطول الدقيق للنص.",
+      "chooseTransform": "اختر أحد الخيارات أعلاه لتحويل النص."
+    },
+    "feedback": {
+      "label": "ملاحظات"
+    },
+    "hero": {
+      "title": "محول النصوص عبر الإنترنت",
+      "subtitle": "الصق النص أدناه واختر التنسيق الذي تريده.",
+      "tagline": "مجاني، خاص وفوري. نصك لا يغادر متصفحك أبداً."
+    },
+    "toolGrid": {
+      "title": "المزيد من الأدوات",
+      "description": "أدوات إضافية للتحويل والتنسيق متاحة."
+    },
+    "benefits": {
+      "free": { "title": "مجاني للأبد", "description": "بدون حواجز دفع، بدون تجارب. كل أداة مجانية." },
+      "private": { "title": "خاص 100%", "description": "نصك لا يغادر جهازك أبداً." },
+      "noSignUp": { "title": "بدون تسجيل", "description": "ابدأ باستخدام الأدوات فوراً." },
+      "browser": { "title": "يعمل في المتصفح", "description": "بدون خوادم. نتائج فورية." }
+    }
+  },
+  "tools": {
+    "title": "جميع الأدوات",
+    "description": "تصفح جميع أدوات تحويل النص المتاحة. مجاني، خاص وفوري.",
+    "everyToolRunsLocally": "كل أداة تعمل محلياً في متصفحك. لا يتم رفع أي شيء أبداً.",
+    "uppercase": {
+      "name": "محول الأحرف الكبيرة",
+      "description": "حول أي نص إلى أحرف كبيرة فوراً. الصق، انقر، انسخ — تم.",
+      "label": "تحويل إلى أحرف كبيرة",
+      "placeholder": "اكتب أو الصق النص هنا..."
+    },
+    "lowercase": {
+      "name": "محول الأحرف الصغيرة",
+      "description": "حول النص إلى أحرف صغيرة بنقرة واحدة."
+    },
+    "capitalize": {
+      "name": "تكبير النص",
+      "description": "اجعل الحرف الأول من كل كلمة أو جملة كبيراً."
+    },
+    "remove-extra-spaces": {
+      "name": "إزالة المسافات الزائدة",
+      "description": "نظف المسافات الفوضوية ونسق فواصل الأسطر."
+    },
+    "word-counter": {
+      "name": "عداد الكلمات",
+      "description": "عد الكلمات والأحرف والجمل والفقرات."
+    },
+    "json-formatter": {
+      "name": "منسق JSON",
+      "description": "نسق أو صغر JSON مع تمييز الصيغة."
+    },
+    "base64-encode": {
+      "name": "تشفير Base64",
+      "description": "شفر أو فك تشفير النص بتنسيق Base64."
+    },
+    "url-encode": {
+      "name": "تشفير URL",
+      "description": "شفر أو فك تشفير النص للاستخدام الآمن في الروابط."
+    },
+    "strikethrough": {
+      "name": "نص مشطوب",
+      "description": "أضف تأثير الشطب إلى نصك."
+    },
+    "reverse": {
+      "name": "نص معكوس",
+      "description": "اعكس ترتيب الأحرف في نصك."
+    },
+    "toggle-case": {
+      "name": "تبديل الأحرف",
+      "description": "بدل بين الأحرف الكبيرة والصغيرة."
+    },
+    "italic": {
+      "name": "نص مائل",
+      "description": "حول النص إلى تنسيق مائل Unicode."
+    },
+    "to-morse": {
+      "name": "شفرة مورس",
+      "description": "حول النص إلى شفرة مورس."
+    },
+    "from-morse": {
+      "name": "فك شفرة مورس",
+      "description": "حول شفرة مورس مرة أخرى إلى نص."
+    },
+    "bold": {
+      "name": "نص غامق",
+      "description": "حول النص إلى تنسيق غامق Unicode."
+    },
+    "underline": {
+      "name": "نص مسطر",
+      "description": "أضف تأثير التسطير إلى نصك باستخدام Unicode."
+    },
+    "wide": {
+      "name": "نص عريض",
+      "description": "حول النص إلى أحرف Unicode بعرض كامل."
+    },
+    "small-caps": {
+      "name": "نص صغير",
+      "description": "حول النص إلى أحرف صغيرة Unicode."
+    },
+    "mirror": {
+      "name": "نص معكوس بالمرآة",
+      "description": "اعكس واعكس كل حرف كالمرآة."
+    },
+    "upside-down": {
+      "name": "نص مقلوب",
+      "description": "اقلب نصك رأساً على عقب."
+    },
+    "binary": {
+      "name": "شفرة ثنائية",
+      "description": "حول النص إلى/من الشفرة الثنائية."
+    },
+    "invisible": {
+      "name": "نص غير مرئي",
+      "description": "أنشئ أحرف Unicode غير مرئية."
+    },
+    "camelcase": {
+      "name": "camelCase",
+      "description": "حول النص إلى تنسيق camelCase."
+    },
+    "pascalcase": {
+      "name": "PascalCase",
+      "description": "حول النص إلى تنسيق PascalCase."
+    },
+    "snakecase": {
+      "name": "snake_case",
+      "description": "حول النص إلى تنسيق snake_case."
+    },
+    "constantcase": {
+      "name": "CONSTANT_CASE",
+      "description": "حول النص إلى تنسيق CONSTANT_CASE."
+    },
+    "kebabcase": {
+      "name": "kebab-case / slugify",
+      "description": "حول النص إلى slug URL بنمط kebab-case."
+    },
+    "dotcase": {
+      "name": "dot.case",
+      "description": "حول النص إلى تنسيق dot.case."
+    },
+    "pathcase": {
+      "name": "path/case",
+      "description": "حول النص إلى تنسيق path/case."
+    },
+    "transforms": {
+      "sentenceCase": "جملة",
+      "lowercase": "أحرف صغيرة",
+      "uppercase": "أحرف كبيرة",
+      "capitalizeEachWord": "تكبير كل كلمة",
+      "removeExtraSpaces": "إزالة المسافات",
+      "titleCase": "تنسيق العنوان",
+      "wordCounter": "عد الكلمات"
+    }
+  },
+  "blog": {
+    "title": "المدونة",
+    "subtitle": "نصائح وإرشادات حول تحويل وتنسيق النصوص عبر الإنترنت.",
+    "readMore": "اقرأ المزيد",
+    "publishedOn": "نُشر في",
+    "posts": {
+      "uppercase-guide": {
+        "title": "كيفية تحويل النص إلى أحرف كبيرة عبر الإنترنت",
+        "excerpt": "تعلم كيفية تحويل أي نص بسرعة إلى أحرف كبيرة باستخدام أدوات مجانية عبر الإنترنت. دليل خطوة بخطوة للكتاب والمطورين ومنشئي المحتوى.",
+        "date": "01/06/2025"
+      },
+      "remove-spaces-guide": {
+        "title": "كيفية إزالة المسافات الزائدة من النص",
+        "excerpt": "المسافات الفوضوية يمكن أن تفسد التنسيق. اكتشف كيفية تنظيف المسافات الزائدة والتبويبات وفواصل الأسطر من نصك فوراً.",
+        "date": "20/05/2025"
+      },
+      "free-text-tools": {
+        "title": "أدوات مجانية لتنسيق النصوص عبر الإنترنت",
+        "excerpt": "قائمة منسقة من الأدوات المجانية المعتمدة على المتصفح لتنسيق وتحويل وتنظيف النصوص — بدون تسجيل، خاص تماماً.",
+        "date": "10/05/2025"
+      }
+    }
+  },
+  "about": {
+    "title": "من نحن - ConvertTextEasy",
+    "description": "تعرف على ConvertTextEasy — المنصة المجانية والخاصة لأدوات النصوص.",
+    "p1": "ConvertTextEasy هي مجموعة من أدوات النصوص المجانية عبر الإنترنت المصممة لتكون بسيطة وسريعة وخاصة. كل أداة تعمل بالكامل في متصفحك باستخدام JavaScript — لا يتم إرسال أي بيانات إلى خادم.",
+    "p2": "بنينا ConvertTextEasy لأننا سئمنا من أدوات النصوص المتضخمة التي تتطلب التسجيل أو تعرض الإعلانات أو ترفع بياناتك إلى السحابة. يجب أن تحدث تحويلات النصوص فوراً، حيث تكتبها مباشرة.",
+    "principlesTitle": "مبادئنا",
+    "principle1": "الخصوصية أولاً.",
+    "principle1Desc": "نصك لا يغادر جهازك أبداً. نقطة.",
+    "principle2": "بدون تسجيل.",
+    "principle2Desc": "ما عليك سوى فتح أداة والبدء في استخدامها.",
+    "principle3": "سريع ومركز.",
+    "principle3Desc": "كل أداة تؤدي مهمة واحدة بشكل جيد.",
+    "principle4": "مفتوح المصدر.",
+    "principle4Desc": "الكود الخاص بنا متاح للجميع للتفحص والمساهمة.",
+    "closing": "نحن نبني أدوات جديدة بنشاط. إذا كان لديك اقتراح، يسعدنا سماعه."
+  },
+  "privacy": {
+    "title": "سياسة الخصوصية",
+    "lastUpdated": "آخر تحديث: يونيو 2025",
+    "dataCollection": {
+      "title": "جمع البيانات",
+      "body": "لا يقوم ConvertTextEasy بجمع أو تخزين أو نقل أي نص تدخله في أدواتنا. تتم معالجة النص بالكامل في متصفحك باستخدام JavaScript. لا يتم إرسال أي بيانات إلى خوادمنا أو أي طرف ثالث."
+    },
+    "cookies": {
+      "title": "ملفات تعريف الارتباط",
+      "body": "نحن لا نستخدم ملفات تعريف ارتباط للتتبع. قد نستخدم ملفات تعريف ارتباط أساسية لوظائف الموقع الأساسية (مثل تذكر تفضيلات المظهر أو اللغة)، ولكنها لا تتعقبك أو تجمع معلومات شخصية."
+    },
+    "analytics": {
+      "title": "التحليلات",
+      "body": "قد نستخدم تحليلات تركز على الخصوصية لا تتعقب المستخدمين الفرديين. لا يتم جمع أي معلومات تعريف شخصية من خلال التحليلات."
+    },
+    "thirdParty": {
+      "title": "خدمات الطرف الثالث",
+      "body": "لا يشارك ConvertTextEasy أي بيانات مع خدمات الطرف الثالث لأننا لا نجمع أي بيانات من الأساس."
+    },
+    "contactForm": {
+      "title": "نموذج الاتصال",
+      "body": "إذا استخدمت نموذج الاتصال الخاص بنا، فقد نجمع اسمك وعنوان بريدك الإلكتروني ورسالتك فقط للرد على استفسارك. لا تتم مشاركة هذه البيانات أو بيعها أو استخدامها لأغراض تسويقية. يمكنك طلب حذف بيانات الاتصال الخاصة بك في أي وقت."
+    },
+    "userRights": {
+      "title": "حقوقك",
+      "body": "يمكنك طلب الوصول إلى أي بيانات شخصية قدمتها من خلال نموذج الاتصال الخاص بنا أو تصحيحها أو حذفها. للقيام بذلك، يرجى التواصل معنا عبر صفحة الاتصال."
+    },
+    "contact": {
+      "title": "اتصل بنا",
+      "body": "إذا كانت لديك أسئلة حول سياسة الخصوصية هذه، يرجى الاتصال بنا عبر صفحة الاتصال."
+    }
+  },
+  "terms": {
+    "title": "شروط الاستخدام",
+    "lastUpdated": "آخر تحديث: يونيو 2025",
+    "acceptance": {
+      "title": "قبول الشروط",
+      "body": "باستخدام ConvertTextEasy، فإنك توافق على شروط الاستخدام هذه. إذا كنت لا توافق، يرجى عدم استخدام الخدمة."
+    },
+    "useOfService": {
+      "title": "استخدام الخدمة",
+      "body": "يوفر ConvertTextEasy أدوات نصية مجانية عبر الإنترنت للاستخدام الشخصي والتجاري. يمكنك استخدام الأدوات دون إنشاء حساب. أنت توافق على عدم إساءة استخدام الخدمة أو محاولة تعطيل تشغيلها."
+    },
+    "userContent": {
+      "title": "محتوى المستخدم",
+      "body": "أنت المسؤول الوحيد عن النص الذي تدخله في أدواتنا. لا تستخدم الخدمة لمعالجة محتوى غير قانوني أو ضار أو مسيء. نظراً لأن كل المعالجة محلية في متصفحك، ليس لدينا وصول إلى المحتوى الخاص بك."
+    },
+    "intellectualProperty": {
+      "title": "الملكية الفكرية",
+      "body": "اسم وشعار وتصميم موقع ConvertTextEasy هي ملك لـ ConvertTextEasy. قد تكون الأدوات والكود مفتوحة المصدر بموجب ترخيص مسموح — يرجى مراجعة مستودع المشروع للتفاصيل."
+    },
+    "disclaimer": {
+      "title": "إخلاء المسؤولية عن الضمانات",
+      "body": "يتم توفير ConvertTextEasy \"كما هو\" دون أي ضمانات من أي نوع، صريحة أو ضمنية. لا نضمن التوفر دون انقطاع أو التشغيل الخالي من الأخطاء أو الملاءمة لأي غرض معين."
+    },
+    "limitation": {
+      "title": "تحديد المسؤولية",
+      "body": "لن يكون ConvertTextEasy مسؤولاً بأي حال من الأحوال عن أي أضرار ناشئة عن استخدام أو عدم القدرة على استخدام الخدمة. يشمل ذلك، دون تحديد، الأضرار المباشرة أو غير المباشرة أو العرضية أو التبعية."
+    },
+    "changes": {
+      "title": "تغييرات الشروط",
+      "body": "قد نقوم بتحديث هذه الشروط من وقت لآخر. استمرار استخدام الخدمة بعد التغييرات يشكل قبولاً للشروط الجديدة. سنبذل جهوداً معقولة لإخطار المستخدمين بالتغييرات الهامة."
+    }
+  },
+  "contact": {
+    "title": "اتصل بنا",
+    "subtitle": "هل لديك سؤال أو اقتراح أو تريد فقط إلقاء التحية؟ يسعدنا أن نسمع منك.",
+    "name": "الاسم",
+    "email": "البريد الإلكتروني",
+    "message": "الرسالة",
+    "namePlaceholder": "اسمك",
+    "emailPlaceholder": "you@example.com",
+    "messagePlaceholder": "أخبرنا بما يدور في ذهنك...",
+    "send": "إرسال الرسالة",
+    "sending": "جارٍ الإرسال...",
+    "successTitle": "تم إرسال الرسالة!",
+    "successMessage": "شكراً لتواصلك. سنرد عليك في أقرب وقت ممكن.",
+    "validation": {
+      "nameRequired": "يرجى إدخال اسمك.",
+      "emailRequired": "يرجى إدخال بريدك الإلكتروني.",
+      "emailInvalid": "يرجى إدخال بريد إلكتروني صحيح.",
+      "messageRequired": "يرجى إدخال رسالة."
+    }
+  },
+  "footer": {
+    "product": {
+      "title": "المنتج",
+      "tools": "الأدوات",
+      "about": "من نحن",
+      "blog": "المدونة"
+    },
+    "support": {
+      "title": "الدعم",
+      "contact": "اتصل بنا",
+      "privacy": "سياسة الخصوصية",
+      "terms": "شروط الاستخدام"
+    },
+    "brand": {
+      "description": "Simple, fast text tools — right in your browser."
+    },
+    "highlight": {
+      "title": "ConvertTextEasy",
+      "description": "Convert texts online for free, with no sign-up and support for multiple languages.",
+      "badges": {
+        "free": "Free",
+        "private": "Private",
+        "noSignup": "No Sign-Up"
+      }
+    },
+    "copyright": "© {year} ConvertTextEasy. جميع الحقوق محفوظة."
+  },
+  "seo": {
+    "home": {
+      "title": "محول النصوص عبر الإنترنت - ConvertTextEasy",
+      "description": "محول نصوص مجاني عبر الإنترنت للأحرف الكبيرة والصغيرة والتكبير وأنماط Unicode وتنسيقات المطورين."
+    },
+    "tools": {
+      "title": "جميع الأدوات - ConvertTextEasy",
+      "description": "تصفح جميع أدوات تحويل النص المتاحة. مجاني، خاص وفوري."
+    },
+    "blog": {
+      "title": "المدونة - ConvertTextEasy",
+      "description": "نصائح وإرشادات حول تحويل وتنسيق النصوص عبر الإنترنت."
+    },
+    "about": {
+      "title": "من نحن - ConvertTextEasy",
+      "description": "تعرف على المزيد حول ConvertTextEasy وأدوات النصوص المجانية المعتمدة على المتصفح."
+    },
+    "privacy": {
+      "title": "سياسة الخصوصية - ConvertTextEasy",
+      "description": "افهم كيف يتعامل ConvertTextEasy مع الخصوصية وبيانات المستخدم."
+    },
+    "terms": {
+      "title": "شروط الاستخدام - ConvertTextEasy",
+      "description": "اقرأ شروط وأحكام استخدام ConvertTextEasy."
+    },
+    "contact": {
+      "title": "اتصل بنا - ConvertTextEasy",
+      "description": "تواصل مع ConvertTextEasy."
+    }
+  }
+}

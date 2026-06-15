@@ -1,0 +1,436 @@
+{
+  "common": {
+    "siteName": "ConvertTextEasy",
+    "siteDescription": "Einfache, schnelle Textwerkzeuge — direkt in Ihrem Browser.",
+    "tagline": "Einfache, schnelle Textwerkzeuge — direkt in Ihrem Browser.",
+    "chars": "Zeichen",
+    "words": "Wörter",
+    "lines": "Zeilen",
+    "letters": "Buchstaben",
+    "copy": "Kopieren",
+    "copied": "Kopiert!",
+    "clear": "Löschen",
+    "clearAll": "Alles löschen",
+    "download": "Herunterladen",
+    "placeholder": "Text hier eingeben oder einfügen...",
+    "soon": "Demnächst",
+    "available": "verfügbar",
+    "comingSoon": "demnächst verfügbar",
+    "freePrivate": "Kostenlos • Privat • Keine Anmeldung",
+    "allRightsReserved": "Alle Rechte vorbehalten.",
+    "switchTheme": "Zum {theme}-Modus wechseln",
+    "switchLang": "Sprache ändern",
+    "errorCopy": "Kopieren in die Zwischenablage fehlgeschlagen",
+    "errorTransform": "Texttransformation fehlgeschlagen",
+    "theme": "Design",
+    "language": "Sprache",
+    "textConverted": "Text erfolgreich konvertiert."
+  },
+  "nav": {
+    "home": "Start",
+    "tools": "Werkzeuge",
+    "blog": "Blog",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "openConverter": "Konverter öffnen"
+  },
+  "header": {
+    "tagline": "Konvertieren Sie Groß- und Kleinbuchstaben kostenlos online."
+  },
+  "home": {
+    "editor": {
+      "label": "Editor",
+      "placeholder": "Fügen Sie hier Ihren Text ein, um zu beginnen..."
+    },
+    "counts": {
+      "letters": "Buchstaben",
+      "words": "Wörter",
+      "lines": "Zeilen"
+    },
+    "actions": {
+      "copy": "kopieren",
+      "clear": "löschen",
+      "download": "herunterladen"
+    },
+    "groups": {
+      "essentials": "Grundlagen",
+      "styles": "Stile",
+      "utilities": "Werkzeuge",
+      "developer": "Entwickler"
+    },
+    "transforms": {
+      "upper": "GROSSBUCHSTABEN",
+      "lower": "kleinbuchstaben",
+      "sentenceCase": "Satzfall",
+      "capitalize": "Erste Großbuchstaben",
+      "titleCase": "Titel",
+      "alternatingCase": "Abwechselnd",
+      "inverseCase": "Groß-/Kleinschreibung umkehren",
+      "removeSpaces": "Leerzeichen entfernen",
+      "strikethrough": "Durchgestrichen",
+      "italic": "Kursiver Text",
+      "bold": "Fetter Text",
+      "underline": "Unterstrichener Text",
+      "wide": "Breiter Text",
+      "small": "Kleiner Text",
+      "reverse": "Umgekehrter Text",
+      "mirror": "Gespiegelter Text",
+      "upsideDown": "Auf dem Kopf",
+      "morse": "Morsecode",
+      "morseDecode": "Morse → Text",
+      "binary": "Binärcode",
+      "invisible": "Unsichtbarer Text",
+      "camelCase": "camelCase",
+      "pascalCase": "PascalCase",
+      "snakeCase": "snake_case",
+      "constantCase": "CONSTANT_CASE",
+      "kebabCase": "kebab-case",
+      "dotCase": "dot.case",
+      "pathCase": "path/case"
+    },
+    "sidebar": {
+      "summary": "Zusammenfassung",
+      "instantConversion": "Sofortige Konvertierung",
+      "instantConversionDesc": "Sehen Sie das Ergebnis in Echtzeit während der Eingabe.",
+      "languagesReady": "Mehrere Sprachen",
+      "languagesReadyDesc": "Volle Unterstützung für Deutsch, Englisch und mehr.",
+      "simpleFlow": "Einfacher Arbeitsablauf",
+      "simpleFlowDesc": "Keine komplizierten Menüs. Schreiben, konvertieren, fertig.",
+      "quickTips": "Schnelle Tipps",
+      "tipStandardize": "Standardisieren Sie Titel mit GROSSBUCHSTABEN, um sie hervorzuheben.",
+      "tipClean": "Bereinigen Sie aus dem Web eingefügten Text mit Leerzeichen entfernen.",
+      "tipCount": "Nutzen Sie den Buchstabenzähler für die genaue Textlänge.",
+      "chooseTransform": "Wählen Sie eine der obigen Optionen, um Ihren Text zu transformieren."
+    },
+    "feedback": {
+      "label": "Feedback"
+    },
+    "hero": {
+      "title": "Online-Textkonverter",
+      "subtitle": "Fügen Sie Ihren Text unten ein und wählen Sie das gewünschte Format.",
+      "tagline": "Kostenlos, privat und sofort. Ihr Text verlässt niemals Ihren Browser."
+    },
+    "toolGrid": {
+      "title": "Weitere Werkzeuge",
+      "description": "Zusätzliche Konvertierungs- und Formatierungswerkzeuge verfügbar."
+    },
+    "benefits": {
+      "free": { "title": "Für immer kostenlos", "description": "Keine Paywalls, keine Testversionen. Jedes Werkzeug ist kostenlos." },
+      "private": { "title": "100 % Privat", "description": "Ihr Text verlässt niemals Ihr Gerät." },
+      "noSignUp": { "title": "Keine Anmeldung", "description": "Beginnen Sie sofort mit der Nutzung der Werkzeuge." },
+      "browser": { "title": "Läuft im Browser", "description": "Keine Server. Sofortige Ergebnisse." }
+    }
+  },
+  "tools": {
+    "title": "Alle Werkzeuge",
+    "description": "Durchsuchen Sie alle verfügbaren Texttransformationswerkzeuge. Kostenlos, privat und sofort.",
+    "everyToolRunsLocally": "Jedes Werkzeug läuft lokal in Ihrem Browser. Es wird nichts hochgeladen.",
+    "uppercase": {
+      "name": "Großbuchstaben-Konverter",
+      "description": "Konvertieren Sie beliebigen Text sofort in GROSSBUCHSTABEN. Einfügen, klicken, kopieren — fertig.",
+      "label": "In GROSSBUCHSTABEN umwandeln",
+      "placeholder": "Text hier eingeben oder einfügen..."
+    },
+    "lowercase": {
+      "name": "Kleinbuchstaben-Konverter",
+      "description": "Konvertieren Sie Text mit einem Klick in Kleinbuchstaben."
+    },
+    "capitalize": {
+      "name": "Text kapitalisieren",
+      "description": "Ersten Buchstaben jedes Wortes oder Satzes groß schreiben."
+    },
+    "remove-extra-spaces": {
+      "name": "Zusätzliche Leerzeichen entfernen",
+      "description": "Bereinigen Sie überflüssige Leerzeichen und normalisieren Sie Zeilenumbrüche."
+    },
+    "word-counter": {
+      "name": "Wortzähler",
+      "description": "Zählen Sie Wörter, Zeichen, Sätze und Absätze."
+    },
+    "json-formatter": {
+      "name": "JSON-Formatierer",
+      "description": "Formatieren oder minimieren Sie JSON mit Syntaxhervorhebung."
+    },
+    "base64-encode": {
+      "name": "Base64-Kodierung",
+      "description": "Kodieren oder dekodieren Sie Text im Base64-Format."
+    },
+    "url-encode": {
+      "name": "URL-Kodierung",
+      "description": "URL-kodieren oder -dekodieren Sie Text für sichere Webnutzung."
+    },
+    "strikethrough": {
+      "name": "Durchgestrichener Text",
+      "description": "Fügen Sie Ihrem Text einen Durchstreichungseffekt hinzu."
+    },
+    "reverse": {
+      "name": "Umgekehrter Text",
+      "description": "Kehren Sie die Zeichenreihenfolge Ihres Textes um."
+    },
+    "toggle-case": {
+      "name": "Groß-/Kleinschreibung umschalten",
+      "description": "Wechseln Sie zwischen Groß- und Kleinbuchstaben."
+    },
+    "italic": {
+      "name": "Kursiver Text",
+      "description": "Konvertieren Sie Text in das Unicode-Kursivformat."
+    },
+    "to-morse": {
+      "name": "Morsecode",
+      "description": "Konvertieren Sie Text in Morsecode."
+    },
+    "from-morse": {
+      "name": "Morsecode-Dekodierer",
+      "description": "Konvertieren Sie Morsecode zurück in Text."
+    },
+    "bold": {
+      "name": "Fetter Text",
+      "description": "Konvertieren Sie Text in das Unicode-Fettformat."
+    },
+    "underline": {
+      "name": "Unterstrichener Text",
+      "description": "Fügen Sie Ihrem Text einen Unterstreichungseffekt mit Unicode hinzu."
+    },
+    "wide": {
+      "name": "Breiter Text",
+      "description": "Konvertieren Sie Text in breite Unicode-Zeichen."
+    },
+    "small-caps": {
+      "name": "Kleiner Text",
+      "description": "Konvertieren Sie Text in Unicode-Small-Caps-Zeichen."
+    },
+    "mirror": {
+      "name": "Gespiegelter Text",
+      "description": "Kehren Sie jeden Buchstaben um und spiegeln Sie ihn."
+    },
+    "upside-down": {
+      "name": "Text auf dem Kopf",
+      "description": "Drehen Sie Ihren Text auf den Kopf."
+    },
+    "binary": {
+      "name": "Binärcode",
+      "description": "Konvertieren Sie Text in/von Binärcode."
+    },
+    "invisible": {
+      "name": "Unsichtbarer Text",
+      "description": "Generieren Sie unsichtbare Unicode-Zeichen."
+    },
+    "camelcase": {
+      "name": "camelCase",
+      "description": "Konvertieren Sie Text in das camelCase-Format."
+    },
+    "pascalcase": {
+      "name": "PascalCase",
+      "description": "Konvertieren Sie Text in das PascalCase-Format."
+    },
+    "snakecase": {
+      "name": "snake_case",
+      "description": "Konvertieren Sie Text in das snake_case-Format."
+    },
+    "constantcase": {
+      "name": "CONSTANT_CASE",
+      "description": "Konvertieren Sie Text in das CONSTANT_CASE-Format."
+    },
+    "kebabcase": {
+      "name": "kebab-case / slugify",
+      "description": "Konvertieren Sie Text in einen kebab-case-URL-Slug."
+    },
+    "dotcase": {
+      "name": "dot.case",
+      "description": "Konvertieren Sie Text in das dot.case-Format."
+    },
+    "pathcase": {
+      "name": "path/case",
+      "description": "Konvertieren Sie Text in das path/case-Format."
+    },
+    "transforms": {
+      "sentenceCase": "Satzfall",
+      "lowercase": "kleinbuchstaben",
+      "uppercase": "GROSSBUCHSTABEN",
+      "capitalizeEachWord": "Jedes Wort kapitalisieren",
+      "removeExtraSpaces": "Leerzeichen entfernen",
+      "titleCase": "Titelformat",
+      "wordCounter": "Wörter zählen"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Tipps und Anleitungen zur Online-Textkonvertierung und -formatierung.",
+    "readMore": "Weiterlesen",
+    "publishedOn": "Veröffentlicht am",
+    "posts": {
+      "uppercase-guide": {
+        "title": "So konvertieren Sie Text online in Großbuchstaben",
+        "excerpt": "Erfahren Sie, wie Sie beliebigen Text schnell mit kostenlosen Online-Tools in Großbuchstaben konvertieren. Eine Schritt-für-Schritt-Anleitung für Autoren, Entwickler und Content-Ersteller.",
+        "date": "01.06.2025"
+      },
+      "remove-spaces-guide": {
+        "title": "So entfernen Sie zusätzliche Leerzeichen aus Text",
+        "excerpt": "Unordentliche Leerzeichen können die Formatierung ruinieren. Entdecken Sie, wie Sie überflüssige Leerzeichen, Tabs und Zeilenumbrüche sofort aus Ihrem Text entfernen.",
+        "date": "20.05.2025"
+      },
+      "free-text-tools": {
+        "title": "Kostenlose Tools zur Online-Textformatierung",
+        "excerpt": "Eine kuratierte Liste kostenloser browserbasierter Tools zur Textformatierung, -konvertierung und -bereinigung — keine Anmeldung erforderlich, vollständig privat.",
+        "date": "10.05.2025"
+      }
+    }
+  },
+  "about": {
+    "title": "Über ConvertTextEasy",
+    "description": "Erfahren Sie mehr über ConvertTextEasy — die kostenlose, private Textwerkzeug-Plattform.",
+    "p1": "ConvertTextEasy ist eine Sammlung kostenloser Online-Textwerkzeuge, die einfach, schnell und privat sein sollen. Jedes Werkzeug läuft vollständig in Ihrem Browser mit JavaScript — es werden niemals Daten an einen Server gesendet.",
+    "p2": "Wir haben ConvertTextEasy entwickelt, weil wir die überladenen Textwerkzeuge satt hatten, die Anmeldungen erfordern, Werbung zeigen oder Ihre Daten in die Cloud hochladen. Textkonvertierungen sollten sofort geschehen, genau dort, wo Sie sie eingeben.",
+    "principlesTitle": "Unsere Grundsätze",
+    "principle1": "Datenschutz zuerst.",
+    "principle1Desc": "Ihr Text verlässt niemals Ihr Gerät. Punkt.",
+    "principle2": "Keine Anmeldungen.",
+    "principle2Desc": "Öffnen Sie einfach ein Werkzeug und legen Sie los.",
+    "principle3": "Schnell und fokussiert.",
+    "principle3Desc": "Jedes Werkzeug erledigt eine Aufgabe richtig.",
+    "principle4": "Open Source.",
+    "principle4Desc": "Unser Code steht jedem zur Einsicht und Mitwirkung offen.",
+    "closing": "Wir entwickeln aktiv neue Werkzeuge. Wenn Sie einen Vorschlag haben, würden wir uns freuen, davon zu hören."
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "lastUpdated": "Letzte Aktualisierung: Juni 2025",
+    "dataCollection": {
+      "title": "Datenerfassung",
+      "body": "ConvertTextEasy erfasst, speichert oder überträgt keinen Text, den Sie in unsere Werkzeuge eingeben. Die gesamte Textverarbeitung erfolgt vollständig in Ihrem Browser mittels JavaScript. Es werden keine Daten an unsere Server oder Dritte gesendet."
+    },
+    "cookies": {
+      "title": "Cookies",
+      "body": "Wir verwenden keine Tracking-Cookies. Wir können essentielle Cookies für grundlegende Website-Funktionen verwenden (wie das Speichern Ihrer Design- oder Spracheinstellungen), aber diese verfolgen Sie nicht und erfassen keine persönlichen Informationen."
+    },
+    "analytics": {
+      "title": "Analyse",
+      "body": "Wir können datenschutzfreundliche Analyse-Tools verwenden, die keine einzelnen Benutzer verfolgen. Es werden keine personenbezogenen Daten durch Analysen erfasst."
+    },
+    "thirdParty": {
+      "title": "Drittanbieter-Dienste",
+      "body": "ConvertTextEasy teilt keine Daten mit Drittanbieter-Diensten, da wir überhaupt keine Daten erfassen."
+    },
+    "contactForm": {
+      "title": "Kontaktformular",
+      "body": "Wenn Sie unser Kontaktformular nutzen, können wir Ihren Namen, Ihre E-Mail-Adresse und Ihre Nachricht ausschließlich zur Beantwortung Ihrer Anfrage erfassen. Diese Daten werden nicht geteilt, verkauft oder für Marketingzwecke verwendet. Sie können jederzeit die Löschung Ihrer Kontaktdaten verlangen."
+    },
+    "userRights": {
+      "title": "Ihre Rechte",
+      "body": "Sie können Zugang, Berichtigung oder Löschung aller personenbezogenen Daten verlangen, die Sie über unser Kontaktformular übermittelt haben. Kontaktieren Sie uns hierzu bitte über unsere Kontaktseite."
+    },
+    "contact": {
+      "title": "Kontakt",
+      "body": "Wenn Sie Fragen zu dieser Datenschutzerklärung haben, kontaktieren Sie uns bitte über unsere Kontaktseite."
+    }
+  },
+  "terms": {
+    "title": "Nutzungsbedingungen",
+    "lastUpdated": "Letzte Aktualisierung: Juni 2025",
+    "acceptance": {
+      "title": "Annahme der Bedingungen",
+      "body": "Durch die Nutzung von ConvertTextEasy stimmen Sie diesen Nutzungsbedingungen zu. Wenn Sie nicht einverstanden sind, nutzen Sie bitte den Dienst nicht."
+    },
+    "useOfService": {
+      "title": "Nutzung des Dienstes",
+      "body": "ConvertTextEasy bietet kostenlose Online-Textwerkzeuge für den persönlichen und kommerziellen Gebrauch. Sie können die Werkzeuge ohne Kontoerstellung nutzen. Sie verpflichten sich, den Dienst nicht zu missbrauchen oder seinen Betrieb zu stören."
+    },
+    "userContent": {
+      "title": "Benutzerinhalte",
+      "body": "Sie sind allein verantwortlich für den Text, den Sie in unsere Werkzeuge eingeben. Nutzen Sie den Dienst nicht zur Verarbeitung illegaler, schädlicher oder missbräuchlicher Inhalte. Da die gesamte Verarbeitung lokal in Ihrem Browser erfolgt, haben wir keinen Zugriff auf Ihre Inhalte."
+    },
+    "intellectualProperty": {
+      "title": "Geistiges Eigentum",
+      "body": "Der Name, das Logo und das Website-Design von ConvertTextEasy sind Eigentum von ConvertTextEasy. Die Werkzeuge und der Code können unter einer freizügigen Lizenz als Open Source verfügbar sein — bitte überprüfen Sie das Projekt-Repository für Details."
+    },
+    "disclaimer": {
+      "title": "Gewährleistungsausschluss",
+      "body": "ConvertTextEasy wird \"wie besehen\" ohne jegliche ausdrückliche oder stillschweigende Gewährleistung bereitgestellt. Wir garantieren keine ununterbrochene Verfügbarkeit, fehlerfreien Betrieb oder Eignung für einen bestimmten Zweck."
+    },
+    "limitation": {
+      "title": "Haftungsbeschränkung",
+      "body": "ConvertTextEasy haftet in keinem Fall für Schäden, die aus der Nutzung oder der Unmöglichkeit der Nutzung des Dienstes entstehen. Dies umfasst, ohne Einschränkung, direkte, indirekte, zufällige oder Folgeschäden."
+    },
+    "changes": {
+      "title": "Änderungen der Bedingungen",
+      "body": "Wir können diese Bedingungen von Zeit zu Zeit aktualisieren. Die fortgesetzte Nutzung des Dienstes nach Änderungen stellt die Annahme der neuen Bedingungen dar. Wir werden angemessene Anstrengungen unternehmen, um Benutzer über wesentliche Änderungen zu informieren."
+    }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Haben Sie eine Frage, einen Vorschlag oder möchten Sie einfach Hallo sagen? Wir würden uns freuen, von Ihnen zu hören.",
+    "name": "Name",
+    "email": "E-Mail",
+    "message": "Nachricht",
+    "namePlaceholder": "Ihr Name",
+    "emailPlaceholder": "sie@beispiel.de",
+    "messagePlaceholder": "Erzählen Sie uns, was Sie beschäftigt...",
+    "send": "Nachricht senden",
+    "sending": "Wird gesendet...",
+    "successTitle": "Nachricht gesendet!",
+    "successMessage": "Vielen Dank für Ihre Nachricht. Wir werden uns so schnell wie möglich bei Ihnen melden.",
+    "validation": {
+      "nameRequired": "Bitte geben Sie Ihren Namen ein.",
+      "emailRequired": "Bitte geben Sie Ihre E-Mail-Adresse ein.",
+      "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+      "messageRequired": "Bitte geben Sie eine Nachricht ein."
+    }
+  },
+  "footer": {
+    "product": {
+      "title": "Produkt",
+      "tools": "Werkzeuge",
+      "about": "Über uns",
+      "blog": "Blog"
+    },
+    "support": {
+      "title": "Support",
+      "contact": "Kontakt",
+      "privacy": "Datenschutzerklärung",
+      "terms": "Nutzungsbedingungen"
+    },
+    "brand": {
+      "description": "Simple, fast text tools — right in your browser."
+    },
+    "highlight": {
+      "title": "ConvertTextEasy",
+      "description": "Convert texts online for free, with no sign-up and support for multiple languages.",
+      "badges": {
+        "free": "Free",
+        "private": "Private",
+        "noSignup": "No Sign-Up"
+      }
+    },
+    "copyright": "© {year} ConvertTextEasy. Alle Rechte vorbehalten."
+  },
+  "seo": {
+    "home": {
+      "title": "Online-Textkonverter - ConvertTextEasy",
+      "description": "Konvertieren Sie Text kostenlos in Großbuchstaben, Kleinbuchstaben, Kapitalisierung, Unicode-Stile und Entwicklerformate."
+    },
+    "tools": {
+      "title": "Alle Werkzeuge - ConvertTextEasy",
+      "description": "Durchsuchen Sie alle verfügbaren Texttransformationswerkzeuge. Kostenlos, privat und sofort."
+    },
+    "blog": {
+      "title": "Blog - ConvertTextEasy",
+      "description": "Tipps und Anleitungen zur Online-Textkonvertierung und -formatierung."
+    },
+    "about": {
+      "title": "Über uns - ConvertTextEasy",
+      "description": "Erfahren Sie mehr über ConvertTextEasy und unsere kostenlosen browserbasierten Textwerkzeuge."
+    },
+    "privacy": {
+      "title": "Datenschutzerklärung - ConvertTextEasy",
+      "description": "Verstehen Sie, wie ConvertTextEasy mit Datenschutz und Benutzerdaten umgeht."
+    },
+    "terms": {
+      "title": "Nutzungsbedingungen - ConvertTextEasy",
+      "description": "Lesen Sie die Nutzungsbedingungen für ConvertTextEasy."
+    },
+    "contact": {
+      "title": "Kontakt - ConvertTextEasy",
+      "description": "Nehmen Sie Kontakt mit ConvertTextEasy auf."
+    }
+  }
+}

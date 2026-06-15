@@ -1,0 +1,436 @@
+{
+  "common": {
+    "siteName": "ConvertTextEasy",
+    "siteDescription": "简单快速的文本工具 — 直接在您的浏览器中。",
+    "tagline": "简单快速的文本工具 — 直接在您的浏览器中。",
+    "chars": "字符",
+    "words": "单词",
+    "lines": "行",
+    "letters": "字母",
+    "copy": "复制",
+    "copied": "已复制！",
+    "clear": "清除",
+    "clearAll": "全部清除",
+    "download": "下载",
+    "placeholder": "在此输入或粘贴文本...",
+    "soon": "即将推出",
+    "available": "可用",
+    "comingSoon": "即将推出",
+    "freePrivate": "免费 • 隐私 • 无需注册",
+    "allRightsReserved": "保留所有权利。",
+    "switchTheme": "切换到{theme}模式",
+    "switchLang": "切换语言",
+    "errorCopy": "复制到剪贴板失败",
+    "errorTransform": "文本转换失败",
+    "theme": "主题",
+    "language": "语言",
+    "textConverted": "文本转换成功。"
+  },
+  "nav": {
+    "home": "首页",
+    "tools": "工具",
+    "blog": "博客",
+    "about": "关于我们",
+    "contact": "联系我们",
+    "openConverter": "打开转换器"
+  },
+  "header": {
+    "tagline": "在线免费转换大小写字母。"
+  },
+  "home": {
+    "editor": {
+      "label": "编辑器",
+      "placeholder": "在此粘贴文本开始使用..."
+    },
+    "counts": {
+      "letters": "字母",
+      "words": "单词",
+      "lines": "行"
+    },
+    "actions": {
+      "copy": "复制",
+      "clear": "清除",
+      "download": "下载"
+    },
+    "groups": {
+      "essentials": "基础功能",
+      "styles": "样式",
+      "utilities": "实用工具",
+      "developer": "开发者工具"
+    },
+    "transforms": {
+      "upper": "大写",
+      "lower": "小写",
+      "sentenceCase": "句子大小写",
+      "capitalize": "首字母大写",
+      "titleCase": "标题大小写",
+      "alternatingCase": "交替大小写",
+      "inverseCase": "反转大小写",
+      "removeSpaces": "去除多余空格",
+      "strikethrough": "删除线",
+      "italic": "斜体文字",
+      "bold": "粗体文字",
+      "underline": "下划线文字",
+      "wide": "宽体文字",
+      "small": "小号文字",
+      "reverse": "反转文字",
+      "mirror": "镜像文字",
+      "upsideDown": "颠倒文字",
+      "morse": "摩尔斯电码",
+      "morseDecode": "摩尔斯 → 文本",
+      "binary": "二进制代码",
+      "invisible": "不可见文字",
+      "camelCase": "camelCase",
+      "pascalCase": "PascalCase",
+      "snakeCase": "snake_case",
+      "constantCase": "CONSTANT_CASE",
+      "kebabCase": "kebab-case",
+      "dotCase": "dot.case",
+      "pathCase": "path/case"
+    },
+    "sidebar": {
+      "summary": "摘要",
+      "instantConversion": "即时转换",
+      "instantConversionDesc": "输入时实时查看结果。",
+      "languagesReady": "多语言支持",
+      "languagesReadyDesc": "全面支持中文、英语等多种语言。",
+      "simpleFlow": "简单工作流",
+      "simpleFlowDesc": "无需复杂菜单。书写、转换、完成。",
+      "quickTips": "快速提示",
+      "tipStandardize": "使用大写统一标题，让它们更突出。",
+      "tipClean": "使用去除空格功能清理从网页粘贴的文本。",
+      "tipCount": "使用字母计数器了解文本的准确长度。",
+      "chooseTransform": "选择上述选项之一来转换您的文本。"
+    },
+    "feedback": {
+      "label": "反馈"
+    },
+    "hero": {
+      "title": "在线文本转换器",
+      "subtitle": "在下方粘贴文本并选择所需格式。",
+      "tagline": "免费、私密且即时。您的文本永远不会离开浏览器。"
+    },
+    "toolGrid": {
+      "title": "更多工具",
+      "description": "其他转换和格式化工具可用。"
+    },
+    "benefits": {
+      "free": { "title": "永久免费", "description": "无付费墙，无试用期。所有工具都免费。" },
+      "private": { "title": "100% 私密", "description": "您的文本永远不会离开您的设备。" },
+      "noSignUp": { "title": "无需注册", "description": "立即开始使用工具。" },
+      "browser": { "title": "在浏览器中运行", "description": "无需服务器。即时结果。" }
+    }
+  },
+  "tools": {
+    "title": "全部工具",
+    "description": "浏览所有可用的文本转换工具。免费、私密且即时。",
+    "everyToolRunsLocally": "每个工具都在您的浏览器中本地运行。绝不会上传任何内容。",
+    "uppercase": {
+      "name": "大写转换器",
+      "description": "即时将任何文本转换为大写。粘贴，点击，复制 — 完成。",
+      "label": "转换为大写",
+      "placeholder": "在此输入或粘贴文本..."
+    },
+    "lowercase": {
+      "name": "小写转换器",
+      "description": "一键将文本转换为小写。"
+    },
+    "capitalize": {
+      "name": "首字母大写",
+      "description": "将每个单词或句子的首字母大写。"
+    },
+    "remove-extra-spaces": {
+      "name": "去除多余空格",
+      "description": "清理多余空格并规范化换行。"
+    },
+    "word-counter": {
+      "name": "单词计数器",
+      "description": "统计单词、字符、句子和段落。"
+    },
+    "json-formatter": {
+      "name": "JSON 格式化器",
+      "description": "使用语法高亮格式化或压缩 JSON。"
+    },
+    "base64-encode": {
+      "name": "Base64 编码",
+      "description": "将文本编码或解码为 Base64 格式。"
+    },
+    "url-encode": {
+      "name": "URL 编码",
+      "description": "对文本进行 URL 编码或解码以便安全使用。"
+    },
+    "strikethrough": {
+      "name": "删除线文字",
+      "description": "为文字添加删除线效果。"
+    },
+    "reverse": {
+      "name": "反转文字",
+      "description": "反转文本的字符顺序。"
+    },
+    "toggle-case": {
+      "name": "切换大小写",
+      "description": "在大写和小写之间切换。"
+    },
+    "italic": {
+      "name": "斜体文字",
+      "description": "将文本转换为 Unicode 斜体格式。"
+    },
+    "to-morse": {
+      "name": "摩尔斯电码",
+      "description": "将文本转换为摩尔斯电码。"
+    },
+    "from-morse": {
+      "name": "摩尔斯解码器",
+      "description": "将摩尔斯电码解码回文本。"
+    },
+    "bold": {
+      "name": "粗体文字",
+      "description": "将文本转换为 Unicode 粗体格式。"
+    },
+    "underline": {
+      "name": "下划线文字",
+      "description": "使用 Unicode 为文字添加下划线效果。"
+    },
+    "wide": {
+      "name": "宽体文字",
+      "description": "将文本转换为全角 Unicode 字符。"
+    },
+    "small-caps": {
+      "name": "小号文字",
+      "description": "将文本转换为小号大写 Unicode 字符。"
+    },
+    "mirror": {
+      "name": "镜像文字",
+      "description": "反转并镜像每个字符。"
+    },
+    "upside-down": {
+      "name": "颠倒文字",
+      "description": "将文字上下颠倒。"
+    },
+    "binary": {
+      "name": "二进制代码",
+      "description": "在文本和二进制代码之间转换。"
+    },
+    "invisible": {
+      "name": "不可见文字",
+      "description": "生成不可见的 Unicode 字符。"
+    },
+    "camelcase": {
+      "name": "camelCase",
+      "description": "将文本转换为 camelCase 格式。"
+    },
+    "pascalcase": {
+      "name": "PascalCase",
+      "description": "将文本转换为 PascalCase 格式。"
+    },
+    "snakecase": {
+      "name": "snake_case",
+      "description": "将文本转换为 snake_case 格式。"
+    },
+    "constantcase": {
+      "name": "CONSTANT_CASE",
+      "description": "将文本转换为 CONSTANT_CASE 格式。"
+    },
+    "kebabcase": {
+      "name": "kebab-case / slugify",
+      "description": "将文本转换为 kebab-case URL slug。"
+    },
+    "dotcase": {
+      "name": "dot.case",
+      "description": "将文本转换为 dot.case 格式。"
+    },
+    "pathcase": {
+      "name": "path/case",
+      "description": "将文本转换为 path/case 格式。"
+    },
+    "transforms": {
+      "sentenceCase": "句子",
+      "lowercase": "小写",
+      "uppercase": "大写",
+      "capitalizeEachWord": "首字母大写",
+      "removeExtraSpaces": "去除空格",
+      "titleCase": "标题格式",
+      "wordCounter": "单词计数"
+    }
+  },
+  "blog": {
+    "title": "博客",
+    "subtitle": "关于在线文本转换和格式化的技巧与指南。",
+    "readMore": "阅读更多",
+    "publishedOn": "发布于",
+    "posts": {
+      "uppercase-guide": {
+        "title": "如何在线将文本转换为大写",
+        "excerpt": "学习如何使用免费在线工具快速将任何文本转换为大写。为作家、开发者和内容创作者提供的分步指南。",
+        "date": "2025-06-01"
+      },
+      "remove-spaces-guide": {
+        "title": "如何去除文本中的多余空格",
+        "excerpt": "杂乱的空格会破坏格式。了解如何即时清理文本中的多余空格、制表符和换行符。",
+        "date": "2025-05-20"
+      },
+      "free-text-tools": {
+        "title": "免费的在线文本格式化工具",
+        "excerpt": "精心挑选的免费浏览器文本格式化、转换和清理工具 — 无需注册，完全私密。",
+        "date": "2025-05-10"
+      }
+    }
+  },
+  "about": {
+    "title": "关于 ConvertTextEasy",
+    "description": "了解 ConvertTextEasy — 免费私密的文本工具平台。",
+    "p1": "ConvertTextEasy 是一系列免费在线文本工具的集合，设计简单、快速且私密。每个工具都完全在您的浏览器中使用 JavaScript 运行 — 不会有任何数据发送到服务器。",
+    "p2": "我们创建 ConvertTextEasy 是因为厌倦了那些需要注册、显示广告或将您的数据上传到云端的功能臃肿的文本工具。文本转换应该即时发生，就在您输入的地方。",
+    "principlesTitle": "我们的原则",
+    "principle1": "隐私优先。",
+    "principle1Desc": "您的文本永远不会离开您的设备。毫无疑问。",
+    "principle2": "无需注册。",
+    "principle2Desc": "打开工具即可开始使用。",
+    "principle3": "快速专注。",
+    "principle3Desc": "每个工具做好一件事。",
+    "principle4": "开源。",
+    "principle4Desc": "我们的代码对所有人开放，可供检查和贡献。",
+    "closing": "我们正在积极构建新工具。如果您有任何建议，我们很乐意听取。"
+  },
+  "privacy": {
+    "title": "隐私政策",
+    "lastUpdated": "最后更新：2025年6月",
+    "dataCollection": {
+      "title": "数据收集",
+      "body": "ConvertTextEasy 不会收集、存储或传输您输入到我们工具中的任何文本。所有文本处理完全在您的浏览器中使用 JavaScript 进行。不会有任何数据发送到我们的服务器或任何第三方。"
+    },
+    "cookies": {
+      "title": "Cookies",
+      "body": "我们不使用跟踪 Cookie。我们可能使用必要的 Cookie 来实现基本的网站功能（如记住您的主题或语言偏好），但这些不会跟踪您或收集个人信息。"
+    },
+    "analytics": {
+      "title": "分析",
+      "body": "我们可能使用注重隐私的分析工具，不会跟踪个人用户。不会通过分析收集任何个人身份信息。"
+    },
+    "thirdParty": {
+      "title": "第三方服务",
+      "body": "ConvertTextEasy 不会与第三方服务共享任何数据，因为我们根本不收集任何数据。"
+    },
+    "contactForm": {
+      "title": "联系表单",
+      "body": "如果您使用我们的联系表单，我们可能会收集您的姓名、电子邮件地址和消息，仅用于回复您的咨询。这些数据不会被共享、出售或用于营销目的。您可以随时请求删除您的联系数据。"
+    },
+    "userRights": {
+      "title": "您的权利",
+      "body": "您可以请求访问、更正或删除您通过联系表单提交的任何个人数据。请通过我们的联系页面与我们联系。"
+    },
+    "contact": {
+      "title": "联系我们",
+      "body": "如果您对此隐私政策有任何疑问，请通过我们的联系页面与我们联系。"
+    }
+  },
+  "terms": {
+    "title": "使用条款",
+    "lastUpdated": "最后更新：2025年6月",
+    "acceptance": {
+      "title": "接受条款",
+      "body": "使用 ConvertTextEasy 即表示您同意这些使用条款。如果您不同意，请不要使用本服务。"
+    },
+    "useOfService": {
+      "title": "服务使用",
+      "body": "ConvertTextEasy 提供免费在线文本工具，供个人和商业使用。您无需创建账户即可使用这些工具。您同意不滥用服务或试图干扰其运行。"
+    },
+    "userContent": {
+      "title": "用户内容",
+      "body": "您对输入到我们工具中的文本负全部责任。请勿使用本服务处理非法、有害或辱骂性内容。由于所有处理都在您的浏览器本地进行，我们无法访问您的内容。"
+    },
+    "intellectualProperty": {
+      "title": "知识产权",
+      "body": "ConvertTextEasy 名称、标志和网站设计为 ConvertTextEasy 的财产。工具和代码可能在宽松许可下开源 — 请查看项目仓库了解详情。"
+    },
+    "disclaimer": {
+      "title": "免责声明",
+      "body": "ConvertTextEasy 按\"原样\"提供，不作任何明示或暗示的保证。我们不保证服务不中断、无错误运行或适用于任何特定用途。"
+    },
+    "limitation": {
+      "title": "责任限制",
+      "body": "在任何情况下，ConvertTextEasy 均不对因使用或无法使用本服务而产生的任何损害承担责任。这包括但不限于直接、间接、附带或后果性损害。"
+    },
+    "changes": {
+      "title": "条款变更",
+      "body": "我们可能会不时更新这些条款。在变更后继续使用本服务即表示接受新条款。我们将做出合理努力，通知用户重大变更。"
+    }
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "有问题、建议或只是想打个招呼？我们很乐意收到您的消息。",
+    "name": "姓名",
+    "email": "邮箱",
+    "message": "消息",
+    "namePlaceholder": "您的姓名",
+    "emailPlaceholder": "you@example.com",
+    "messagePlaceholder": "告诉我们您的想法...",
+    "send": "发送消息",
+    "sending": "发送中...",
+    "successTitle": "消息已发送！",
+    "successMessage": "感谢您的联系。我们会尽快回复您。",
+    "validation": {
+      "nameRequired": "请输入您的姓名。",
+      "emailRequired": "请输入您的邮箱。",
+      "emailInvalid": "请输入有效的邮箱地址。",
+      "messageRequired": "请输入消息内容。"
+    }
+  },
+  "footer": {
+    "product": {
+      "title": "产品",
+      "tools": "工具",
+      "about": "关于我们",
+      "blog": "博客"
+    },
+    "support": {
+      "title": "支持",
+      "contact": "联系我们",
+      "privacy": "隐私政策",
+      "terms": "使用条款"
+    },
+    "brand": {
+      "description": "Simple, fast text tools — right in your browser."
+    },
+    "highlight": {
+      "title": "ConvertTextEasy",
+      "description": "Convert texts online for free, with no sign-up and support for multiple languages.",
+      "badges": {
+        "free": "Free",
+        "private": "Private",
+        "noSignup": "No Sign-Up"
+      }
+    },
+    "copyright": "© {year} ConvertTextEasy。保留所有权利。"
+  },
+  "seo": {
+    "home": {
+      "title": "在线文本转换器 - ConvertTextEasy",
+      "description": "免费在线文本转换器，支持大写、小写、首字母大写、Unicode 样式和开发者格式。"
+    },
+    "tools": {
+      "title": "全部工具 - ConvertTextEasy",
+      "description": "浏览所有可用的文本转换工具。免费、私密且即时。"
+    },
+    "blog": {
+      "title": "博客 - ConvertTextEasy",
+      "description": "关于在线文本转换和格式化的技巧与指南。"
+    },
+    "about": {
+      "title": "关于我们 - ConvertTextEasy",
+      "description": "了解更多关于 ConvertTextEasy 及我们的免费浏览器文本工具。"
+    },
+    "privacy": {
+      "title": "隐私政策 - ConvertTextEasy",
+      "description": "了解 ConvertTextEasy 如何处理隐私和用户数据。"
+    },
+    "terms": {
+      "title": "使用条款 - ConvertTextEasy",
+      "description": "阅读 ConvertTextEasy 的使用条款和条件。"
+    },
+    "contact": {
+      "title": "联系我们 - ConvertTextEasy",
+      "description": "与 ConvertTextEasy 取得联系。"
+    }
+  }
+}
