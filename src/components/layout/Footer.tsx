@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useTranslation } from "@/i18n/I18nProvider";
 
 export default function Footer() {
@@ -20,9 +21,13 @@ export default function Footer() {
                   href={`/${localeUrl}`}
                   className="inline-flex items-center gap-2 text-lg font-bold tracking-tight text-slate-900 dark:text-white"
                 >
-                  <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-indigo-600 text-sm font-bold text-white">
-                    CT
-                  </span>
+                  <Image
+                    src="/iconeTextLab.png"
+                    alt={t("common.siteName")}
+                    width={36}
+                    height={36}
+                    className="h-9 w-auto"
+                  />
                   {t("common.siteName")}
                 </Link>
                 <p className="mt-3 text-sm leading-relaxed text-slate-500 dark:text-slate-400">

@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useTranslation } from "@/i18n/I18nProvider";
 import ThemeToggle from "@/components/theme/ThemeToggle";
@@ -45,9 +46,14 @@ export default function Header() {
           <div className="flex items-center justify-between px-5 py-3">
             <div className="flex items-center gap-4">
               <Link href={`/${localeUrl}`} className="flex items-center gap-3 shrink-0">
-                <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-600 dark:bg-indigo-500 text-white font-bold text-sm">
-                  CT
-                </span>
+                <Image
+                  src="/iconeTextLab.png"
+                  alt={t("common.siteName")}
+                  width={48}
+                  height={40}
+                  className="h-10 w-auto"
+                  priority
+                />
                 <div className="hidden sm:block">
                   <div className="text-base font-bold tracking-tight text-slate-900 dark:text-white leading-tight">
                     {t("common.siteName")}
