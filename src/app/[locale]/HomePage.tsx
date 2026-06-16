@@ -7,7 +7,14 @@ import {
   countLines,
 } from "@/lib/tools/transforms";
 import { toolGroups, transformText, type ToolGroup, type ToolMeta } from "@/utils/textTransforms";
+import Hero from "@/components/home/Hero";
+import ToolCategories from "@/components/home/ToolCategories";
+import PopularTools from "@/components/home/PopularTools";
+import UseCases from "@/components/home/UseCases";
+import PrivacyBanner from "@/components/home/PrivacyBanner";
+import SuggestTool from "@/components/home/SuggestTool";
 import FeaturesGuide from "@/components/home/FeaturesGuide";
+import AdPlaceholder from "@/components/home/AdPlaceholder";
 
 export default function HomePage() {
   const { t, locale } = useTranslation();
@@ -96,7 +103,9 @@ export default function HomePage() {
         </div>
       )}
 
-      <div className="flex flex-col lg:flex-row gap-6">
+      <Hero />
+
+      <div className="flex flex-col lg:flex-row gap-6 mt-2">
         <div className="flex-1 min-w-0">
           <div className="rounded-2xl border border-slate-200/60 dark:border-slate-700/80 bg-white/80 dark:bg-slate-900/70 backdrop-blur-xl shadow-sm overflow-hidden">
             <div className="px-4 py-3 border-b border-slate-200/50 dark:border-slate-700/60 flex items-center justify-between gap-2">
@@ -243,6 +252,8 @@ export default function HomePage() {
               {error}
             </div>
           )}
+
+          <AdPlaceholder position="after-editor" />
         </div>
 
         <aside
@@ -330,7 +341,21 @@ export default function HomePage() {
         </aside>
       </div>
 
+      <AdPlaceholder position="after-popular-tools" />
+
+      <ToolCategories />
+
+      <PopularTools />
+
+      <AdPlaceholder position="after-tool-grid" />
+
+      <UseCases />
+
+      <PrivacyBanner />
+
       <FeaturesGuide />
+
+      <SuggestTool />
 
     </div>
   );

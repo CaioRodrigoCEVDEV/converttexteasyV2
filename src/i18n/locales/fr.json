@@ -25,6 +25,7 @@
     "theme": "Thème",
     "language": "Langue",
     "textConverted": "Texte converti avec succès.",
+    "advertisement": "Advertisement",
     "themeAuto": "Auto",
     "themeLight": "Light",
     "themeDark": "Dark"
@@ -109,9 +110,15 @@
       "label": "Commentaires"
     },
     "hero": {
-      "title": "Convertisseur de Texte en Ligne",
-      "subtitle": "Collez votre texte ci-dessous et choisissez le format souhaité.",
-      "tagline": "Gratuit, privé et instantané. Votre texte ne quitte jamais votre navigateur."
+      "title": "Your Free Online Text Toolkit",
+      "subtitle": "Convert, format, clean and transform text instantly — the complete free toolkit for text, SEO and development.",
+      "tagline": "Free, private, and instant. Your text never leaves your browser.",
+      "badges": {
+        "free": "Free",
+        "noLogin": "No Login",
+        "browser": "Browser-based",
+        "multiLang": "Multi-language"
+      }
     },
     "toolGrid": {
       "title": "Plus d'outils",
@@ -134,6 +141,81 @@
         "title": "Fonctionne dans le navigateur",
         "description": "Pas de serveurs. Résultats instantanés."
       }
+    },
+    "categories": {
+      "title": "Tool Categories",
+      "description": "Explore our complete collection of free online tools organized by category.",
+      "textTools": {
+        "title": "Text Tools",
+        "description": "Case conversion, Unicode styling, and text formatting tools."
+      },
+      "developerTools": {
+        "title": "Developer Tools",
+        "description": "Code case converters, formatters, and encoding tools."
+      },
+      "seoTools": {
+        "title": "SEO Tools",
+        "description": "Slug generators, keyword tools, and content analyzers."
+      },
+      "dataConverters": {
+        "title": "Data Converters",
+        "description": "Convert between text, binary, Morse code and more."
+      },
+      "textCleaners": {
+        "title": "Text Cleaners",
+        "description": "Remove extra spaces, normalize whitespace, and tidy up text."
+      }
+    },
+    "popularTools": {
+      "title": "Popular Tools",
+      "description": "The most used text tools by our community."
+    },
+    "useCases": {
+      "title": "Who Uses ConvertTextEasy?",
+      "description": "From writers to developers, our tools help thousands of professionals daily.",
+      "writers": {
+        "title": "Writers",
+        "description": "Format text for articles, social media, and publications with case converters and Unicode styles."
+      },
+      "developers": {
+        "title": "Developers",
+        "description": "Transform between camelCase, snake_case, kebab-case and other code formats instantly."
+      },
+      "seoAnalysts": {
+        "title": "SEO Analysts",
+        "description": "Generate clean URL slugs and format content for better search engine rankings."
+      },
+      "students": {
+        "title": "Students",
+        "description": "Count words, format essays, and clean up notes with fast browser-based tools."
+      },
+      "supportTeams": {
+        "title": "Support Teams",
+        "description": "Standardize customer replies, clean up pasted text, and prepare responses quickly."
+      }
+    },
+    "privacy": {
+      "title": "Built for Privacy",
+      "noAccount": {
+        "title": "No Account Required",
+        "description": "Start using any tool immediately — no sign-up, no email, no hassle."
+      },
+      "browser": {
+        "title": "Runs in Your Browser",
+        "description": "All processing happens locally. Your text never reaches our servers."
+      },
+      "fast": {
+        "title": "Fast & Simple",
+        "description": "No loading screens, no uploads. Just type, click, and you're done."
+      },
+      "workflows": {
+        "title": "Daily Workflows",
+        "description": "Perfect for everyday text tasks — from formatting to cleanup and conversion."
+      }
+    },
+    "suggestTool": {
+      "title": "Missing a tool? We'd love to hear about it.",
+      "button": "Suggest a Tool"
     }
   },
   "tools": {
@@ -396,16 +478,16 @@
   },
   "footer": {
     "product": {
-      "title": "Produit",
-      "tools": "Outils",
-      "about": "À propos",
+      "title": "Product",
+      "tools": "Tools",
+      "about": "About Us",
       "blog": "Blog"
     },
     "support": {
       "title": "Support",
       "contact": "Contact",
-      "privacy": "Politique de confidentialité",
-      "terms": "Conditions d'utilisation"
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Use"
     },
     "brand": {
       "description": "Simple, fast text tools — right in your browser."
@@ -419,12 +501,49 @@
         "noSignup": "No Sign-Up"
       }
     },
-    "copyright": "© {year} ConvertTextEasy. Tous droits réservés."
+    "columns": {
+      "convertTextEasy": {
+        "title": "ConvertTextEasy",
+        "description": "Free online tools for text conversion, formatting, validation, SEO and developer workflows."
+      },
+      "textTools": {
+        "title": "Text Tools",
+        "uppercase": "Uppercase Converter",
+        "lowercase": "Lowercase Converter",
+        "capitalize": "Capitalize Text",
+        "strikethrough": "Strikethrough Text",
+        "removeSpaces": "Remove Extra Spaces"
+      },
+      "developerTools": {
+        "title": "Developer Tools",
+        "camelcase": "camelCase",
+        "snakecase": "snake_case",
+        "kebabcase": "kebab-case",
+        "json": "JSON Formatter",
+        "base64": "Base64 Encode/Decode"
+      },
+      "seoTools": {
+        "title": "SEO Tools",
+        "slug": "Slug Generator",
+        "wordCounter": "Word Counter",
+        "titleCase": "Title Case Converter"
+      },
+      "company": {
+        "title": "Company",
+        "about": "About Us",
+        "blog": "Blog",
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Use",
+        "contact": "Contact"
+      }
+    },
+    "tagline": "Free online tools for text conversion, formatting, validation, SEO and developer workflows.",
+    "copyright": "© {year} ConvertTextEasy. All rights reserved."
   },
   "seo": {
     "home": {
-      "title": "Convertisseur de Texte en Ligne - ConvertTextEasy",
-      "description": "Convertissez du texte en majuscules, minuscules, capitalisation, styles Unicode et formats développeur gratuitement."
+      "title": "Free Online Text Toolkit - Convert, Format & Transform Text",
+      "description": "ConvertTextEasy is a free online text toolkit. Convert case, format JSON, generate slugs, encode Base64, clean text, and more. No sign-up required. All tools run in your browser."
     },
     "tools": {
       "title": "Tous les outils - ConvertTextEasy",

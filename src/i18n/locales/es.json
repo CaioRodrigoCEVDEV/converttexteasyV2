@@ -25,6 +25,7 @@
     "theme": "Tema",
     "language": "Idioma",
     "textConverted": "Texto convertido correctamente.",
+    "advertisement": "Publicidad",
     "themeAuto": "Auto",
     "themeLight": "Light",
     "themeDark": "Dark"
@@ -109,9 +110,15 @@
       "label": "Feedback"
     },
     "hero": {
-      "title": "Conversor de Texto en Línea",
-      "subtitle": "Pega tu texto abajo y elige el formato que deseas.",
-      "tagline": "Gratis, privado e instantáneo. Tu texto nunca sale de tu navegador."
+      "title": "Tu Kit de Herramientas de Texto Gratuito en Línea",
+      "subtitle": "Convierte, formatea, limpia y transforma texto al instante — el kit completo gratuito para texto, SEO y desarrollo.",
+      "tagline": "Gratis, privado e instantáneo. Tu texto nunca sale de tu navegador.",
+      "badges": {
+        "free": "Gratis",
+        "noLogin": "Sin Login",
+        "browser": "En el Navegador",
+        "multiLang": "Multi-idioma"
+      }
     },
     "toolGrid": {
       "title": "Más herramientas",
@@ -134,6 +141,81 @@
         "title": "Funciona en el Navegador",
         "description": "Sin servidores. Resultados instantáneos."
       }
+    },
+    "categories": {
+      "title": "Categorías de Herramientas",
+      "description": "Explora nuestra colección completa de herramientas gratuitas en línea organizadas por categoría.",
+      "textTools": {
+        "title": "Herramientas de Texto",
+        "description": "Conversión de mayúsculas/minúsculas, estilos Unicode y formato de texto."
+      },
+      "developerTools": {
+        "title": "Herramientas para Devs",
+        "description": "Conversores de case, formateadores y herramientas de codificación."
+      },
+      "seoTools": {
+        "title": "Herramientas SEO",
+        "description": "Generadores de slug, herramientas de palabras clave y analizadores de contenido."
+      },
+      "dataConverters": {
+        "title": "Conversores de Datos",
+        "description": "Convierte entre texto, binario, código Morse y más."
+      },
+      "textCleaners": {
+        "title": "Limpiadores de Texto",
+        "description": "Elimina espacios extra, normaliza espacios en blanco y ordena el texto."
+      }
+    },
+    "popularTools": {
+      "title": "Herramientas Populares",
+      "description": "Las herramientas de texto más utilizadas por nuestra comunidad."
+    },
+    "useCases": {
+      "title": "Quién usa ConvertTextEasy?",
+      "description": "Desde escritores hasta desarrolladores, nuestras herramientas ayudan a miles de profesionales diariamente.",
+      "writers": {
+        "title": "Escritores",
+        "description": "Formatea texto para artículos, redes sociales y publicaciones con conversores de case y estilos Unicode."
+      },
+      "developers": {
+        "title": "Desarrolladores",
+        "description": "Transforma entre camelCase, snake_case, kebab-case y otros formatos al instante."
+      },
+      "seoAnalysts": {
+        "title": "Analistas SEO",
+        "description": "Genera slugs de URL limpios y formatea contenido para mejor posicionamiento en buscadores."
+      },
+      "students": {
+        "title": "Estudiantes",
+        "description": "Cuenta palabras, formatea ensayos y limpia notas con herramientas rápidas en el navegador."
+      },
+      "supportTeams": {
+        "title": "Equipos de Soporte",
+        "description": "Estandariza respuestas, limpia textos pegados y prepara respuestas rápidamente."
+      }
+    },
+    "privacy": {
+      "title": "Hecho para la Privacidad",
+      "noAccount": {
+        "title": "Sin Registro",
+        "description": "Usa cualquier herramienta inmediatamente — sin registro, sin email, sin complicaciones."
+      },
+      "browser": {
+        "title": "Funciona en tu Navegador",
+        "description": "Todo el procesamiento es local. Tu texto nunca llega a nuestros servidores."
+      },
+      "fast": {
+        "title": "Rápido & Simple",
+        "description": "Sin pantallas de carga, sin subidas. Solo escribe, haz clic y listo."
+      },
+      "workflows": {
+        "title": "Flujos Diarios",
+        "description": "Perfecto para tareas diarias de texto — desde formato hasta limpieza y conversión."
+      }
+    },
+    "suggestTool": {
+      "title": "¿Falta una herramienta? Nos encantaría saberlo.",
+      "button": "Sugerir Herramienta"
     },
     "features": {
       "label": "GUÍA RÁPIDA",
@@ -466,12 +548,49 @@
         "noSignup": "Sin registro"
       }
     },
+    "columns": {
+      "convertTextEasy": {
+        "title": "ConvertTextEasy",
+        "description": "Herramientas gratuitas en línea para conversión, formateo, validación, SEO y flujos de desarrollo de texto."
+      },
+      "textTools": {
+        "title": "Herramientas de Texto",
+        "uppercase": "Conversor a Mayúsculas",
+        "lowercase": "Conversor a Minúsculas",
+        "capitalize": "Capitalizar Texto",
+        "strikethrough": "Texto Tachado",
+        "removeSpaces": "Eliminar Espacios Extra"
+      },
+      "developerTools": {
+        "title": "Herramientas para Devs",
+        "camelcase": "camelCase",
+        "snakecase": "snake_case",
+        "kebabcase": "kebab-case",
+        "json": "Formateador JSON",
+        "base64": "Codificar/Decodificar Base64"
+      },
+      "seoTools": {
+        "title": "Herramientas SEO",
+        "slug": "Generador de Slug",
+        "wordCounter": "Contador de Palabras",
+        "titleCase": "Convertidor de Títulos"
+      },
+      "company": {
+        "title": "Empresa",
+        "about": "Sobre Nosotros",
+        "blog": "Blog",
+        "privacy": "Política de Privacidad",
+        "terms": "Términos de Uso",
+        "contact": "Contacto"
+      }
+    },
+    "tagline": "Herramientas gratuitas en línea para conversión, formateo, validación, SEO y flujos de desarrollo de texto.",
     "copyright": "© {year} ConvertTextEasy. Todos los derechos reservados."
   },
   "seo": {
     "home": {
-      "title": "Conversor de Texto en Línea - ConvertTextEasy",
-      "description": "Conversor de texto en línea gratuito para mayúsculas, minúsculas, capitalización, estilos Unicode y formatos para desarrolladores."
+      "title": "Kit de Herramientas de Texto Gratuito en Línea - Convierte, Formatea & Transforma",
+      "description": "ConvertTextEasy es un kit gratuito de herramientas de texto en línea. Convierte mayúsculas/minúsculas, formatea JSON, genera slugs, codifica Base64, limpia texto y más. Sin registro. Todo en el navegador."
     },
     "tools": {
       "title": "Herramientas - ConvertTextEasy",
