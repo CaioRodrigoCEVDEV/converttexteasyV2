@@ -23,6 +23,9 @@
     "errorCopy": "Failed to copy to clipboard",
     "errorTransform": "Failed to transform text",
     "theme": "Theme",
+    "themeAuto": "Auto",
+    "themeLight": "Light",
+    "themeDark": "Dark",
     "language": "Language",
     "textConverted": "Text converted successfully."
   },
@@ -115,10 +118,22 @@
       "description": "Additional conversion and formatting tools available."
     },
     "benefits": {
-      "free": { "title": "Free Forever", "description": "No paywalls, no trials. Every tool is free." },
-      "private": { "title": "100% Private", "description": "Your text never leaves your device." },
-      "noSignUp": { "title": "No Sign-Up", "description": "Start using tools immediately." },
-      "browser": { "title": "Runs in Browser", "description": "No servers. Instant results." }
+      "free": {
+        "title": "Free Forever",
+        "description": "No paywalls, no trials. Every tool is free."
+      },
+      "private": {
+        "title": "100% Private",
+        "description": "Your text never leaves your device."
+      },
+      "noSignUp": {
+        "title": "No Sign-Up",
+        "description": "Start using tools immediately."
+      },
+      "browser": {
+        "title": "Runs in Browser",
+        "description": "No servers. Instant results."
+      }
     },
     "features": {
       "label": "QUICK GUIDE",
@@ -309,17 +324,20 @@
       "uppercase-guide": {
         "title": "How to Convert Text to Uppercase Online",
         "excerpt": "Learn how to quickly convert any text to uppercase using free online tools. A step-by-step guide for writers, developers, and content creators.",
-        "date": "2025-06-01"
+        "body": "Converting text to uppercase is one of the most common text formatting needs. Whether you're fixing a title, standardizing data, or just want your text to stand out, an online text to uppercase converter is the fastest solution.\n\nWith ConvertTextEasy, you can convert any text to uppercase instantly and for free. Simply type or paste your text into the editor, click \"Uppercase\", and the conversion happens immediately in your browser.\n\nThis approach is not only fast but also private. Since all processing happens locally on your device, your text never leaves your computer. There are no servers involved, no data storage, and no privacy concerns.\n\nAdditionally, you can copy the result with one click, clear the editor to start fresh, or download the converted text as a file. It's the simplest way to get perfectly formatted uppercase text every time.",
+        "category": "Conversion"
       },
       "remove-spaces-guide": {
         "title": "How to Remove Extra Spaces from Text",
         "excerpt": "Messy whitespace can ruin formatting. Discover how to clean up extra spaces, tabs, and line breaks from your text instantly.",
-        "date": "2025-05-20"
+        "body": "Extra spaces in text can be a real headache. Whether you're copying from a PDF, dealing with inconsistent formatting, or cleaning up user input, double spaces, trailing whitespace, and irregular indentation can ruin your content.\n\nConvertTextEasy's \"Remove Extra Spaces\" tool solves this problem instantly. It trims leading and trailing whitespace, collapses multiple spaces into one, and ensures your text is clean and consistent.\n\nThis tool is particularly useful for cleaning up text copied from emails, documents, or web pages. Instead of manually fixing each spacing issue, you can process your entire text in one click.\n\nLike all ConvertTextEasy tools, the space removal runs entirely in your browser. Your data remains private and secure, with no uploads to any server.",
+        "category": "Cleaning"
       },
       "free-text-tools": {
         "title": "Free Tools to Format Text Online",
         "excerpt": "A curated list of free browser-based tools for text formatting, conversion, and cleanup — no sign-up required, completely private.",
-        "date": "2025-05-10"
+        "body": "There are many text formatting tools available online, but not all of them respect your privacy. Many services require you to upload your text to their servers, which means your data is no longer under your control.\n\nEvery tool on ConvertTextEasy runs locally in your browser. This means your text never leaves your device. We don't store, log, or transmit any of your content.\n\nOur growing collection includes tools for case conversion, text cleaning, Unicode styling, and developer formats. All tools are completely free to use with no limits or registration required.\n\nThe philosophy is simple: text tools should be free, fast, and private. ConvertTextEasy delivers on all three promises, giving you professional-grade text conversion without compromising your privacy.",
+        "category": "Tools"
       }
     }
   },

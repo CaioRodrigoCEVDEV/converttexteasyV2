@@ -23,6 +23,9 @@
     "errorCopy": "Falha ao copiar para a área de transferência",
     "errorTransform": "Falha ao transformar o texto",
     "theme": "Tema",
+    "themeAuto": "Automático",
+    "themeLight": "Claro",
+    "themeDark": "Escuro",
     "language": "Idioma",
     "textConverted": "Texto convertido com sucesso."
   },
@@ -115,10 +118,22 @@
       "description": "Ferramentas adicionais de conversão e formatação disponíveis."
     },
     "benefits": {
-      "free": { "title": "Grátis Para Sempre", "description": "Sem paywalls, sem testes. Todas as ferramentas são gratuitas." },
-      "private": { "title": "100% Privado", "description": "Seu texto nunca sai do seu dispositivo." },
-      "noSignUp": { "title": "Sem Cadastro", "description": "Comece a usar as ferramentas imediatamente." },
-      "browser": { "title": "Roda no Navegador", "description": "Sem servidores. Resultados instantâneos." }
+      "free": {
+        "title": "Grátis Para Sempre",
+        "description": "Sem paywalls, sem testes. Todas as ferramentas são gratuitas."
+      },
+      "private": {
+        "title": "100% Privado",
+        "description": "Seu texto nunca sai do seu dispositivo."
+      },
+      "noSignUp": {
+        "title": "Sem Cadastro",
+        "description": "Comece a usar as ferramentas imediatamente."
+      },
+      "browser": {
+        "title": "Roda no Navegador",
+        "description": "Sem servidores. Resultados instantâneos."
+      }
     },
     "features": {
       "label": "GUIA RÁPIDO",
@@ -309,17 +324,20 @@
       "uppercase-guide": {
         "title": "Como Converter Texto para Maiúsculas Online",
         "excerpt": "Aprenda a converter rapidamente qualquer texto para maiúsculas usando ferramentas online gratuitas. Guia passo a passo para escritores, desenvolvedores e criadores de conteúdo.",
-        "date": "01/06/2025"
+        "body": "Converter texto para maiúsculas é uma das necessidades mais comuns de formatação de texto. Seja para corrigir um título, padronizar dados ou apenas destacar seu texto, um conversor online de texto para maiúsculas é a solução mais rápida.\n\nCom o ConvertTextEasy, você pode converter qualquer texto para maiúsculas instantaneamente e de graça. Basta digitar ou colar seu texto no editor, clicar em \"Maiúsculas\", e a conversão acontece imediatamente no seu navegador.\n\nEsta abordagem não é apenas rápida, mas também privada. Como todo o processamento acontece localmente no seu dispositivo, seu texto nunca sai do seu computador. Não há servidores envolvidos, nem armazenamento de dados, nem preocupações com privacidade.\n\nAlém disso, você pode copiar o resultado com um clique, limpar o editor para começar de novo ou baixar o texto convertido como arquivo. É a maneira mais simples de obter texto perfeitamente formatado em maiúsculas toda vez.",
+        "category": "Conversão"
       },
       "remove-spaces-guide": {
         "title": "Como Remover Espaços Extras de um Texto",
         "excerpt": "Espaços em branco bagunçados podem arruinar a formatação. Descubra como limpar espaços extras, tabs e quebras de linha do seu texto instantaneamente.",
-        "date": "20/05/2025"
+        "body": "Espaços extras em textos podem ser um verdadeiro problema. Seja ao copiar de um PDF, lidar com formatação inconsistente ou limpar dados inseridos por usuários, espaços duplos, espaços no início e fim e indentação irregular podem arruinar seu conteúdo.\n\nA ferramenta \"Remover Espaços Extras\" do ConvertTextEasy resolve este problema instantaneamente. Ela remove espaços no início e fim do texto, elimina espaços múltiplos e garante que seu texto fique limpo e consistente.\n\nEsta ferramenta é particularmente útil para limpar textos copiados de e-mails, documentos ou páginas da web. Em vez de corrigir manualmente cada problema de espaçamento, você processa todo o texto em um clique.\n\nComo todas as ferramentas do ConvertTextEasy, a remoção de espaços é executada inteiramente no seu navegador. Seus dados permanecem privados e seguros, sem upload para nenhum servidor.",
+        "category": "Limpeza"
       },
       "free-text-tools": {
         "title": "Ferramentas Gratuitas para Formatar Texto Online",
         "excerpt": "Uma lista curada de ferramentas gratuitas baseadas no navegador para formatação, conversão e limpeza de texto — sem cadastro, completamente privado.",
-        "date": "10/05/2025"
+        "body": "Existem muitas ferramentas de formatação de texto disponíveis online, mas nem todas respeitam sua privacidade. Muitos serviços exigem que você envie seu texto para os servidores deles, o que significa que seus dados não estão mais sob seu controle.\n\nCada ferramenta do ConvertTextEasy é executada localmente no seu navegador. Isso significa que seu texto nunca sai do seu dispositivo. Nós não armazenamos, registramos ou transmitimos nenhum conteúdo.\n\nNossa coleção crescente inclui ferramentas para conversão de maiúsculas/minúsculas, limpeza de texto, estilos Unicode e formatos para desenvolvedores. Todas as ferramentas são completamente gratuitas, sem limites ou necessidade de cadastro.\n\nA filosofia é simples: ferramentas de texto devem ser gratuitas, rápidas e privadas. O ConvertTextEasy cumpre todas essas três promessas, oferecendo conversão de texto de nível profissional sem comprometer sua privacidade.",
+        "category": "Ferramentas"
       }
     }
   },

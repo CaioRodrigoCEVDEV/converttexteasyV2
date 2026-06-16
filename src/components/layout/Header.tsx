@@ -43,31 +43,34 @@ export default function Header() {
     <header className="sticky top-0 z-50">
       <div className="mx-auto max-w-6xl px-4 pt-4 sm:px-6 lg:px-8">
         <div className="rounded-2xl border border-slate-200/60 dark:border-slate-800/60 bg-slate-100/80 dark:bg-slate-950/70 backdrop-blur-xl shadow-sm shadow-slate-200/40 dark:shadow-black/20">
-          <div className="flex items-center justify-between px-5 py-3">
-            <div className="flex items-center gap-4">
-              <Link href={`/${localeUrl}`} className="flex items-center gap-3 shrink-0">
+          <div className="flex items-center justify-between px-4 md:px-5 py-2 md:py-3">
+            <div className="flex items-center gap-2 md:gap-3 lg:gap-4 min-w-0">
+              <Link href={`/${localeUrl}`} className="flex items-center gap-2 md:gap-3 shrink-0 min-w-0">
                 <Image
                   src="/iconeTextLab.png"
                   alt={t("common.siteName")}
                   width={48}
                   height={40}
-                  className="h-10 w-auto"
+                  className="h-9 md:h-10 w-auto shrink-0"
                   priority
                 />
-                <div className="hidden sm:block">
-                  <div className="text-base font-bold tracking-tight text-slate-900 dark:text-white leading-tight">
+                <span className="md:hidden truncate text-sm font-bold text-slate-900 dark:text-white leading-tight">
+                  {t("common.siteName")}
+                </span>
+                <div className="hidden md:block">
+                  <div className="text-sm md:text-base font-bold tracking-tight text-slate-900 dark:text-white leading-tight truncate max-w-[160px] lg:max-w-none">
                     {t("common.siteName")}
                   </div>
-                  <div className="text-[11px] text-slate-500 dark:text-slate-400 leading-tight">
+                  <div className="hidden lg:block text-[11px] text-slate-500 dark:text-slate-400 leading-tight truncate max-w-[160px] lg:max-w-none">
                     {t("header.tagline")}
                   </div>
                 </div>
               </Link>
 
-              <div ref={dropdownRef} className="relative hidden sm:block">
+              <div ref={dropdownRef} className="relative hidden md:block shrink-0">
                 <button
                   onClick={() => setDropdownOpen(!dropdownOpen)}
-                  className={`flex items-center gap-1.5 rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
+                  className={`flex items-center gap-1.5 rounded-lg px-2.5 lg:px-3 py-1.5 lg:py-2 text-xs lg:text-sm font-medium transition-colors ${
                     dropdownOpen || isActive("tools")
                       ? "bg-indigo-50 text-indigo-600 dark:bg-indigo-950 dark:text-indigo-400"
                       : "text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800"
@@ -99,12 +102,12 @@ export default function Header() {
                 )}
               </div>
 
-              <nav className="hidden sm:flex items-center gap-1">
+              <nav className="hidden md:flex items-center gap-0.5 lg:gap-1">
                 {navLinks.slice(1).map((link) => (
                   <Link
                     key={link.href}
                     href={buildHref(link.href)}
-                    className={`rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
+                    className={`rounded-lg px-2 lg:px-3 py-1.5 lg:py-2 text-xs lg:text-sm font-medium transition-colors whitespace-nowrap ${
                       isActive(link.href)
                         ? "bg-indigo-50 text-indigo-600 dark:bg-indigo-950 dark:text-indigo-400"
                         : "text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-slate-200"
@@ -116,13 +119,13 @@ export default function Header() {
               </nav>
             </div>
 
-            <div className="flex items-center gap-1">
+            <div className="flex items-center gap-0.5 md:gap-1 shrink-0">
               <LanguageSelector />
               <ThemeToggle />
               <button
                 onClick={() => setMobileOpen(!mobileOpen)}
                 aria-label="Toggle menu"
-                className="sm:hidden rounded-lg p-2 text-slate-500 hover:bg-slate-100 dark:text-slate-400 dark:hover:bg-slate-800 transition-colors"
+                className="md:hidden rounded-lg p-1.5 text-slate-500 hover:bg-slate-100 dark:text-slate-400 dark:hover:bg-slate-800 transition-colors"
               >
                 {mobileOpen ? (
                   <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
@@ -138,7 +141,7 @@ export default function Header() {
           </div>
 
           {mobileOpen && (
-            <div className="border-t border-slate-200/60 dark:border-slate-700/60 sm:hidden px-5 py-3">
+            <div className="border-t border-slate-200/60 dark:border-slate-700/60 md:hidden px-4 py-3">
               <nav className="flex flex-col gap-1">
                 <Link
                   href={buildHref("tools")}

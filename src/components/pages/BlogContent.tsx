@@ -1,22 +1,27 @@
 "use client";
 
 import Link from "next/link";
+import { useMemo } from "react";
 import { useTranslation } from "@/i18n/I18nProvider";
 
-interface BlogPost {
-  slug: string;
-  category: string;
-  icon: string;
-}
-
-const posts: BlogPost[] = [
-  { slug: "uppercase-guide", category: "Conversion", icon: "Aa" },
-  { slug: "remove-spaces-guide", category: "Cleaning", icon: "▦" },
-  { slug: "free-text-tools", category: "Tools", icon: "🧰" },
+const posts = [
+  { slug: "uppercase-guide", icon: "Aa" },
+  { slug: "remove-spaces-guide", icon: "▦" },
+  { slug: "free-text-tools", icon: "🧰" },
 ];
 
 export default function BlogContent() {
-  const { t, localeUrl } = useTranslation();
+  const { t, locale, localeUrl } = useTranslation();
+
+  const publishDate = useMemo(() => {
+    const date = new Date("2026-06-15T12:00:00Z");
+    const localeForDate = locale === "pt-BR" ? "pt-BR" : locale;
+    return new Intl.DateTimeFormat(localeForDate, {
+      day: "2-digit",
+      month: "2-digit",
+      year: "numeric",
+    }).format(date);
+  }, [locale]);
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
@@ -43,7 +48,7 @@ export default function BlogContent() {
             </div>
             <div className="mb-3">
               <span className="inline-block rounded-md bg-slate-50 dark:bg-slate-700 px-2 py-0.5 text-[11px] font-medium text-slate-500 dark:text-slate-400">
-                {post.category}
+                {t(`blog.posts.${post.slug}.category`)}
               </span>
             </div>
             <h2 className="text-base font-semibold leading-snug text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
@@ -54,7 +59,7 @@ export default function BlogContent() {
             </p>
             <div className="mt-4 flex items-center justify-between">
               <span className="text-xs text-slate-400 dark:text-slate-500">
-                {t("blog.publishedOn")} {t(`blog.posts.${post.slug}.date`)}
+                {t("blog.publishedOn")} {publishDate}
               </span>
               <span className="text-xs font-medium text-indigo-600 dark:text-indigo-400 group-hover:underline">
                 {t("blog.readMore")} →

@@ -46,7 +46,7 @@ export default function LanguageSelector() {
         title={currentLabel}
       >
         <span className="text-base leading-none">{currentFlag}</span>
-        <span className="hidden sm:inline text-xs font-semibold">{currentUrl}</span>
+        <span className="hidden md:inline text-xs font-semibold">{currentUrl}</span>
         <svg className="h-3 w-3 opacity-60" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
         </svg>

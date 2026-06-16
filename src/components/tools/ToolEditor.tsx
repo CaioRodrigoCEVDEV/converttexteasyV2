@@ -143,14 +143,13 @@ export default function ToolEditor({
               setError(null);
             }}
             placeholder={resolvedPlaceholder}
-            rows={12}
-            className="w-full resize-y rounded-2xl border border-slate-200/60 dark:border-slate-700/80 bg-white/80 dark:bg-slate-900/70 backdrop-blur-xl p-5 text-base leading-relaxed text-slate-900 dark:text-slate-100 shadow-sm placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:border-indigo-400 dark:focus:border-indigo-500 focus:outline-none focus:ring-4 focus:ring-indigo-50 dark:focus:ring-indigo-900/30 transition-all"
-            style={{ minHeight: "280px" }}
+            rows={10}
+            className="w-full resize-y rounded-2xl border border-slate-200/60 dark:border-slate-700/80 bg-white/80 dark:bg-slate-900/70 backdrop-blur-xl p-4 md:p-5 text-base leading-relaxed text-slate-900 dark:text-slate-100 shadow-sm placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:border-indigo-400 dark:focus:border-indigo-500 focus:outline-none focus:ring-4 focus:ring-indigo-50 dark:focus:ring-indigo-900/30 transition-all min-h-[200px] md:min-h-[280px]"
           />
         </div>
 
-        <div className="mt-3 flex flex-wrap items-center justify-between gap-2 text-xs tabular-nums">
-          <div className="flex items-center gap-3">
+        <div className="mt-3 flex flex-wrap items-center justify-between gap-2 text-[11px] md:text-xs tabular-nums">
+          <div className="flex items-center gap-2 md:gap-3">
             <button
               onClick={() => setShowWordCount(!showWordCount)}
               className="flex items-center gap-1 text-slate-500 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
@@ -200,13 +199,13 @@ export default function ToolEditor({
           </div>
         )}
 
-        <div className="mt-4 flex flex-wrap items-center gap-2">
+        <div className="mt-4 flex flex-wrap items-center gap-1.5 md:gap-2">
           {actionButtons.map((btn) => (
             <button
               key={btn.label}
               onClick={btn.onClick}
               disabled={btn.disabled}
-              className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200/80 dark:border-slate-700 bg-white/80 dark:bg-slate-800 px-3.5 py-2 text-xs font-medium text-slate-600 dark:text-slate-300 shadow-sm transition-all hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-800 dark:hover:text-white hover:border-slate-300 dark:hover:border-slate-600 disabled:opacity-40 disabled:cursor-not-allowed"
+              className="inline-flex items-center gap-1 md:gap-1.5 rounded-lg border border-slate-200/80 dark:border-slate-700 bg-white/80 dark:bg-slate-800 px-2.5 md:px-3.5 py-1.5 md:py-2 text-[11px] md:text-xs font-medium text-slate-600 dark:text-slate-300 shadow-sm transition-all hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-800 dark:hover:text-white hover:border-slate-300 dark:hover:border-slate-600 disabled:opacity-40 disabled:cursor-not-allowed"
             >
               {btn.icon}
               {btn.label}
@@ -214,13 +213,13 @@ export default function ToolEditor({
           ))}
         </div>
 
-        <div className="mt-4 flex flex-wrap gap-2">
+        <div className="mt-4 flex flex-wrap gap-1.5 md:gap-2">
           {availableTransforms.map((tr, i) => (
             <button
               key={`${tr.label}-${i}`}
               onClick={() => handleTransform(tr.fn)}
               disabled={!hasContent}
-              className="rounded-xl bg-indigo-50 dark:bg-indigo-950/80 border border-indigo-100 dark:border-indigo-800 px-4 py-2.5 text-sm font-semibold text-indigo-700 dark:text-indigo-300 shadow-sm transition-all hover:bg-indigo-100 dark:hover:bg-indigo-900 hover:border-indigo-200 dark:hover:border-indigo-700 hover:text-indigo-800 dark:hover:text-indigo-200 active:scale-[0.98] disabled:opacity-40 disabled:cursor-not-allowed"
+              className="rounded-xl bg-indigo-50 dark:bg-indigo-950/80 border border-indigo-100 dark:border-indigo-800 px-3 md:px-4 py-2 md:py-2.5 text-xs md:text-sm font-semibold text-indigo-700 dark:text-indigo-300 shadow-sm transition-all hover:bg-indigo-100 dark:hover:bg-indigo-900 hover:border-indigo-200 dark:hover:border-indigo-700 hover:text-indigo-800 dark:hover:text-indigo-200 active:scale-[0.98] disabled:opacity-40 disabled:cursor-not-allowed"
             >
               {tr.label}
             </button>
@@ -228,7 +227,7 @@ export default function ToolEditor({
           {disabledTransforms.map((tr, i) => (
             <span
               key={`disabled-${i}`}
-              className="rounded-xl bg-slate-50 dark:bg-slate-800/30 border border-slate-100 dark:border-slate-800 px-4 py-2.5 text-sm font-medium text-slate-400 dark:text-slate-500 opacity-60 cursor-default"
+              className="rounded-xl bg-slate-50 dark:bg-slate-800/30 border border-slate-100 dark:border-slate-800 px-3 md:px-4 py-2 md:py-2.5 text-xs md:text-sm font-medium text-slate-400 dark:text-slate-500 opacity-60 cursor-default"
             >
               {tr.label}
             </span>

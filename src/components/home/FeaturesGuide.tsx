@@ -31,12 +31,12 @@ export default function FeaturesGuide() {
         </p>
       </div>
 
-      <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-3 grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
         {featureSlugs.map((slug) => (
           <Link
             key={slug}
             href={`/${localeUrl}/tools/${slug}`}
-            className="group rounded-xl border border-slate-200/60 dark:border-slate-700/80 bg-white/60 dark:bg-slate-900/50 p-5 transition-all hover:border-indigo-200 dark:hover:border-indigo-700 hover:bg-white dark:hover:bg-slate-900 hover:-translate-y-0.5"
+            className="group rounded-xl border border-slate-200/60 dark:border-slate-700/80 bg-white/60 dark:bg-slate-900/50 p-4 md:p-5 transition-all hover:border-indigo-200 dark:hover:border-indigo-700 hover:bg-white dark:hover:bg-slate-900 hover:-translate-y-0.5"
           >
             <h3 className="text-sm font-semibold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
               {t(`home.features.cards.${slug}.title`)}

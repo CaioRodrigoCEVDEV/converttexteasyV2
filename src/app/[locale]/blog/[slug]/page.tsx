@@ -1,4 +1,6 @@
 import { buildMetadata } from "@/lib/seo/metadata";
+import { getDictionary, getValue } from "@/i18n/dictionary";
+import { urlToLocale } from "@/i18n/types";
 import BlogPostPage from "@/components/blog/BlogPostPage";
 
 export async function generateMetadata({
@@ -7,9 +9,14 @@ export async function generateMetadata({
   params: Promise<{ locale: string; slug: string }>;
 }) {
   const { locale, slug } = await params;
+  const loc = urlToLocale(locale);
+  const dict = getDictionary(loc) as unknown as Record<string, unknown>;
+  const title = getValue(dict, `blog.posts.${slug}.title`) || slug.replace(/-/g, " ");
+  const description = getValue(dict, `blog.posts.${slug}.excerpt`) || "";
+
   return buildMetadata({
-    title: `Blog - ${slug.replace(/-/g, " ")}`,
-    description: `Read our blog post about ${slug.replace(/-/g, " ")}.`,
+    title,
+    description,
     path: `/${locale}/blog/${slug}`,
   });
 }

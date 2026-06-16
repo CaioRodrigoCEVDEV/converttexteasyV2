@@ -14,12 +14,12 @@ export default function LocaleLayoutClient({
   initialLocale: Locale;
 }) {
   return (
-    <I18nProvider key={initialLocale} initialLocale={initialLocale}>
-      <ThemeProvider>
+    <ThemeProvider>
+      <I18nProvider key={initialLocale} initialLocale={initialLocale}>
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
-      </ThemeProvider>
-    </I18nProvider>
+      </I18nProvider>
+    </ThemeProvider>
   );
 }

@@ -7,7 +7,7 @@ import type { Tool } from "@/data/tools";
 
 function ToolCard({ tool, t, localeUrl }: { tool: Tool; t: (key: string) => string; localeUrl: string }) {
   const available = tool.status === "available";
-  const base = "group relative rounded-2xl border p-6 transition-all";
+  const base = "group relative rounded-2xl border p-4 md:p-6 transition-all";
   const enabled =
     "bg-white/80 dark:bg-slate-900/70 backdrop-blur-xl border-slate-200/60 dark:border-slate-700/80 hover:border-indigo-200 dark:hover:border-indigo-800 hover:shadow-lg hover:shadow-indigo-100/50 dark:hover:shadow-indigo-500/10 hover:-translate-y-0.5";
   const disabled =
@@ -20,7 +20,7 @@ function ToolCard({ tool, t, localeUrl }: { tool: Tool; t: (key: string) => stri
   const content = (
     <>
       <div
-        className={`mb-4 flex h-10 w-10 items-center justify-center rounded-xl text-lg font-bold transition-colors ${
+        className={`mb-3 md:mb-4 flex h-8 w-8 md:h-10 md:w-10 items-center justify-center rounded-xl text-base md:text-lg font-bold transition-colors ${
           available
             ? "bg-indigo-50 text-indigo-600 dark:bg-indigo-950 dark:text-indigo-400 group-hover:bg-indigo-100 dark:group-hover:bg-indigo-900"
             : "bg-slate-100 text-slate-400 dark:bg-slate-800 dark:text-slate-500"
@@ -90,7 +90,7 @@ export default function ToolsContent() {
         </div>
       </div>
 
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-3 md:gap-4 grid-cols-2 sm:grid-cols-2 lg:grid-cols-3">
         {tools.map((tool) => (
           <ToolCard key={tool.slug} tool={tool} t={t} localeUrl={localeUrl} />
         ))}

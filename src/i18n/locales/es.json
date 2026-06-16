@@ -24,7 +24,10 @@
     "errorTransform": "Error al transformar el texto",
     "theme": "Tema",
     "language": "Idioma",
-    "textConverted": "Texto convertido correctamente."
+    "textConverted": "Texto convertido correctamente.",
+    "themeAuto": "Auto",
+    "themeLight": "Light",
+    "themeDark": "Dark"
   },
   "nav": {
     "home": "Inicio",
@@ -115,10 +118,22 @@
       "description": "Herramientas adicionales de conversión y formato disponibles."
     },
     "benefits": {
-      "free": { "title": "Gratis Para Siempre", "description": "Sin muros de pago, sin pruebas. Todas las herramientas son gratuitas." },
-      "private": { "title": "100% Privado", "description": "Tu texto nunca sale de tu dispositivo." },
-      "noSignUp": { "title": "Sin Registro", "description": "Empieza a usar las herramientas inmediatamente." },
-      "browser": { "title": "Funciona en el Navegador", "description": "Sin servidores. Resultados instantáneos." }
+      "free": {
+        "title": "Gratis Para Siempre",
+        "description": "Sin muros de pago, sin pruebas. Todas las herramientas son gratuitas."
+      },
+      "private": {
+        "title": "100% Privado",
+        "description": "Tu texto nunca sale de tu dispositivo."
+      },
+      "noSignUp": {
+        "title": "Sin Registro",
+        "description": "Empieza a usar las herramientas inmediatamente."
+      },
+      "browser": {
+        "title": "Funciona en el Navegador",
+        "description": "Sin servidores. Resultados instantáneos."
+      }
     },
     "features": {
       "label": "GUÍA RÁPIDA",
@@ -309,17 +324,20 @@
       "uppercase-guide": {
         "title": "Cómo Convertir Texto a Mayúsculas en Línea",
         "excerpt": "Aprende a convertir rápidamente cualquier texto a mayúsculas usando herramientas gratuitas en línea. Guía paso a paso para escritores, desarrolladores y creadores de contenido.",
-        "date": "01/06/2025"
+        "body": "Converting text to uppercase is one of the most common text formatting needs. Whether you're fixing a title, standardizing data, or just want your text to stand out, an online text to uppercase converter is the fastest solution.\n\nWith ConvertTextEasy, you can convert any text to uppercase instantly and for free. Simply type or paste your text into the editor, click \"Uppercase\", and the conversion happens immediately in your browser.\n\nThis approach is not only fast but also private. Since all processing happens locally on your device, your text never leaves your computer. There are no servers involved, no data storage, and no privacy concerns.\n\nAdditionally, you can copy the result with one click, clear the editor to start fresh, or download the converted text as a file. It's the simplest way to get perfectly formatted uppercase text every time.",
+        "category": "Conversion"
       },
       "remove-spaces-guide": {
         "title": "Cómo Eliminar Espacios Extra de un Texto",
         "excerpt": "Los espacios en blanco desordenados pueden arruinar el formato. Descubre cómo limpiar espacios extra, tabs y saltos de línea de tu texto al instante.",
-        "date": "20/05/2025"
+        "body": "Extra spaces in text can be a real headache. Whether you're copying from a PDF, dealing with inconsistent formatting, or cleaning up user input, double spaces, trailing whitespace, and irregular indentation can ruin your content.\n\nConvertTextEasy's \"Remove Extra Spaces\" tool solves this problem instantly. It trims leading and trailing whitespace, collapses multiple spaces into one, and ensures your text is clean and consistent.\n\nThis tool is particularly useful for cleaning up text copied from emails, documents, or web pages. Instead of manually fixing each spacing issue, you can process your entire text in one click.\n\nLike all ConvertTextEasy tools, the space removal runs entirely in your browser. Your data remains private and secure, with no uploads to any server.",
+        "category": "Cleaning"
       },
       "free-text-tools": {
         "title": "Herramientas Gratuitas para Formatear Texto en Línea",
         "excerpt": "Una lista seleccionada de herramientas gratuitas basadas en navegador para formato, conversión y limpieza de texto — sin registro, completamente privado.",
-        "date": "10/05/2025"
+        "body": "There are many text formatting tools available online, but not all of them respect your privacy. Many services require you to upload your text to their servers, which means your data is no longer under your control.\n\nEvery tool on ConvertTextEasy runs locally in your browser. This means your text never leaves your device. We don't store, log, or transmit any of your content.\n\nOur growing collection includes tools for case conversion, text cleaning, Unicode styling, and developer formats. All tools are completely free to use with no limits or registration required.\n\nThe philosophy is simple: text tools should be free, fast, and private. ConvertTextEasy delivers on all three promises, giving you professional-grade text conversion without compromising your privacy.",
+        "category": "Tools"
       }
     }
   },
