@@ -450,6 +450,24 @@
         "excerpt": "テキストのフォーマット、変換、クリーンアップのための厳選された無料ブラウザベースツール — 登録不要、完全プライベート。",
         "body": "There are many text formatting tools available online, but not all of them respect your privacy. Many services require you to upload your text to their servers, which means your data is no longer under your control.\n\nEvery tool on ConvertTextEasy runs locally in your browser. This means your text never leaves your device. We don't store, log, or transmit any of your content.\n\nOur growing collection includes tools for case conversion, text cleaning, Unicode styling, and developer formats. All tools are completely free to use with no limits or registration required.\n\nThe philosophy is simple: text tools should be free, fast, and private. ConvertTextEasy delivers on all three promises, giving you professional-grade text conversion without compromising your privacy.",
         "category": "Tools"
+      },
+      "contador-de-palavras-online": {
+        "title": "オンラインで無料単語数・文字数をカウントする方法",
+        "excerpt": "オンライン単語カウンターを使ってテキストをレビューし、コンテンツを改善し、フォームやソーシャルメディア、記事の文字数制限を守る方法を学びます。",
+        "body": "単語カウンターは、テキストを扱うすべての人にとってシンプルながら不可欠なツールです。単語数、文字数、文章数、段落数を瞬時にカウントし、エッセイ、ソーシャルメディアの投稿、SEOメタディスクリプションなどの特定の長さ要件を満たすのに役立ちます。\n\nConvertTextEasyの単語カウンターを使えば、任意のテキストを入力または貼り付けてリアルタイムの統計情報を表示できます。ツールは入力中に即座に総単語数、文字数、行数、文字種別を表示します。\n\nこれは、エッセイの長さ要件を満たす必要がある学生、単語制限のある記事を作成するライター、ドキュメントを作成する開発者、広告文を最適化するマーケティングプロフェッショナルに特に役立ちます。\n\n主な利点には、手動カウントの時間節約、目標の長さに達するための迅速な修正、フォームやソーシャルメディアの文字数制限の管理、簡潔なライティングによるテキストの明確性向上が含まれます。すべての処理はブラウザ内でローカルに行われ、コンテンツをプライベートかつ安全に保ちます。",
+        "category": "生産性"
+      },
+      "conversor-de-titulo-online": {
+        "title": "オンラインでテキストをタイトル形式に変換する方法",
+        "excerpt": "普通の文章を記事、ページ、投稿、ドキュメント、プロフェッショナルコンテンツの適切にフォーマットされたタイトルに変換する方法をご紹介します。",
+        "body": "タイトル形式（title case）は、主要な単語が大文字で始まり、マイナーな単語が小文字で表記されるテキスト形式です。ブログ投稿、ページタイトル、SEOメタデータ、製品名、ドキュメント、プレゼンテーション、メールの件名で広く使用されています。\n\nConvertTextEasyのタイトル変換ツールを使えば、この書式を瞬時に適用できます。テキストを貼り付け、「タイトル」オプションをクリックするだけで、主要な単語が正しく大文字で始まります。\n\nプレーンテキスト、大文字、小文字、タイトル形式の違いを理解することは、プロフェッショナルなコミュニケーションにとって重要です。大文字は攻撃的に見え、小文字は非公式に見えますが、タイトル形式は見出しやタイトルに最適なバランスを提供します。\n\nこのツールはコンテンツを迅速に標準化し、ブログ投稿、ウェブページ、マーケティング資料の一貫性を確保するのに役立ちます。各単語を手動で大文字にする必要がなくなり、時間を節約しエラーを減らします。",
+        "category": "フォーマット"
+      },
+      "formatador-json-online": {
+        "title": "オンラインでJSONを簡単かつ迅速にフォーマットする方法",
+        "excerpt": "オンラインJSONフォーマッターがどのように開発者のデータ表示、整理、検証を支援するかを理解します。",
+        "body": "JSON（JavaScript Object Notation）は、API、設定ファイル、Webサービス、システム統合で広く使用される軽量データ交換形式です。JSONは人間が読みやすいように設計されていますが、フォーマットされていない、または最小化されたJSONは視覚的に解釈するのが難しい場合があります。\n\nConvertTextEasyのようなJSONフォーマッターは、JSONデータを自動的にインデントして整理し、読み取り、デバッグ、保守をはるかに容易にします。適切な間隔、改行、ネストを追加して、データの構造を迅速に理解できるようにします。\n\n主な利点には、可読性向上のための自動インデント、欠落した括弧やカンマの簡単な特定、早期エラー発見のための構文検証、API開発およびテスト中の簡素化されたデバッグが含まれます。\n\nREST APIを利用するフロントエンド開発者、サービスを設定するバックエンドエンジニア、インフラストラクチャをコードとして管理するDevOpsプロフェッショナルのいずれであっても、JSONフォーマッターはツールキットに欠かせない存在です。そしてすべてのConvertTextEasyツールと同様に、サーバーにデータを送信することなくブラウザ内で完全に動作します。",
+        "category": "開発者ツール"
       }
     }
   },

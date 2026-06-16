@@ -450,6 +450,24 @@
         "excerpt": "精心挑选的免费浏览器文本格式化、转换和清理工具 — 无需注册，完全私密。",
         "body": "There are many text formatting tools available online, but not all of them respect your privacy. Many services require you to upload your text to their servers, which means your data is no longer under your control.\n\nEvery tool on ConvertTextEasy runs locally in your browser. This means your text never leaves your device. We don't store, log, or transmit any of your content.\n\nOur growing collection includes tools for case conversion, text cleaning, Unicode styling, and developer formats. All tools are completely free to use with no limits or registration required.\n\nThe philosophy is simple: text tools should be free, fast, and private. ConvertTextEasy delivers on all three promises, giving you professional-grade text conversion without compromising your privacy.",
         "category": "Tools"
+      },
+      "contador-de-palavras-online": {
+        "title": "如何在线免费统计字数和字符数",
+        "excerpt": "了解如何使用在线字数统计工具来审阅文本、改进内容，并遵守表单、社交媒体和文章中的字符限制。",
+        "body": "字数统计工具是一个简单但必不可少的工具，适合任何处理文本的人。它可以即时统计字数、字符数、句子数和段落数，帮助您满足论文、社交媒体帖子、SEO元描述等的特定长度要求。\n\n使用ConvertTextEasy的字数统计工具，您可以输入或粘贴任何文本，并实时查看统计数据。该工具会在您输入时即时显示总字数、字符数、行数和字母数。\n\n这对于需要满足论文长度要求的学生、撰写有字数限制文章的作家、编写文档的开发人员以及优化广告文案的营销专业人士尤其有用。\n\n主要优点包括节省手动计数的时间、快速修改以达到目标长度、控制表单和社交媒体的字符限制，以及通过更简洁的写作提高文本清晰度。所有处理都在您的浏览器本地完成，确保您的内容私密安全。",
+        "category": "生产力"
+      },
+      "conversor-de-titulo-online": {
+        "title": "如何在线将文本转换为标题格式",
+        "excerpt": "了解如何将普通句子转换为格式良好的标题，用于文章、页面、帖子、文档和专业内容。",
+        "body": "标题格式，也称为title case，是一种主要单词大写、次要单词小写的文本格式。它广泛用于博客文章、页面标题、SEO元数据、产品名称、文档、演示文稿和电子邮件主题行中。\n\nConvertTextEasy的标题转换器可以轻松即时地应用此格式。只需粘贴文本，点击\"标题\"选项，即可看到每个主要单词正确大写。\n\n理解普通文本、全大写、全小写和标题格式之间的区别对于专业沟通很重要。全大写可能显得咄咄逼人，全小写显得不正式，而标题格式为标题提供了完美的平衡。\n\n此工具有助于快速标准化内容，确保您的博客文章、网站页面和营销材料的一致性。它消除了手动将每个单词大写的需要，节省时间并减少错误。",
+        "category": "格式化"
+      },
+      "formatador-json-online": {
+        "title": "如何简单快速地在线格式化JSON",
+        "excerpt": "了解在线JSON格式化工具如何帮助开发者更轻松地查看、组织和验证数据。",
+        "body": "JSON（JavaScript对象表示法）是一种轻量级数据交换格式，广泛用于API、配置文件、Web服务和系统集成。虽然JSON设计为人类可读，但未格式化或压缩的JSON可能难以直观地解析。\n\n像ConvertTextEasy中的JSON格式化工具，可以自动缩进和组织JSON数据，使其更易于阅读、调试和维护。它会添加适当的间距、换行和嵌套，让您快速理解数据的结构。\n\n主要优点包括自动缩进以提高可读性、更容易识别缺少的括号或逗号、语法验证以尽早发现错误，以及在API开发和测试期间简化调试。\n\n无论您是使用REST API的前端开发者、配置服务的后端工程师，还是管理基础设施即代码的DevOps专业人士，JSON格式化工具都是您工具箱中不可或缺的一部分。与所有ConvertTextEasy工具一样，它完全在您的浏览器中运行，不会将数据发送到任何服务器。",
+        "category": "开发工具"
       }
     }
   },

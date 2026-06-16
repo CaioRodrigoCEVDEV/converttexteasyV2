@@ -8,6 +8,9 @@ const posts = [
   { slug: "uppercase-guide", icon: "Aa" },
   { slug: "remove-spaces-guide", icon: "▦" },
   { slug: "free-text-tools", icon: "🧰" },
+  { slug: "contador-de-palavras-online", icon: "123" },
+  { slug: "conversor-de-titulo-online", icon: "Tt" },
+  { slug: "formatador-json-online", icon: "{}" },
 ];
 
 export default function BlogContent() {
