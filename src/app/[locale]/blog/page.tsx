@@ -1,5 +1,7 @@
 import { buildLocalizedMetadata } from "@/lib/seo/metadata";
 import { urlToLocale } from "@/i18n/types";
+import { siteConfig } from "@/data/site";
+import JsonLd from "@/components/seo/JsonLd";
 import BlogContent from "@/components/pages/BlogContent";
 
 export async function generateMetadata({
@@ -12,5 +14,18 @@ export async function generateMetadata({
 }
 
 export default function BlogPage() {
-  return <BlogContent />;
+  const blogJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    name: "ConvertTextEasy Blog",
+    description: "Tips and guides about online text conversion and formatting.",
+    url: `${siteConfig.url}/blog`,
+  };
+
+  return (
+    <>
+      <JsonLd data={blogJsonLd} />
+      <BlogContent />
+    </>
+  );
 }

@@ -642,6 +642,10 @@
       "title": "Serviços de Terceiros",
       "body": "O ConvertTextEasy não compartilha dados com serviços de terceiros porque não coletamos dados em primeiro lugar."
     },
+    "advertising": {
+      "title": "Publicidade e Cookies",
+      "body": "Podemos utilizar serviços de publicidade, como o Google AdSense, para exibir anúncios em nosso site. O Google e seus parceiros podem usar cookies para exibir anúncios com base em visitas anteriores do usuário ao nosso site ou a outros sites. Esses cookies permitem que o Google e seus parceiros exibam anúncios personalizados. Você pode saber mais sobre as práticas de publicidade do Google e optar por não receber anúncios personalizados visitando a página de Configurações de Anúncios do Google (https://adssettings.google.com). Você também pode gerenciar as preferências de cookies através das configurações do seu navegador. Seu navegador também pode fornecer ferramentas para bloquear, excluir ou gerenciar cookies. Observe que bloquear certos cookies pode afetar a funcionalidade deste site. Ao interagir com nosso site, dados técnicos como tipo de navegador, preferência de idioma, tipo de dispositivo, páginas visitadas e endereço IP podem ser coletados por esses serviços de terceiros de acordo com suas próprias políticas de privacidade."
+    },
     "contactForm": {
       "title": "Formulário de Contato",
       "body": "Se você usar nosso formulário de contato, poderemos coletar seu nome, endereço de e-mail e mensagem exclusivamente para responder à sua solicitação. Esses dados não são compartilhados, vendidos ou usados para fins de marketing. Você pode solicitar a exclusão dos seus dados de contato a qualquer momento."
@@ -819,32 +823,32 @@
   },
   "seo": {
     "home": {
-      "title": "Kit de Ferramentas de Texto Online Grátis - Converta, Formate & Transforme",
+      "title": "Conversor de Texto Online Gratuito",
       "description": "ConvertTextEasy é um kit gratuito de ferramentas de texto online. Converta maiúsculas/minúsculas, formate JSON, gere slugs, codifique Base64, limpe texto e mais. Sem cadastro. Tudo no navegador."
     },
     "tools": {
-      "title": "Ferramentas - ConvertTextEasy",
+      "title": "Todas as Ferramentas",
       "description": "Explore todas as ferramentas de transformação de texto disponíveis. Grátis, privado e instantâneo."
     },
     "blog": {
-      "title": "Blog - ConvertTextEasy",
+      "title": "Blog sobre Conversão de Texto e Produtividade",
       "description": "Dicas e guias sobre conversão e formatação de texto online."
     },
     "about": {
-      "title": "Sobre o ConvertTextEasy | Ferramentas de Texto Online Grátis",
+      "title": "Sobre o ConvertTextEasy",
       "description": "Conheça o ConvertTextEasy, uma plataforma gratuita, rápida e privada com ferramentas de texto online que funcionam diretamente no navegador."
     },
     "privacy": {
-      "title": "Política de Privacidade - ConvertTextEasy",
-      "description": "Entenda como o ConvertTextEasy trata a privacidade e os dados do usuário."
+      "title": "Política de Privacidade",
+      "description": "Entenda como o ConvertTextEasy trata privacidade, cookies, dados de publicidade e informações do usuário."
     },
     "terms": {
-      "title": "Termos de Uso - ConvertTextEasy",
+      "title": "Termos de Uso",
       "description": "Leia os termos e condições de uso do ConvertTextEasy."
     },
     "contact": {
-      "title": "Contato - ConvertTextEasy",
-      "description": "Entre em contato com o ConvertTextEasy."
+      "title": "Contato",
+      "description": "Entre em contato com o ConvertTextEasy. Envie feedback, reporte problemas ou sugira novas ferramentas."
     }
   }
 }

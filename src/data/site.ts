@@ -2,9 +2,22 @@ export const siteConfig = {
   name: "ConvertTextEasy",
   tagline: "Simple, fast text tools — right in your browser.",
   description:
-    "Free online text tools to convert, format, and transform your text. Uppercase, lowercase, JSON formatting, encoding, and more. No sign-up. No data sent to servers.",
+    "Converta textos online gratuitamente com o ConvertTextEasy. Transforme texto em maiúsculas, minúsculas, título, sentença, slug, camelCase, snake_case e outros formatos de forma rápida e simples.",
   url: "https://converttexteasy.com",
   ogImage: "/og-image.png",
+  keywords: [
+    "conversor de texto",
+    "converter texto",
+    "uppercase",
+    "lowercase",
+    "title case",
+    "sentence case",
+    "slug generator",
+    "camelCase",
+    "snake_case",
+    "kebab-case",
+    "text converter online",
+  ],
   links: {
     twitter: "https://twitter.com/converttexteasy",
     github: "https://github.com/converttexteasy",

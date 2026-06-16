@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { siteConfig } from "@/data/site";
 import { getDictionary } from "@/i18n/dictionary";
 import type { Locale } from "@/i18n/types";
+import { locales, localeToUrl } from "@/i18n/types";
 
 function ogLocale(locale: Locale): string {
   const map: Record<Locale, string> = {
@@ -19,6 +20,27 @@ function ogLocale(locale: Locale): string {
   return map[locale] ?? "en_US";
 }
 
+function localeToPath(locale: Locale): string {
+  return localeToUrl(locale);
+}
+
+function buildAlternates(path: string, locale: Locale) {
+  const languages: Record<string, string> = {};
+  for (const loc of locales) {
+    const locUrl = localeToPath(loc);
+    const localizedPath =
+      path === ""
+        ? `${siteConfig.url}/${locUrl}`
+        : `${siteConfig.url}/${locUrl}${path.startsWith("/") ? path : `/${path}`}`;
+    languages[loc] = localizedPath;
+  }
+  languages["x-default"] = `${siteConfig.url}/`;
+  return {
+    canonical: `${siteConfig.url}/${localeToPath(locale)}${path.startsWith("/") ? path : `/${path}`}`,
+    languages,
+  };
+}
+
 export function buildMetadata({
   title,
   description,
@@ -32,24 +54,27 @@ export function buildMetadata({
   noIndex?: boolean;
   locale?: Locale;
 } = {}): Metadata {
-  const fullTitle = title
-    ? `${title} | ${siteConfig.name}`
-    : `${siteConfig.name} — ${siteConfig.tagline}`;
-
   const fullDescription = description ?? siteConfig.description;
-  const url = path ? `${siteConfig.url}${path}` : siteConfig.url;
+  const canonicalPath = path.startsWith("/")
+    ? `${siteConfig.url}${path}`
+    : path
+      ? `${siteConfig.url}/${path}`
+      : siteConfig.url;
+
+  const alternates = path !== undefined 
+    ? buildAlternates(path, locale)
+    : undefined;
 
   return {
-    title: fullTitle,
+    title,
     description: fullDescription,
     metadataBase: new URL(siteConfig.url),
-    alternates: {
-      canonical: url,
-    },
+    keywords: siteConfig.keywords,
+    alternates,
     openGraph: {
-      title: fullTitle,
+      title: title ?? siteConfig.name,
       description: fullDescription,
-      url,
+      url: canonicalPath,
       siteName: siteConfig.name,
       locale: ogLocale(locale),
       type: "website",
@@ -64,28 +89,34 @@ export function buildMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title: fullTitle,
+      title: title ?? siteConfig.name,
       description: fullDescription,
       images: [siteConfig.ogImage],
     },
     robots: noIndex
       ? { index: false, follow: false }
-      : { index: true, follow: true },
+      : {
+          index: true,
+          follow: true,
+          googleBot: {
+            index: true,
+            follow: true,
+            "max-video-preview": -1,
+            "max-image-preview": "large",
+            "max-snippet": -1,
+          },
+        },
   };
-}
-
-function localeToPath(locale: Locale): string {
-  if (locale === "pt-BR") return "pt";
-  return locale;
 }
 
 export function buildLocalizedMetadata(locale: Locale, page: string) {
   const dict = getDictionary(locale) as Record<string, unknown>;
   const seo = (dict.seo as Record<string, Record<string, string>>)?.[page];
+  const pagePath = page === "home" ? "" : page;
   return buildMetadata({
     title: seo?.title,
     description: seo?.description,
-    path: `/${localeToPath(locale)}/${page === "home" ? "" : page}`,
+    path: `/${localeToPath(locale)}/${pagePath}`,
     locale,
   });
 }

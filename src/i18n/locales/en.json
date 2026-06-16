@@ -641,6 +641,10 @@
       "title": "Third-Party Services",
       "body": "ConvertTextEasy does not share any data with third-party services because we do not collect any data to begin with."
     },
+    "advertising": {
+      "title": "Advertising and Cookies",
+      "body": "We may use advertising services, such as Google AdSense, to display ads on our website. Google and its partners may use cookies to serve ads based on a user's prior visits to our website or other websites. These cookies enable Google and its partners to serve personalized ads. You can learn more about Google's advertising practices and opt out of personalized advertising by visiting Google's Ads Settings page (https://adssettings.google.com). You may also manage cookie preferences through your browser settings. Your web browser may also provide tools to block, delete, or manage cookies. Please note that blocking certain cookies may affect the functionality of this website. When you interact with our website, technical data such as browser type, language preference, device type, pages visited, and IP address may be collected by these third-party services in accordance with their own privacy policies."
+    },
     "contactForm": {
       "title": "Contact Form",
       "body": "If you use our contact form, we may collect your name, email address, and message solely to respond to your inquiry. This data is not shared, sold, or used for marketing purposes. You may request deletion of your contact data at any time."
@@ -818,32 +822,32 @@
   },
   "seo": {
     "home": {
-      "title": "Free Online Text Toolkit - Convert, Format & Transform Text",
+      "title": "Free Online Text Converter",
       "description": "ConvertTextEasy is a free online text toolkit. Convert case, format JSON, generate slugs, encode Base64, clean text, and more. No sign-up required. All tools run in your browser."
     },
     "tools": {
-      "title": "All Tools - ConvertTextEasy",
+      "title": "All Tools",
       "description": "Browse all available text transformation tools. Free, private, and instant."
     },
     "blog": {
-      "title": "Blog - ConvertTextEasy",
+      "title": "Blog about Text Conversion and Productivity",
       "description": "Tips and guides about online text conversion and formatting."
     },
     "about": {
-      "title": "About ConvertTextEasy | Free Online Text Tools",
+      "title": "About ConvertTextEasy",
       "description": "Learn about ConvertTextEasy — a free, fast, and private platform with online text tools that run entirely in your browser."
     },
     "privacy": {
-      "title": "Privacy Policy - ConvertTextEasy",
-      "description": "Understand how ConvertTextEasy handles privacy and user data."
+      "title": "Privacy Policy",
+      "description": "Understand how ConvertTextEasy handles privacy, cookies, advertising data, and user information."
     },
     "terms": {
-      "title": "Terms of Use - ConvertTextEasy",
+      "title": "Terms of Use",
       "description": "Read the terms and conditions for using ConvertTextEasy."
     },
     "contact": {
-      "title": "Contact - ConvertTextEasy",
-      "description": "Get in touch with ConvertTextEasy."
+      "title": "Contact",
+      "description": "Get in touch with ConvertTextEasy. Send feedback, report issues, or suggest new tools."
     }
   }
 }

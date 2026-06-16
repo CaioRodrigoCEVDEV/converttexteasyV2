@@ -1,0 +1,2 @@
+# ads.txt for ConvertTextEasy
+google.com, pub-1764837779058715, DIRECT, f08c47fec0942fa0

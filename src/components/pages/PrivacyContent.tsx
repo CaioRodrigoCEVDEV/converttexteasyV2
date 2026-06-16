@@ -8,6 +8,7 @@ const sections = [
   "cookies",
   "analytics",
   "thirdParty",
+  "advertising",
   "contactForm",
   "userRights",
   "contact",
