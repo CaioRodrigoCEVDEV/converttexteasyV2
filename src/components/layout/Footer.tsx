@@ -140,7 +140,7 @@ export default function Footer() {
                     </Link>
                   </li>
                   <li>
-                    <Link href={buildHref("privacy")} className="text-sm text-slate-500 dark:text-slate-400 transition-colors hover:text-indigo-600 dark:hover:text-indigo-400">
+                    <Link href={buildHref("privacy-policy")} className="text-sm text-slate-500 dark:text-slate-400 transition-colors hover:text-indigo-600 dark:hover:text-indigo-400">
                       {t("footer.columns.company.privacy")}
                     </Link>
                   </li>

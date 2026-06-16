@@ -109,10 +109,15 @@ export function buildMetadata({
   };
 }
 
-export function buildLocalizedMetadata(locale: Locale, page: string) {
+export function buildLocalizedMetadata(
+  locale: Locale,
+  page: string,
+  pathOverride?: string,
+) {
   const dict = getDictionary(locale) as Record<string, unknown>;
   const seo = (dict.seo as Record<string, Record<string, string>>)?.[page];
-  const pagePath = page === "home" ? "" : page;
+  const pagePath =
+    pathOverride ?? (page === "home" ? "" : page);
   return buildMetadata({
     title: seo?.title,
     description: seo?.description,

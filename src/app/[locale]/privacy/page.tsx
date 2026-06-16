@@ -1,16 +1,5 @@
-import { buildLocalizedMetadata } from "@/lib/seo/metadata";
-import { urlToLocale } from "@/i18n/types";
-import PrivacyContent from "@/components/pages/PrivacyContent";
+import { redirect } from "next/navigation";
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
-  const { locale } = await params;
-  return buildLocalizedMetadata(urlToLocale(locale), "privacy");
-}
-
-export default function PrivacyPage() {
-  return <PrivacyContent />;
+export default async function PrivacyRedirect() {
+  redirect("privacy-policy");
 }
