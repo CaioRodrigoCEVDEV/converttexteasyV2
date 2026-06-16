@@ -39,7 +39,7 @@ export default function HomePage() {
 
   const handleTransform = useCallback(
     (tool: ToolMeta) => {
-      if (!hasContent && tool.slug !== "invisible") return;
+      if (!hasContent && tool.slug !== "invisible" && !tool.hasOutput) return;
       try {
         const input = text || " ";
         const result = transformText(tool.slug, input, locale);
@@ -222,7 +222,7 @@ export default function HomePage() {
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-1.5 md:gap-2">
               {currentTools.map((tool) => {
                 const isActive = lastTransform === tool.slug;
-                const isDisabled = !hasContent && tool.slug !== "invisible";
+                const isDisabled = !hasContent && tool.slug !== "invisible" && !tool.hasOutput;
                 return (
                   <button
                     key={tool.slug}

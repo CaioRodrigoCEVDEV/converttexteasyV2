@@ -28,7 +28,8 @@
     "themeDark": "Dark",
     "language": "Language",
     "textConverted": "Text converted successfully.",
-    "advertisement": "Advertisement"
+    "advertisement": "Advertisement",
+    "generate": "Generate"
   },
   "nav": {
     "home": "Home",
@@ -90,7 +91,23 @@
       "constantCase": "CONSTANT_CASE",
       "kebabCase": "kebab-case",
       "dotCase": "dot.case",
-      "pathCase": "path/case"
+      "pathCase": "path/case",
+      "jsonFormatter": "JSON Formatter",
+      "removeDuplicateLines": "Remove Duplicate Lines",
+      "removeEmptyLines": "Remove Empty Lines",
+      "removeLineBreaks": "Remove Line Breaks",
+      "trimText": "Trim Text",
+      "sortLines": "Sort Lines",
+      "htmlFormatter": "HTML Formatter",
+      "cssFormatter": "CSS Formatter",
+      "javascriptFormatter": "JS Formatter",
+      "yamlFormatter": "YAML Formatter",
+      "markdownFormatter": "Markdown Formatter",
+      "regexTester": "Regex Tester",
+      "uuidGenerator": "UUID Generator",
+      "passwordGenerator": "Password Generator",
+      "loremIpsumGenerator": "Lorem Ipsum",
+      "utmGenerator": "UTM Generator"
     },
     "sidebar": {
       "summary": "Summary",
@@ -293,7 +310,12 @@
     },
     "json-formatter": {
       "name": "JSON Formatter",
-      "description": "Pretty-print or minify JSON with syntax highlighting."
+      "description": "Pretty-print or minify JSON with syntax highlighting.",
+      "howTo": "Paste or type your JSON code into the editor and click the Format button. The tool will indent and organize your JSON automatically. If your JSON is invalid, an error message will guide you.",
+      "faq1q": "Is my JSON data safe?",
+      "faq1a": "Yes, all processing happens locally in your browser. Your JSON never leaves your device.",
+      "faq2q": "Can I minify JSON with this tool?",
+      "faq2a": "Yes, the tool formats and organizes your JSON for readability. You can copy the formatted output or use it directly."
     },
     "base64-encode": {
       "name": "Base64 Encode",
@@ -386,6 +408,141 @@
     "pathcase": {
       "name": "path/case",
       "description": "Convert text to path/case format."
+    },
+    "remove-duplicate-lines": {
+      "name": "Remove Duplicate Lines",
+      "description": "Remove duplicate lines from your text while preserving order.",
+      "howTo": "Paste your text into the editor and click the transform button. All duplicate lines will be removed, keeping only the first occurrence of each line.",
+      "faq1q": "Does it preserve line order?",
+      "faq1a": "Yes, the first occurrence of each line is kept in its original position.",
+      "faq2q": "What counts as a duplicate?",
+      "faq2a": "Lines are compared exactly, including whitespace. Two lines with different spacing are considered different."
+    },
+    "remove-empty-lines": {
+      "name": "Remove Empty Lines",
+      "description": "Delete all blank lines from your text instantly.",
+      "howTo": "Paste your text and click the button. All empty or whitespace-only lines will be removed, keeping your content compact.",
+      "faq1q": "Does it remove lines with spaces?",
+      "faq1a": "Yes, lines containing only whitespace characters (spaces, tabs) are also removed.",
+      "faq2q": "Is this reversible?",
+      "faq2a": "No, but you can use Undo (Ctrl+Z) in the text area immediately after the transformation."
+    },
+    "remove-line-breaks": {
+      "name": "Remove Line Breaks",
+      "description": "Join all lines into a single line by removing line breaks.",
+      "howTo": "Paste multi-line text and click the button. All line breaks will be replaced with spaces, creating a single paragraph.",
+      "faq1q": "Will it merge words incorrectly?",
+      "faq1a": "The tool collapses multiple spaces into one, so words won't merge together unintentionally.",
+      "faq2q": "Can I undo this?",
+      "faq2a": "Use Ctrl+Z immediately after the transformation, or keep a backup of your original text."
+    },
+    "trim-text": {
+      "name": "Trim Text",
+      "description": "Remove leading and trailing whitespace from your text.",
+      "howTo": "Paste your text and click Trim. Any spaces, tabs, or newlines at the very beginning or end of your text will be removed.",
+      "faq1q": "Does it affect text in the middle?",
+      "faq1a": "No, only whitespace at the start and end of the entire text is removed.",
+      "faq2q": "Does it affect formatting?",
+      "faq2a": "Only leading and trailing whitespace is removed. Internal spacing remains unchanged."
+    },
+    "sort-lines": {
+      "name": "Sort Lines",
+      "description": "Sort lines alphabetically in ascending order.",
+      "howTo": "Paste your list of lines and click Sort. The lines will be reordered alphabetically using natural locale-aware comparison.",
+      "faq1q": "Is the sort case-sensitive?",
+      "faq1a": "The sort uses locale-aware comparison, which typically places uppercase before lowercase. Results may vary by language.",
+      "faq2q": "Can I sort in descending order?",
+      "faq2a": "Currently only ascending alphabetical order is supported."
+    },
+    "regex-tester": {
+      "name": "Regex Tester",
+      "description": "Test regular expressions in real-time against your text.",
+      "howTo": "Enter your text in the input area, type your regex pattern, and select flags. Matches will be highlighted in real-time. All processing is done locally for safety.",
+      "faq1q": "Is this safe? Can regex crash my browser?",
+      "faq1a": "The tool uses JavaScript's built-in RegExp engine and processes everything locally. While catastrophic backtracking is possible with complex patterns, all computation is sandboxed in your browser.",
+      "faq2q": "What regex flags are supported?",
+      "faq2a": "Common flags like g (global), i (case-insensitive), m (multiline), s (dotall), and u (unicode) are supported."
+    },
+    "html-formatter": {
+      "name": "HTML Formatter",
+      "description": "Format and beautify messy HTML code.",
+      "howTo": "Paste your HTML code into the editor and click the Format button. The tool will add proper indentation and line breaks for readability.",
+      "faq1q": "Does it handle self-closing tags?",
+      "faq1a": "Yes, the formatter recognizes self-closing tags like <br>, <img>, and <input>.",
+      "faq2q": "Will it fix broken HTML?",
+      "faq2a": "The formatter works best with well-formed HTML. Severely broken HTML may not format as expected."
+    },
+    "css-formatter": {
+      "name": "CSS Formatter",
+      "description": "Beautify and organize CSS stylesheets.",
+      "howTo": "Paste your CSS code and click Format. The tool will organize selectors, properties, and values with consistent indentation.",
+      "faq1q": "Does it sort CSS properties?",
+      "faq1a": "Properties within each rule are formatted but not reordered alphabetically.",
+      "faq2q": "Does it support SASS/SCSS?",
+      "faq2a": "Currently only standard CSS is supported. SASS/SCSS preprocessor syntax may not format correctly."
+    },
+    "javascript-formatter": {
+      "name": "JavaScript Formatter",
+      "description": "Pretty-print and format JavaScript code.",
+      "howTo": "Paste your JavaScript code and click Format. The tool will add consistent indentation and line breaks.",
+      "faq1q": "Is this as powerful as Prettier?",
+      "faq1a": "This is a lightweight formatter focused on basic indentation. For advanced formatting, dedicated tools like Prettier are recommended.",
+      "faq2q": "Does it handle modern JavaScript?",
+      "faq2a": "The formatter handles basic JavaScript syntax. Very complex or minified code may need a more powerful tool."
+    },
+    "yaml-formatter": {
+      "name": "YAML Formatter",
+      "description": "Format and clean up YAML configuration files.",
+      "howTo": "Paste your YAML content and click Format. Extra blank lines will be cleaned up and indentation will be normalized.",
+      "faq1q": "Does it validate YAML?",
+      "faq1a": "This tool focuses on formatting. Basic indentation issues may be corrected, but full YAML validation is not performed.",
+      "faq2q": "Will it change my YAML structure?",
+      "faq2a": "No, the formatting only affects whitespace and blank lines. The data structure remains unchanged."
+    },
+    "markdown-formatter": {
+      "name": "Markdown Formatter",
+      "description": "Format and beautify Markdown documents.",
+      "howTo": "Paste your Markdown content and click Format. The tool will normalize spacing, fix heading formatting, and clean up lists.",
+      "faq1q": "Does it support all Markdown syntax?",
+      "faq1a": "Common Markdown elements like headings, lists, code blocks, and paragraphs are supported.",
+      "faq2q": "Will it break code blocks?",
+      "faq2a": "No, content inside code blocks (triple backticks) is preserved exactly as written."
+    },
+    "uuid-generator": {
+      "name": "UUID Generator",
+      "description": "Generate UUID v4 identifiers instantly.",
+      "howTo": "Click the Generate button to create a new UUID v4 identifier. You can generate multiple UUIDs and copy them individually.",
+      "faq1q": "What UUID version is generated?",
+      "faq1a": "This tool generates UUID v4 (random) using the browser's crypto API.",
+      "faq2q": "Are the UUIDs truly random?",
+      "faq2a": "The UUIDs are generated using cryptographically strong random values via the Web Crypto API."
+    },
+    "password-generator": {
+      "name": "Password Generator",
+      "description": "Create strong, secure passwords with custom options.",
+      "howTo": "Select your desired options (length, include numbers, symbols, uppercase/lowercase letters) and click Generate. Copy the password with one click.",
+      "faq1q": "How are passwords generated?",
+      "faq1a": "Passwords are generated using cryptographically secure random values from the Web Crypto API.",
+      "faq2q": "Is my password stored anywhere?",
+      "faq2a": "No, passwords are generated entirely in your browser and never leave your device. They are not stored or transmitted."
+    },
+    "lorem-ipsum-generator": {
+      "name": "Lorem Ipsum Generator",
+      "description": "Generate placeholder text for your designs and layouts.",
+      "howTo": "Click Generate to create Lorem Ipsum placeholder text. The tool generates multiple paragraphs of classic filler text.",
+      "faq1q": "How much text is generated?",
+      "faq1a": "Each click generates approximately 3 paragraphs of Lorem Ipsum text.",
+      "faq2q": "Can I customize the length?",
+      "faq2a": "Currently the tool generates a fixed amount of text. Copy what you need and regenerate for more."
+    },
+    "utm-generator": {
+      "name": "UTM Generator",
+      "description": "Build UTM-tracked URLs for your marketing campaigns.",
+      "howTo": "Fill in the required fields: Website URL, campaign source, medium, and campaign name. Optionally add campaign term and content. Click Generate to get your tracked URL.",
+      "faq1q": "What are UTM parameters?",
+      "faq1a": "UTM parameters are tags added to URLs that help analytics tools track where your traffic comes from and how users find your content.",
+      "faq2q": "Can I reuse the generated URLs?",
+      "faq2a": "Yes, generated URLs are permanent as long as the base URL is valid. You can save and reuse them."
     },
     "transforms": {
       "sentenceCase": "Sentence case",
@@ -559,7 +716,12 @@
         "lowercase": "Lowercase Converter",
         "capitalize": "Capitalize Text",
         "strikethrough": "Strikethrough Text",
-        "removeSpaces": "Remove Extra Spaces"
+        "removeSpaces": "Remove Extra Spaces",
+        "removeDuplicateLines": "Remove Duplicate Lines",
+        "removeEmptyLines": "Remove Empty Lines",
+        "removeLineBreaks": "Remove Line Breaks",
+        "trimText": "Trim Text",
+        "sortLines": "Sort Lines"
       },
       "developerTools": {
         "title": "Developer Tools",
@@ -567,13 +729,20 @@
         "snakecase": "snake_case",
         "kebabcase": "kebab-case",
         "json": "JSON Formatter",
+        "htmlFormatter": "HTML Formatter",
+        "cssFormatter": "CSS Formatter",
+        "javascriptFormatter": "JS Formatter",
+        "yamlFormatter": "YAML Formatter",
+        "markdownFormatter": "Markdown Formatter",
+        "regexTester": "Regex Tester",
         "base64": "Base64 Encode/Decode"
       },
       "seoTools": {
         "title": "SEO Tools",
         "slug": "Slug Generator",
         "wordCounter": "Word Counter",
-        "titleCase": "Title Case Converter"
+        "titleCase": "Title Case Converter",
+        "utmGenerator": "UTM Generator"
       },
       "company": {
         "title": "Company",

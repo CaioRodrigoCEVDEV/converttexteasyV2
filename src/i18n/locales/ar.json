@@ -28,7 +28,8 @@
     "advertisement": "Advertisement",
     "themeAuto": "Auto",
     "themeLight": "Light",
-    "themeDark": "Dark"
+    "themeDark": "Dark",
+    "generate": "Generate"
   },
   "nav": {
     "home": "الرئيسية",
@@ -90,7 +91,23 @@
       "constantCase": "CONSTANT_CASE",
       "kebabCase": "kebab-case",
       "dotCase": "dot.case",
-      "pathCase": "path/case"
+      "pathCase": "path/case",
+      "jsonFormatter": "JSON Formatter",
+      "removeDuplicateLines": "Remove Duplicate Lines",
+      "removeEmptyLines": "Remove Empty Lines",
+      "removeLineBreaks": "Remove Line Breaks",
+      "trimText": "Trim Text",
+      "sortLines": "Sort Lines",
+      "htmlFormatter": "HTML Formatter",
+      "cssFormatter": "CSS Formatter",
+      "javascriptFormatter": "JS Formatter",
+      "yamlFormatter": "YAML Formatter",
+      "markdownFormatter": "Markdown Formatter",
+      "regexTester": "Regex Tester",
+      "uuidGenerator": "UUID Generator",
+      "passwordGenerator": "Password Generator",
+      "loremIpsumGenerator": "Lorem Ipsum",
+      "utmGenerator": "UTM Generator"
     },
     "sidebar": {
       "summary": "ملخص",
@@ -348,6 +365,66 @@
       "removeExtraSpaces": "إزالة المسافات",
       "titleCase": "تنسيق العنوان",
       "wordCounter": "عد الكلمات"
+    },
+    "remove-duplicate-lines": {
+      "name": "Remove Duplicate Lines",
+      "description": "Remove duplicate lines from your text while preserving order."
+    },
+    "remove-empty-lines": {
+      "name": "Remove Empty Lines",
+      "description": "Delete all blank lines from your text instantly."
+    },
+    "remove-line-breaks": {
+      "name": "Remove Line Breaks",
+      "description": "Join all lines into a single line by removing line breaks."
+    },
+    "trim-text": {
+      "name": "Trim Text",
+      "description": "Remove leading and trailing whitespace from your text."
+    },
+    "sort-lines": {
+      "name": "Sort Lines",
+      "description": "Sort lines alphabetically in ascending order."
+    },
+    "regex-tester": {
+      "name": "Regex Tester",
+      "description": "Test regular expressions in real-time against your text."
+    },
+    "html-formatter": {
+      "name": "HTML Formatter",
+      "description": "Format and beautify messy HTML code."
+    },
+    "css-formatter": {
+      "name": "CSS Formatter",
+      "description": "Beautify and organize CSS stylesheets."
+    },
+    "javascript-formatter": {
+      "name": "JavaScript Formatter",
+      "description": "Pretty-print and format JavaScript code."
+    },
+    "yaml-formatter": {
+      "name": "YAML Formatter",
+      "description": "Format and clean up YAML configuration files."
+    },
+    "markdown-formatter": {
+      "name": "Markdown Formatter",
+      "description": "Format and beautify Markdown documents."
+    },
+    "uuid-generator": {
+      "name": "UUID Generator",
+      "description": "Generate UUID v4 identifiers instantly."
+    },
+    "password-generator": {
+      "name": "Password Generator",
+      "description": "Create strong, secure passwords with custom options."
+    },
+    "lorem-ipsum-generator": {
+      "name": "Lorem Ipsum Generator",
+      "description": "Generate placeholder text for your designs and layouts."
+    },
+    "utm-generator": {
+      "name": "UTM Generator",
+      "description": "Build UTM-tracked URLs for your marketing campaigns."
     }
   },
   "blog": {

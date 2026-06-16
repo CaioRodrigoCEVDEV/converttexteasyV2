@@ -26,9 +26,11 @@
     "language": "Idioma",
     "textConverted": "Texto convertido correctamente.",
     "advertisement": "Publicidad",
+    "generate": "Generar",
     "themeAuto": "Auto",
     "themeLight": "Light",
-    "themeDark": "Dark"
+    "themeDark": "Dark",
+    "generate": "Generate"
   },
   "nav": {
     "home": "Inicio",
@@ -90,7 +92,23 @@
       "constantCase": "CONSTANT_CASE",
       "kebabCase": "kebab-case",
       "dotCase": "dot.case",
-      "pathCase": "path/case"
+      "pathCase": "path/case",
+      "jsonFormatter": "Formateador JSON",
+      "removeDuplicateLines": "Eliminar Líneas Duplicadas",
+      "removeEmptyLines": "Eliminar Líneas Vacías",
+      "removeLineBreaks": "Eliminar Saltos de Línea",
+      "trimText": "Recortar Texto",
+      "sortLines": "Ordenar Líneas",
+      "htmlFormatter": "Formateador HTML",
+      "cssFormatter": "Formateador CSS",
+      "javascriptFormatter": "Formateador JS",
+      "yamlFormatter": "Formateador YAML",
+      "markdownFormatter": "Formateador Markdown",
+      "regexTester": "Probador Regex",
+      "uuidGenerator": "Generador UUID",
+      "passwordGenerator": "Generador Contraseñas",
+      "loremIpsumGenerator": "Lorem Ipsum",
+      "utmGenerator": "Generador UTM"
     },
     "sidebar": {
       "summary": "Resumen",
@@ -293,7 +311,12 @@
     },
     "json-formatter": {
       "name": "Formateador JSON",
-      "description": "Formatea o minimiza JSON con resaltado de sintaxis."
+      "description": "Formatea o minimiza JSON con resaltado de sintaxis.",
+      "howTo": "Pega o escribe tu código JSON en el editor y haz clic en Formatear. La herramienta indentará y organizará tu JSON automáticamente.",
+      "faq1q": "¿Mis datos JSON están seguros?",
+      "faq1a": "Sí, todo el procesamiento ocurre localmente en tu navegador. Tu JSON nunca sale de tu dispositivo.",
+      "faq2q": "¿Puedo minimizar JSON con esta herramienta?",
+      "faq2a": "La herramienta formatea y organiza tu JSON para legibilidad. Puedes copiar la salida formateada."
     },
     "base64-encode": {
       "name": "Codificador Base64",
@@ -386,6 +409,141 @@
     "pathcase": {
       "name": "path/case",
       "description": "Convierte texto a formato path/case."
+    },
+    "remove-duplicate-lines": {
+      "name": "Eliminar Líneas Duplicadas",
+      "description": "Elimina líneas duplicadas de tu texto conservando el orden.",
+      "howTo": "Pega tu texto en el editor y haz clic en el botón. Todas las líneas duplicadas serán eliminadas, manteniendo solo la primera aparición.",
+      "faq1q": "¿Conserva el orden de las líneas?",
+      "faq1a": "Sí, la primera aparición de cada línea se mantiene en su posición original.",
+      "faq2q": "¿Qué cuenta como duplicado?",
+      "faq2a": "Las líneas se comparan exactamente, incluidos los espacios. Dos líneas con diferente espaciado se consideran diferentes."
+    },
+    "remove-empty-lines": {
+      "name": "Eliminar Líneas Vacías",
+      "description": "Elimina todas las líneas en blanco de tu texto al instante.",
+      "howTo": "Pega tu texto y haz clic en el botón. Todas las líneas vacías o con solo espacios serán eliminadas.",
+      "faq1q": "¿Elimina líneas con espacios?",
+      "faq1a": "Sí, las líneas que contienen solo espacios o tabs también se eliminan.",
+      "faq2q": "¿Esto es reversible?",
+      "faq2a": "No, pero puedes usar Ctrl+Z en el área de texto inmediatamente después de la transformación."
+    },
+    "remove-line-breaks": {
+      "name": "Eliminar Saltos de Línea",
+      "description": "Une todas las líneas en una sola eliminando los saltos de línea.",
+      "howTo": "Pega texto multilínea y haz clic en el botón. Los saltos de línea serán reemplazados por espacios.",
+      "faq1q": "¿Fusionará palabras incorrectamente?",
+      "faq1a": "La herramienta colapsa múltiples espacios en uno, por lo que las palabras no se fusionarán.",
+      "faq2q": "¿Puedo deshacer esto?",
+      "faq2a": "Usa Ctrl+Z inmediatamente después de la transformación o mantén una copia de seguridad."
+    },
+    "trim-text": {
+      "name": "Recortar Texto",
+      "description": "Elimina espacios al inicio y final de tu texto.",
+      "howTo": "Pega tu texto y haz clic en Recortar. Los espacios, tabs o saltos al inicio o final serán eliminados.",
+      "faq1q": "¿Afecta al texto del medio?",
+      "faq1a": "No, solo se eliminan los espacios al inicio y final del texto completo.",
+      "faq2q": "¿Afecta al formato?",
+      "faq2a": "Solo se eliminan espacios al inicio y final. El espaciado interno permanece sin cambios."
+    },
+    "sort-lines": {
+      "name": "Ordenar Líneas",
+      "description": "Ordena líneas alfabéticamente en orden ascendente.",
+      "howTo": "Pega tu lista de líneas y haz clic en Ordenar. Las líneas se reordenarán alfabéticamente.",
+      "faq1q": "¿La ordenación distingue mayúsculas?",
+      "faq1a": "La ordenación usa comparación localizada, que típicamente coloca mayúsculas antes que minúsculas.",
+      "faq2q": "¿Puedo ordenar en orden descendente?",
+      "faq2a": "Actualmente solo se admite el orden alfabético ascendente."
+    },
+    "regex-tester": {
+      "name": "Probador de Regex",
+      "description": "Prueba expresiones regulares en tiempo real en tu texto.",
+      "howTo": "Ingresa tu texto, escribe el patrón regex y selecciona las banderas. Las coincidencias se resaltarán en tiempo real.",
+      "faq1q": "¿Es seguro? ¿Puede el regex bloquear el navegador?",
+      "faq1a": "La herramienta usa el motor RegExp nativo de JavaScript. Aunque el backtracking catastrófico es posible, todo el procesamiento es local.",
+      "faq2q": "¿Qué banderas regex son compatibles?",
+      "faq2a": "Banderas comunes como g (global), i (insensible a mayúsculas), m (multilínea), s (dotall) y u (unicode) son compatibles."
+    },
+    "html-formatter": {
+      "name": "Formateador HTML",
+      "description": "Formatea y embellece código HTML desordenado.",
+      "howTo": "Pega tu código HTML en el editor y haz clic en Formatear. La herramienta añadirá indentación y saltos de línea adecuados.",
+      "faq1q": "¿Maneja etiquetas autocerrables?",
+      "faq1a": "Sí, el formateador reconoce etiquetas como <br>, <img> e <input>.",
+      "faq2q": "¿Arreglará HTML roto?",
+      "faq2a": "El formateador funciona mejor con HTML bien formado. HTML severamente roto puede no formatearse correctamente."
+    },
+    "css-formatter": {
+      "name": "Formateador CSS",
+      "description": "Embellece y organiza hojas de estilo CSS.",
+      "howTo": "Pega tu código CSS y haz clic en Formatear. La herramienta organizará selectores y propiedades con indentación consistente.",
+      "faq1q": "¿Ordena propiedades CSS?",
+      "faq1a": "Las propiedades se formatean pero no se reordenan alfabéticamente.",
+      "faq2q": "¿Es compatible con SASS/SCSS?",
+      "faq2a": "Actualmente solo se admite CSS estándar. La sintaxis de preprocesadores puede no formatearse correctamente."
+    },
+    "javascript-formatter": {
+      "name": "Formateador JavaScript",
+      "description": "Formatea y embellece código JavaScript.",
+      "howTo": "Pega tu código JavaScript y haz clic en Formatear. La herramienta añadirá indentación y saltos de línea consistentes.",
+      "faq1q": "¿Es tan potente como Prettier?",
+      "faq1a": "Este es un formateador ligero centrado en la indentación básica. Para formato avanzado, se recomiendan herramientas como Prettier.",
+      "faq2q": "¿Es compatible con JavaScript moderno?",
+      "faq2a": "El formateador maneja sintaxis JavaScript básica. El código muy complejo puede necesitar herramientas más potentes."
+    },
+    "yaml-formatter": {
+      "name": "Formateador YAML",
+      "description": "Formatea y limpia archivos de configuración YAML.",
+      "howTo": "Pega tu contenido YAML y haz clic en Formatear. Las líneas en blanco adicionales se limpiarán y la indentación se normalizará.",
+      "faq1q": "¿Valida YAML?",
+      "faq1a": "Esta herramienta se centra en el formateo. No se realiza una validación completa de YAML.",
+      "faq2q": "¿Cambiará mi estructura YAML?",
+      "faq2a": "No, el formateo solo afecta los espacios en blanco. La estructura de datos permanece sin cambios."
+    },
+    "markdown-formatter": {
+      "name": "Formateador Markdown",
+      "description": "Formatea y embellece documentos Markdown.",
+      "howTo": "Pega tu contenido Markdown y haz clic en Formatear. La herramienta normalizará el espaciado, corregirá encabezados y limpiará listas.",
+      "faq1q": "¿Es compatible con toda la sintaxis Markdown?",
+      "faq1a": "Elementos comunes como encabezados, listas, bloques de código y párrafos son compatibles.",
+      "faq2q": "¿Romperá los bloques de código?",
+      "faq2a": "No, el contenido dentro de los bloques de código (triples comillas invertidas) se conserva exactamente como está escrito."
+    },
+    "uuid-generator": {
+      "name": "Generador de UUID",
+      "description": "Genera identificadores UUID v4 al instante.",
+      "howTo": "Haz clic en Generar para crear un nuevo UUID v4. Puedes generar múltiples UUIDs y copiarlos individualmente.",
+      "faq1q": "¿Qué versión de UUID se genera?",
+      "faq1a": "Esta herramienta genera UUID v4 (aleatorio) usando la API crypto del navegador.",
+      "faq2q": "¿Los UUIDs son realmente aleatorios?",
+      "faq2a": "Los UUIDs se generan utilizando valores aleatorios criptográficamente fuertes a través de la Web Crypto API."
+    },
+    "password-generator": {
+      "name": "Generador de Contraseñas",
+      "description": "Crea contraseñas seguras con opciones personalizadas.",
+      "howTo": "Selecciona las opciones deseadas (longitud, incluir números, símbolos, mayúsculas/minúsculas) y haz clic en Generar. Copia la contraseña con un clic.",
+      "faq1q": "¿Cómo se generan las contraseñas?",
+      "faq1a": "Las contraseñas se generan utilizando valores aleatorios criptográficamente seguros de la Web Crypto API.",
+      "faq2q": "¿Mi contraseña se almacena en algún lugar?",
+      "faq2a": "No, las contraseñas se generan completamente en tu navegador y nunca salen de tu dispositivo."
+    },
+    "lorem-ipsum-generator": {
+      "name": "Generador de Lorem Ipsum",
+      "description": "Genera texto de relleno para tus diseños y maquetas.",
+      "howTo": "Haz clic en Generar para crear texto Lorem Ipsum. La herramienta genera múltiples párrafos de texto de relleno clásico.",
+      "faq1q": "¿Cuánto texto se genera?",
+      "faq1a": "Cada clic genera aproximadamente 3 párrafos de texto Lorem Ipsum.",
+      "faq2q": "¿Puedo personalizar la longitud?",
+      "faq2a": "Actualmente la herramienta genera una cantidad fija de texto. Copia lo que necesites y regenera para obtener más."
+    },
+    "utm-generator": {
+      "name": "Generador de UTM",
+      "description": "Construye URLs con parámetros UTM para tus campañas de marketing.",
+      "howTo": "Completa los campos obligatorios: URL, origen, medio y nombre de la campaña. Opcionalmente añade término y contenido. Haz clic en Generar para obtener tu URL rastreada.",
+      "faq1q": "¿Qué son los parámetros UTM?",
+      "faq1a": "Los parámetros UTM son etiquetas añadidas a las URLs que ayudan a las herramientas de análisis a rastrear de dónde provienen tus visitantes.",
+      "faq2q": "¿Puedo reutilizar las URLs generadas?",
+      "faq2a": "Sí, las URLs generadas son permanentes siempre que la URL base sea válida. Puedes guardarlas y reutilizarlas."
     },
     "transforms": {
       "sentenceCase": "Oración",
@@ -559,7 +717,12 @@
         "lowercase": "Conversor a Minúsculas",
         "capitalize": "Capitalizar Texto",
         "strikethrough": "Texto Tachado",
-        "removeSpaces": "Eliminar Espacios Extra"
+        "removeSpaces": "Eliminar Espacios Extra",
+        "removeDuplicateLines": "Eliminar Líneas Duplicadas",
+        "removeEmptyLines": "Eliminar Líneas Vacías",
+        "removeLineBreaks": "Eliminar Saltos de Línea",
+        "trimText": "Recortar Texto",
+        "sortLines": "Ordenar Líneas"
       },
       "developerTools": {
         "title": "Herramientas para Devs",
@@ -567,13 +730,20 @@
         "snakecase": "snake_case",
         "kebabcase": "kebab-case",
         "json": "Formateador JSON",
+        "htmlFormatter": "Formateador HTML",
+        "cssFormatter": "Formateador CSS",
+        "javascriptFormatter": "Formateador JS",
+        "yamlFormatter": "Formateador YAML",
+        "markdownFormatter": "Formateador Markdown",
+        "regexTester": "Probador Regex",
         "base64": "Codificar/Decodificar Base64"
       },
       "seoTools": {
         "title": "Herramientas SEO",
         "slug": "Generador de Slug",
         "wordCounter": "Contador de Palabras",
-        "titleCase": "Convertidor de Títulos"
+        "titleCase": "Convertidor de Títulos",
+        "utmGenerator": "Generador UTM"
       },
       "company": {
         "title": "Empresa",

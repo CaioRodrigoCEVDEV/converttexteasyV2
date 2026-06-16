@@ -423,6 +423,262 @@ export function toggleCase(text: string): string {
   return toInverseCase(text);
 }
 
+// ── Text Cleaning Tools ─────────────────────────────────────────────
+
+export function removeDuplicateLines(text: string): string {
+  const lines = text.split("\n");
+  const seen = new Set<string>();
+  const result: string[] = [];
+  for (const line of lines) {
+    if (!seen.has(line)) {
+      seen.add(line);
+      result.push(line);
+    }
+  }
+  return result.join("\n");
+}
+
+export function removeEmptyLines(text: string): string {
+  return text
+    .split("\n")
+    .filter((line) => line.trim() !== "")
+    .join("\n");
+}
+
+export function removeLineBreaks(text: string): string {
+  return text.replace(/\r?\n/g, " ").replace(/\s+/g, " ").trim();
+}
+
+export function trimText(text: string): string {
+  return text.trim();
+}
+
+export function sortLines(text: string): string {
+  return text
+    .split("\n")
+    .map((line) => line.trimRight())
+    .sort((a, b) => a.localeCompare(b))
+    .join("\n");
+}
+
+// ── Generators ──────────────────────────────────────────────────────
+
+export function generateUUID(_text?: string): string {
+  void _text;
+  return crypto.randomUUID();
+}
+
+const loremWords = [
+  "lorem", "ipsum", "dolor", "sit", "amet", "consectetur", "adipiscing",
+  "elit", "sed", "do", "eiusmod", "tempor", "incididunt", "ut", "labore",
+  "et", "dolore", "magna", "aliqua", "ut", "enim", "ad", "minim", "veniam",
+  "quis", "nostrud", "exercitation", "ullamco", "laboris", "nisi", "ut",
+  "aliquip", "ex", "ea", "commodo", "consequat", "duis", "aute", "irure",
+  "dolor", "in", "reprehenderit", "in", "voluptate", "velit", "esse",
+  "cillum", "dolore", "eu", "fugiat", "nulla", "pariatur", "excepteur",
+  "sint", "occaecat", "cupidatat", "non", "proident", "sunt", "in", "culpa",
+  "qui", "officia", "deserunt", "mollit", "anim", "id", "est", "laborum",
+];
+
+export function generateLoremIpsum(_text?: string, _locale?: string): string {
+  void _text; void _locale;
+  const paragraphs = 3;
+  const result: string[] = [];
+  for (let p = 0; p < paragraphs; p++) {
+    const wordCount = 30 + Math.floor(Math.random() * 40);
+    const words: string[] = [];
+    for (let i = 0; i < wordCount; i++) {
+      words.push(loremWords[Math.floor(Math.random() * loremWords.length)]);
+    }
+    const sentence = words.join(" ") + ".";
+    result.push(sentence.charAt(0).toUpperCase() + sentence.slice(1));
+  }
+  return result.join("\n\n");
+}
+
+export function generatePassword(
+  length: number = 16,
+  options: { numbers?: boolean; symbols?: boolean; uppercase?: boolean; lowercase?: boolean } = {},
+): string {
+  if (typeof length === "string") length = 16;
+  const nums = "0123456789";
+  const syms = "!@#$%^&*()_+-=[]{}|;:,.<>?";
+  const upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  const lower = "abcdefghijklmnopqrstuvwxyz";
+
+  let chars = "";
+  if (options.lowercase !== false) chars += lower;
+  if (options.uppercase !== false) chars += upper;
+  if (options.numbers !== false) chars += nums;
+  if (options.symbols) chars += syms;
+
+  if (chars.length === 0) chars = lower + upper + nums;
+
+  const array = new Uint32Array(length);
+  crypto.getRandomValues(array);
+
+  let password = "";
+  for (let i = 0; i < length; i++) {
+    password += chars[array[i] % chars.length];
+  }
+  return password;
+}
+
+// ── Code Formatters ─────────────────────────────────────────────────
+
+export function formatHTML(text: string): string {
+  const cleaned = text
+    .replace(/<br\s*\/?>/gi, "\n")
+    .replace(/>\s+</g, ">\n<")
+    .replace(/(\s*\n\s*){2,}/g, "\n")
+    .trim();
+
+  const lines = cleaned.split("\n");
+  const result: string[] = [];
+  let indent = 0;
+  const selfClosing = /^(area|base|br|col|embed|hr|img|input|link|meta|param|source|track|wbr)$/i;
+
+  for (const line of lines) {
+    const trimmed = line.trim();
+    if (!trimmed) continue;
+
+    const closing = /^<\//.test(trimmed);
+    const opening = /^<[^/][^>]*[^/]>$/.test(trimmed) && !selfClosing.test(trimmed.replace(/<([^\s>/]+).*/, "$1"));
+
+    if (closing) indent--;
+
+    result.push("  ".repeat(Math.max(0, indent)) + trimmed);
+
+    if (opening) indent++;
+  }
+
+  return result.join("\n");
+}
+
+export function formatCSS(text: string): string {
+  const cleaned = text.replace(/\s+/g, " ").trim();
+  const result: string[] = [];
+  let i = 0;
+  while (i < cleaned.length) {
+    const braceOpen = cleaned.indexOf("{", i);
+    if (braceOpen === -1) {
+      result.push(cleaned.slice(i).trim());
+      break;
+    }
+    const selector = cleaned.slice(i, braceOpen).trim();
+    const braceClose = cleaned.indexOf("}", braceOpen);
+    const body = cleaned.slice(braceOpen + 1, braceClose).trim();
+
+    const props = body
+      .split(";")
+      .map((p) => p.trim())
+      .filter(Boolean)
+      .map((p) => `  ${p};`);
+
+    result.push(selector + " {");
+    result.push(...props);
+    result.push("}");
+
+    i = braceClose + 1;
+  }
+  return result.join("\n");
+}
+
+export function formatJavaScript(text: string): string {
+  let result = "";
+  let indent = 0;
+  const lines = text.split("\n");
+
+  for (const rawLine of lines) {
+    const line = rawLine.trim();
+    if (!line) continue;
+
+    const dedent = /^[}\]],?/.test(line) ? -1 : 0;
+    indent = Math.max(0, indent + dedent);
+
+    if (line.endsWith("{") || line.endsWith("(")) {
+      result += "  ".repeat(indent) + line + "\n";
+      indent++;
+    } else if (/^[}\]]/.test(line)) {
+      result += "  ".repeat(indent) + line + "\n";
+    } else {
+      result += "  ".repeat(indent) + line + "\n";
+    }
+  }
+
+  return result.trimEnd();
+}
+
+export function formatYAML(text: string): string {
+  return text
+    .split("\n")
+    .map((line) => line.trimEnd())
+    .filter((line, _i, arr) => !(line.trim() === "" && _i === arr.length - 1))
+    .join("\n");
+}
+
+export function formatJSON(text: string): string {
+  try {
+    const parsed = JSON.parse(text);
+    return JSON.stringify(parsed, null, 2);
+  } catch {
+    throw new Error("Invalid JSON: unable to parse. Please check your syntax.");
+  }
+}
+
+export function formatMarkdown(text: string): string {
+  const lines = text.split("\n");
+  const result: string[] = [];
+  let inCodeBlock = false;
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+
+    if (line.trim().startsWith("```")) {
+      inCodeBlock = !inCodeBlock;
+      result.push(line);
+      continue;
+    }
+
+    if (inCodeBlock) {
+      result.push(line);
+      continue;
+    }
+
+    const trimmed = line.trimEnd();
+
+    if (/^#{1,6}\s/.test(trimmed)) {
+      const match = trimmed.match(/^(#+)\s+(.*)/);
+      if (match) {
+        const hashes = match[1];
+        const content = match[2].trim();
+        const formatted =
+          content.charAt(0).toUpperCase() + content.slice(1);
+        result.push(`${hashes} ${formatted}`);
+        continue;
+      }
+    }
+
+    if (/^[-*+]\s/.test(trimmed)) {
+      result.push(trimmed.replace(/\s{2,}/g, " "));
+      continue;
+    }
+
+    if (/^\d+\.\s/.test(trimmed)) {
+      result.push(trimmed.replace(/\s{2,}/g, " "));
+      continue;
+    }
+
+    if (trimmed === "" && i > 0 && lines[i - 1].trim() === "") {
+      continue;
+    }
+
+    result.push(trimmed);
+  }
+
+  return result.join("\n");
+}
+
 export function countWords(text: string): number {
   const trimmed = text.trim();
   if (trimmed === "") return 0;
@@ -468,4 +724,21 @@ export const transformMap: Record<string, (text: string, locale?: string) => str
   kebabcase: toKebabCase,
   dotcase: toDotCase,
   pathcase: toPathCase,
+  "json-formatter": formatJSON,
+  // Text Cleaning
+  "remove-duplicate-lines": removeDuplicateLines,
+  "remove-empty-lines": removeEmptyLines,
+  "remove-line-breaks": removeLineBreaks,
+  "trim-text": trimText,
+  "sort-lines": sortLines,
+  // Generators
+  "uuid-generator": generateUUID as unknown as (t: string, l?: string) => string,
+  "password-generator": generatePassword as unknown as (t: string, l?: string) => string,
+  "lorem-ipsum-generator": generateLoremIpsum as unknown as (t: string, l?: string) => string,
+  // Formatters
+  "html-formatter": formatHTML,
+  "css-formatter": formatCSS,
+  "javascript-formatter": formatJavaScript,
+  "yaml-formatter": formatYAML,
+  "markdown-formatter": formatMarkdown,
 };

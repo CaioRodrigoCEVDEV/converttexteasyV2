@@ -6,11 +6,15 @@ import { useTranslation } from "@/i18n/I18nProvider";
 const popular = [
   { slug: "uppercase", icon: "UC", color: "bg-violet-100 dark:bg-violet-950 text-violet-700 dark:text-violet-400" },
   { slug: "lowercase", icon: "lc", color: "bg-blue-100 dark:bg-blue-950 text-blue-700 dark:text-blue-400" },
-  { slug: "word-counter", icon: "∑", color: "bg-teal-100 dark:bg-teal-950 text-teal-700 dark:text-teal-400" },
   { slug: "json-formatter", icon: "{ }", color: "bg-amber-100 dark:bg-amber-950 text-amber-700 dark:text-amber-400" },
   { slug: "kebabcase", icon: "Sl", color: "bg-orange-100 dark:bg-orange-950 text-orange-700 dark:text-orange-400" },
   { slug: "camelcase", icon: "cC", color: "bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-400" },
-  { slug: "reverse", icon: "Rv", color: "bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-400" },
+  { slug: "password-generator", icon: "Pw", color: "bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-400" },
+  { slug: "regex-tester", icon: ".*", color: "bg-purple-100 dark:bg-purple-950 text-purple-700 dark:text-purple-400" },
+  { slug: "utm-generator", icon: "Ut", color: "bg-teal-100 dark:bg-teal-950 text-teal-700 dark:text-teal-400" },
+  { slug: "uuid-generator", icon: "Ui", color: "bg-violet-100 dark:bg-violet-950 text-violet-700 dark:text-violet-400" },
+  { slug: "lorem-ipsum-generator", icon: "Li", color: "bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-400" },
+  { slug: "html-formatter", icon: "Ht", color: "bg-orange-100 dark:bg-orange-950 text-orange-700 dark:text-orange-400" },
   { slug: "remove-extra-spaces", icon: "Sp", color: "bg-rose-100 dark:bg-rose-950 text-rose-700 dark:text-rose-400" },
 ];
 
@@ -28,7 +32,7 @@ export default function PopularTools() {
         </p>
       </div>
 
-      <div className="grid gap-3 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
+      <div className="grid gap-3 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
         {popular.map((tool) => (
           <Link
             key={tool.slug}
