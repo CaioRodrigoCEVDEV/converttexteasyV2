@@ -1,3 +1,5 @@
+import type { LocaleUrl } from "@/i18n/types";
+
 export type ToolStatus = "available" | "coming_soon";
 
 export interface Tool {
@@ -7,6 +9,7 @@ export interface Tool {
   status: ToolStatus;
   category: string;
   icon: string;
+  locales?: LocaleUrl[];
 }
 
 export const tools: Tool[] = [
@@ -243,6 +246,16 @@ export const tools: Tool[] = [
     category: "Developer",
     icon: "{ }",
   },
+  {
+    slug: "classificacao-tributaria-ibs-cbs",
+    name: "Consulta Classificação Tributária IBS/CBS",
+    description:
+      "Consulte cClassTrib, CST IBS/CBS, reduções, base legal e documentos fiscais aplicáveis.",
+    status: "available",
+    category: "Ferramentas Fiscais",
+    icon: "IBS",
+    locales: ["pt"],
+  },
   // ── Text Cleaning Tools ─────────────────────────────────────────────
   {
     slug: "remove-duplicate-lines",
@@ -370,6 +383,14 @@ export const tools: Tool[] = [
 
 export function getTool(slug: string): Tool | undefined {
   return tools.find((t) => t.slug === slug);
+}
+
+export function isToolVisibleInLocale(tool: Tool, localeUrl: LocaleUrl): boolean {
+  return !tool.locales || tool.locales.includes(localeUrl);
+}
+
+export function getVisibleTools(localeUrl: LocaleUrl): Tool[] {
+  return tools.filter((tool) => isToolVisibleInLocale(tool, localeUrl));
 }
 
 export function getAvailableTools(): Tool[] {

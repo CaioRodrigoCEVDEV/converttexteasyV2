@@ -182,6 +182,10 @@
       "textCleaners": {
         "title": "Limpadores de Texto",
         "description": "Remova espaços extras, normalize espaços em branco e organize o texto."
+      },
+      "fiscalTools": {
+        "title": "Ferramentas Fiscais",
+        "description": "Consulte a classificação tributária IBS/CBS, CST, reduções e documentos fiscais aplicáveis."
       }
     },
     "popularTools": {
@@ -317,6 +321,51 @@
       "faq1a": "Sim, todo processamento acontece localmente no seu navegador. Seu JSON nunca sai do seu dispositivo.",
       "faq2q": "Posso minimizar JSON com esta ferramenta?",
       "faq2a": "A ferramenta formata e organiza seu JSON para legibilidade. Você pode copiar a saída formatada."
+    },
+    "classificacao-tributaria-ibs-cbs": {
+      "name": "Consulta Classificação Tributária IBS/CBS",
+      "description": "Consulte cClassTrib, CST IBS/CBS, reduções, base legal e documentos fiscais aplicáveis.",
+      "hero": "Consulta oficial da tabela de Classificação Tributária IBS/CBS.",
+      "warning": "Esta ferramenta organiza dados de Classificação Tributária IBS/CBS para consulta. As informações devem ser conferidas com a legislação vigente e com o responsável fiscal da operação.",
+      "loading": "Carregando dados locais...",
+      "empty": "Use os exemplos abaixo para começar a busca.",
+      "noData": "Nenhuma planilha oficial foi importada ainda.",
+      "noResults": "Nenhum resultado encontrado. Tente ajustar a busca ou os filtros.",
+      "searchPlaceholder": "Busque por cClassTrib, CST, nome, descrição ou artigo",
+      "searchExamples": "Exemplos: 011002, 011, Art. 237, NFSe",
+      "filters": {
+        "cst": "CST IBS/CBS",
+        "taxRateType": "Tipo de alíquota",
+        "redIbs": "Redução IBS",
+        "redCbs": "Redução CBS",
+        "document": "Documento fiscal",
+        "all": "Todos",
+        "clear": "Limpar busca"
+      },
+      "results": {
+        "title": "Resultados",
+        "count": "{count} registros",
+        "copyClass": "Copiar cClassTrib",
+        "copyCst": "Copiar CST",
+        "copyFull": "Copiar resultado completo",
+        "officialLink": "Link oficial",
+        "copySuccess": "Resultado copiado para a área de transferência.",
+        "copyClassSuccess": "cClassTrib copiado.",
+        "copyCstSuccess": "CST copiado.",
+        "emptyTitle": "Nenhum filtro aplicado ainda",
+        "emptyDescription": "Filtre por CST, alíquota, redução ou documento fiscal para consultar a tabela oficial.",
+        "recentSearches": "Sugestões: 011002, 011, Art. 237, NFSe",
+        "field": {
+          "name": "Nome",
+          "description": "Descrição",
+          "cstDescription": "Descrição do CST",
+          "taxRateType": "Tipo de alíquota",
+          "reductions": "Reduções",
+          "documents": "Documentos fiscais",
+          "legalBase": "Base legal",
+          "lawReference": "Referência legal"
+        }
+      }
     },
     "base64-encode": {
       "name": "Codificador Base64",

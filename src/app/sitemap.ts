@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { siteConfig } from "@/data/site";
-import { tools as allTools } from "@/data/tools";
+import { getVisibleTools } from "@/data/tools";
 import { localeUrls } from "@/i18n/types";
 
 const blogSlugs = ["uppercase-guide", "remove-spaces-guide", "free-text-tools"];
@@ -53,7 +53,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       });
     }
 
-    for (const tool of allTools) {
+    for (const tool of getVisibleTools(localeUrl)) {
       entries.push({
         url: `${siteConfig.url}/${localeUrl}/tools/${tool.slug}`,
         lastModified: new Date(),

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useTranslation } from "@/i18n/I18nProvider";
-import { tools } from "@/data/tools";
+import { getVisibleTools } from "@/data/tools";
 import type { Tool } from "@/data/tools";
 
 function ToolIcon({ icon, available }: { icon: string; available: boolean }) {
@@ -64,6 +64,7 @@ function ToolCard({ tool, t, localeUrl }: { tool: Tool; t: (key: string) => stri
 
 export default function ToolGrid() {
   const { t, localeUrl } = useTranslation();
+  const visibleTools = getVisibleTools(localeUrl);
 
   return (
     <section className="bg-slate-50/80 dark:bg-slate-950/80 backdrop-blur-sm py-16 sm:py-20 border-t border-slate-200/50 dark:border-slate-800/60">
@@ -78,7 +79,7 @@ export default function ToolGrid() {
         </div>
 
         <div className="mt-10 md:mt-14 grid gap-3 md:gap-4 grid-cols-2 sm:grid-cols-2 lg:grid-cols-4">
-          {tools.map((tool) => (
+          {visibleTools.map((tool) => (
             <ToolCard key={tool.slug} tool={tool} t={t} localeUrl={localeUrl} />
           ))}
         </div>

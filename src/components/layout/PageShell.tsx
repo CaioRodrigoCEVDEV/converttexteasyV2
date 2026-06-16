@@ -1,7 +1,5 @@
 "use client";
 
-import { useTranslation } from "@/i18n/I18nProvider";
-
 interface PageShellProps {
   eyebrow?: string;
   title: string;
@@ -15,8 +13,6 @@ export default function PageShell({
   description,
   children,
 }: PageShellProps) {
-  const { t } = useTranslation();
-
   return (
     <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6 lg:px-8">
       <div className="rounded-2xl border border-slate-200/60 dark:border-slate-700/80 bg-white/80 dark:bg-slate-900/70 backdrop-blur-xl shadow-sm p-6 sm:p-10">

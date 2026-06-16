@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useTranslation } from "@/i18n/I18nProvider";
-import { tools } from "@/data/tools";
+import { getVisibleTools } from "@/data/tools";
 import type { Tool } from "@/data/tools";
 
 function ToolCard({ tool, t, localeUrl }: { tool: Tool; t: (key: string) => string; localeUrl: string }) {
@@ -64,8 +64,9 @@ function ToolCard({ tool, t, localeUrl }: { tool: Tool; t: (key: string) => stri
 
 export default function ToolsContent() {
   const { t, localeUrl } = useTranslation();
-  const availableCount = tools.filter((tool) => tool.status === "available").length;
-  const comingSoonCount = tools.filter((tool) => tool.status === "coming_soon").length;
+  const visibleTools = getVisibleTools(localeUrl);
+  const availableCount = visibleTools.filter((tool) => tool.status === "available").length;
+  const comingSoonCount = visibleTools.filter((tool) => tool.status === "coming_soon").length;
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
@@ -91,7 +92,7 @@ export default function ToolsContent() {
       </div>
 
       <div className="grid gap-3 md:gap-4 grid-cols-2 sm:grid-cols-2 lg:grid-cols-3">
-        {tools.map((tool) => (
+        {visibleTools.map((tool) => (
           <ToolCard key={tool.slug} tool={tool} t={t} localeUrl={localeUrl} />
         ))}
       </div>

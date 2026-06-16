@@ -38,6 +38,10 @@ yarn-error.log*
 .env.production.local
 .env.*.local
 
+# IBS/CBS raw sources
+/data/sources/ibs-cbs/*.xls
+/data/sources/ibs-cbs/*.xlsx
+
 # vercel
 .vercel
 
