@@ -666,19 +666,32 @@
     "subtitle": "Tem uma dúvida, sugestão ou só quer dizer oi? Adoraríamos ouvir você.",
     "name": "Nome",
     "email": "E-mail",
+    "subject": "Assunto",
     "message": "Mensagem",
+    "rating": "Avaliação",
     "namePlaceholder": "Seu nome",
     "emailPlaceholder": "voce@exemplo.com",
+    "subjectPlaceholder": "Sobre o que é?",
     "messagePlaceholder": "Conte-nos o que você está pensando...",
     "send": "Enviar Mensagem",
     "sending": "Enviando...",
     "successTitle": "Mensagem Enviada!",
     "successMessage": "Obrigado por entrar em contato. Retornaremos o mais breve possível.",
+    "charactersCount": "Caracteres",
+    "errorGeneric": "Algo deu errado. Por favor, tente novamente mais tarde.",
     "validation": {
       "nameRequired": "Por favor, insira seu nome.",
+      "nameTooLong": "O nome deve ter no máximo 120 caracteres.",
       "emailRequired": "Por favor, insira seu e-mail.",
       "emailInvalid": "Por favor, insira um e-mail válido.",
-      "messageRequired": "Por favor, insira uma mensagem."
+      "emailTooLong": "O e-mail deve ter no máximo 180 caracteres.",
+      "subjectTooLong": "O assunto deve ter no máximo 180 caracteres.",
+      "messageRequired": "Por favor, insira uma mensagem.",
+      "messageTooShort": "A mensagem deve ter pelo menos 5 caracteres.",
+      "messageTooLong": "A mensagem deve ter no máximo 2000 caracteres.",
+      "sendError": "Não foi possível enviar sua mensagem. Tente novamente.",
+      "rateLimited": "Muitas requisições. Aguarde um momento e tente novamente.",
+      "ratingInvalid": "Selecione uma avaliação válida."
     }
   },
   "footer": {

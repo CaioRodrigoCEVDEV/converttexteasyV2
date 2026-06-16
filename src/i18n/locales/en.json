@@ -665,19 +665,32 @@
     "subtitle": "Have a question, suggestion, or just want to say hi? We'd love to hear from you.",
     "name": "Name",
     "email": "Email",
+    "subject": "Subject",
     "message": "Message",
+    "rating": "Rating",
     "namePlaceholder": "Your name",
     "emailPlaceholder": "you@example.com",
+    "subjectPlaceholder": "What's this about?",
     "messagePlaceholder": "Tell us what's on your mind...",
     "send": "Send Message",
     "sending": "Sending...",
     "successTitle": "Message Sent!",
     "successMessage": "Thank you for reaching out. We'll get back to you as soon as possible.",
+    "charactersCount": "Characters",
+    "errorGeneric": "Something went wrong. Please try again later.",
     "validation": {
       "nameRequired": "Please enter your name.",
+      "nameTooLong": "Name must be at most 120 characters.",
       "emailRequired": "Please enter your email.",
       "emailInvalid": "Please enter a valid email.",
-      "messageRequired": "Please enter a message."
+      "emailTooLong": "Email must be at most 180 characters.",
+      "subjectTooLong": "Subject must be at most 180 characters.",
+      "messageRequired": "Please enter a message.",
+      "messageTooShort": "Message must be at least 5 characters.",
+      "messageTooLong": "Message must be at most 2000 characters.",
+      "sendError": "Could not send your message. Please try again.",
+      "rateLimited": "Too many requests. Please wait a moment and try again.",
+      "ratingInvalid": "Please select a valid rating."
     }
   },
   "footer": {
