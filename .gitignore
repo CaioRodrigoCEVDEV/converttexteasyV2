@@ -41,6 +41,7 @@ yarn-error.log*
 # IBS/CBS raw sources
 /data/sources/ibs-cbs/*.xls
 /data/sources/ibs-cbs/*.xlsx
+/public/data/ibs-cbs/
 
 # vercel
 .vercel

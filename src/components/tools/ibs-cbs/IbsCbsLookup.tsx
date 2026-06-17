@@ -163,7 +163,7 @@ export default function IbsCbsLookup({ metadata, cClassTribRecords, cstRecords }
   const showEmptyState = !hasActiveFilters;
 
   return (
-    <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 lg:px-8">
+    <div className="mx-auto max-w-6xl px-4 py-8 pb-16 sm:px-6 sm:pb-20 lg:px-8">
       {toast && (
         <div className="fixed right-4 top-4 z-50 rounded-xl border border-emerald-200 dark:border-emerald-800 bg-emerald-50 dark:bg-emerald-950 px-4 py-2 text-sm font-medium text-emerald-700 dark:text-emerald-300 shadow-lg">
           {toast}
@@ -208,7 +208,7 @@ export default function IbsCbsLookup({ metadata, cClassTribRecords, cstRecords }
           Esta ferramenta organiza dados de Classificação Tributária IBS/CBS para consulta. As informações devem ser conferidas com a legislação vigente e com o responsável fiscal da operação.
         </p>
 
-        <div className="mt-5 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
+        <div className="mt-5 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
           <div className="rounded-xl border border-slate-200/70 dark:border-slate-700/70 bg-slate-50/80 dark:bg-slate-800/40 px-4 py-3">
             <span className="block text-[11px] uppercase tracking-wide text-slate-400 dark:text-slate-500">Fonte</span>
             <span className="mt-1 block truncate text-sm font-medium text-slate-700 dark:text-slate-200">{sourceFile}</span>
@@ -221,10 +221,6 @@ export default function IbsCbsLookup({ metadata, cClassTribRecords, cstRecords }
             <span className="block text-[11px] uppercase tracking-wide text-slate-400 dark:text-slate-500">CSTs</span>
             <span className="mt-1 block text-sm font-medium text-slate-700 dark:text-slate-200">{cstRecords.length.toLocaleString("pt-BR")}</span>
           </div>
-          <div className="rounded-xl border border-slate-200/70 dark:border-slate-700/70 bg-slate-50/80 dark:bg-slate-800/40 px-4 py-3">
-            <span className="block text-[11px] uppercase tracking-wide text-slate-400 dark:text-slate-500">Documentos</span>
-            <span className="mt-1 block text-sm font-medium text-slate-700 dark:text-slate-200">{documentOptions.length.toLocaleString("pt-BR")}</span>
-          </div>
         </div>
       </div>
 
@@ -235,7 +231,7 @@ export default function IbsCbsLookup({ metadata, cClassTribRecords, cstRecords }
             <input
               value={query}
               onChange={(event) => setQuery(event.target.value)}
-              placeholder="Busque por cClassTrib, CST, nome, descrição ou artigo"
+              placeholder="Busque por cClassTrib, CST, base legal ou NFSe"
               className="w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-white/90 dark:bg-slate-950/60 px-4 py-3 text-sm text-slate-900 dark:text-slate-100 placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:border-indigo-300 dark:focus:border-indigo-700 focus:outline-none"
             />
           </label>
@@ -307,11 +303,10 @@ export default function IbsCbsLookup({ metadata, cClassTribRecords, cstRecords }
 
       {showEmptyState ? (
         <div className="mt-6 rounded-2xl border border-dashed border-slate-300 dark:border-slate-700 bg-white/50 dark:bg-slate-900/40 p-8 text-center shadow-sm">
-          <h2 className="text-lg font-semibold text-slate-900 dark:text-white">Nenhum filtro aplicado ainda</h2>
-          <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">Filtre por CST, alíquota, redução ou documento fiscal para consultar a tabela oficial.</p>
+          <h2 className="text-lg font-semibold text-slate-900 dark:text-white">Comece por uma busca rápida</h2>
+          <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">Exemplos: cClassTrib, CST, base legal ou documento fiscal.</p>
           <div className="mt-4 flex flex-wrap justify-center gap-2 text-xs text-slate-500 dark:text-slate-400">
             <span className="rounded-full bg-slate-100 dark:bg-slate-800 px-3 py-1">011002</span>
-            <span className="rounded-full bg-slate-100 dark:bg-slate-800 px-3 py-1">011</span>
             <span className="rounded-full bg-slate-100 dark:bg-slate-800 px-3 py-1">Art. 237</span>
             <span className="rounded-full bg-slate-100 dark:bg-slate-800 px-3 py-1">NFSe</span>
           </div>
@@ -323,7 +318,7 @@ export default function IbsCbsLookup({ metadata, cClassTribRecords, cstRecords }
         <div className="mt-6 rounded-2xl border border-dashed border-slate-300 dark:border-slate-700 bg-white/50 dark:bg-slate-900/40 p-8 text-center shadow-sm">
           <h2 className="text-lg font-semibold text-slate-900 dark:text-white">Nenhum resultado encontrado</h2>
           <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">Tente ajustar a busca ou os filtros.</p>
-          <p className="mt-3 text-xs text-slate-400 dark:text-slate-500">Sugestões: 011002, 011, Art. 237, NFSe</p>
+          <p className="mt-3 text-xs text-slate-400 dark:text-slate-500">Sugestões: 011002, Art. 237, NFSe</p>
         </div>
       ) : (
         <div className="mt-6 space-y-4">

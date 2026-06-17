@@ -43,7 +43,7 @@ const cClassFieldAliases: Record<string, string[]> = {
   cClassTrib: ["cclasstrib", "c class trib", "c classtrib"],
   name: ["nome", "name", "denominacao", "denominação", "classificacao", "classificação"],
   description: ["descricao", "description", "descrição", "detalhamento"],
-  legalBase: ["base legal", "artigo", "art", "legal base", "legalbase"],
+  legalBase: ["base legal", "artigo", "art", "legal base", "legalbase", "lc redacao", "lc redação"],
   lawReference: ["referencia legal", "referência legal", "lc 214/25", "lei complementar", "lawreference"],
   taxRateType: ["tipo de aliquota", "tipo de alíquota", "aliquota", "alíquota", "taxratetype", "tax rate type"],
   pRedIBS: ["predibs", "reducao ibs", "redução ibs", "p red ibs", "reduction ibs"],
@@ -140,6 +140,49 @@ function normalizeLink(value: unknown): NormalizedValue {
   return text;
 }
 
+const documentFlagColumns = [
+  { header: ["indnfeabi"], label: "NF-e ABI" },
+  { header: ["indnfe"], label: "NF-e" },
+  { header: ["indnfce"], label: "NFC-e" },
+  { header: ["indcte"], label: "CT-e" },
+  { header: ["indcteos"], label: "CT-e OS" },
+  { header: ["indbpe"], label: "BP-e" },
+  { header: ["indbpeta"], label: "BP-e TA" },
+  { header: ["indbpetm"], label: "BP-e TM" },
+  { header: ["indnf3e"], label: "NF3-e" },
+  { header: ["indnfse via"], label: "NFSe Via" },
+  { header: ["indnfse"], label: "NFSe" },
+  { header: ["indnfcom"], label: "NFCom" },
+  { header: ["indnfag"], label: "NFAg" },
+  { header: ["indnfgas"], label: "NFGas" },
+  { header: ["inddere"], label: "DERE" },
+];
+
+function cellIsTruthy(value: unknown): boolean {
+  if (value === 1 || value === true) return true;
+  if (typeof value === "string") {
+    return ["1", "x", "sim", "true", "v"].includes(value.trim().toLowerCase());
+  }
+  return false;
+}
+
+function extractDocumentsFromFlags(row: unknown[], headerRow: unknown[]): string[] {
+  const indexedHeaders = headerRow.map((cell, index) => ({
+    index,
+    normalized: normalizeHeader(cell),
+  }));
+
+  const docs = documentFlagColumns.flatMap((entry) => {
+    const headerIndex = indexedHeaders.find((cell) =>
+      entry.header.some((alias) => cell.normalized.includes(alias)),
+    )?.index;
+    if (headerIndex === undefined) return [] as string[];
+    return cellIsTruthy(row[headerIndex]) ? [entry.label] : [];
+  });
+
+  return Array.from(new Set(docs));
+}
+
 function findSheetName(sheetNames: string[], candidates: string[]): string | undefined {
   const normalized = sheetNames.map((name) => ({ name, normalized: normalizeHeader(name) }));
   for (const candidate of candidates) {
@@ -215,6 +258,8 @@ function parseClassSheet(rows: unknown[][]) {
 
   return rows.slice(headerIndex + 1).filter((row) => !isEmptyRow(row)).map((row) => {
     const { values } = mapRow(row, headerRow, cClassFieldAliases);
+    const directDocuments = normalizeDocuments(values.documents);
+    const flagDocuments = extractDocumentsFromFlags(row, headerRow);
     return {
       cst: normalizeCode(values.cst, 3),
       cstDescription: normalizeText(values.cstDescription),
@@ -226,7 +271,7 @@ function parseClassSheet(rows: unknown[][]) {
       taxRateType: normalizeText(values.taxRateType),
       pRedIBS: normalizePercentage(values.pRedIBS),
       pRedCBS: normalizePercentage(values.pRedCBS),
-      documents: normalizeDocuments(values.documents),
+      documents: Array.from(new Set([...directDocuments, ...flagDocuments])),
       link: normalizeLink(values.link),
     } satisfies NormalizedClassRecord;
   }).filter((record) => record.cClassTrib || record.cst || record.name || record.description);
