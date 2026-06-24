@@ -4,40 +4,6 @@ import { useState, type FormEvent } from "react";
 import { useTranslation } from "@/i18n/I18nProvider";
 
 const messageMaxLength = 2000;
-const FEEDBACK_TYPES = ["suggestion", "bug", "feedback", "partnership", "other"] as const;
-
-const errorCodeToKey: Record<string, string> = {
-  email_invalid: "contact.validation.emailInvalid",
-  email_too_long: "contact.validation.emailTooLong",
-  message_too_short: "contact.validation.messageTooShort",
-  message_too_long: "contact.validation.messageTooLong",
-  name_too_long: "contact.validation.nameTooLong",
-  rating_invalid: "contact.validation.ratingInvalid",
-  feedback_type_required: "contact.validation.feedbackTypeRequired",
-  feedback_type_invalid: "contact.validation.feedbackTypeRequired",
-  rate_limited: "contact.validation.rateLimited",
-  send_error: "contact.validation.sendError",
-};
-
-function StarIcon({ filled }: { filled: boolean }) {
-  return (
-    <svg
-      className={`h-7 w-7 transition-colors ${
-        filled ? "text-amber-400" : "text-slate-300 dark:text-slate-600"
-      }`}
-      fill={filled ? "currentColor" : "none"}
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-      strokeWidth={1.5}
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
-      />
-    </svg>
-  );
-}
 
 function InfoCard({ title, text }: { title: string; text: string }) {
   return (
@@ -58,12 +24,10 @@ function BottomCard({ icon, title }: { icon: string; title: string }) {
 }
 
 export default function ContactContent() {
-  const { t, localeUrl } = useTranslation();
-  const [feedbackType, setFeedbackType] = useState<string>("");
+  const { t } = useTranslation();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [rating, setRating] = useState<number | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [sending, setSending] = useState(false);
   const [submitted, setSubmitted] = useState(false);
@@ -72,9 +36,6 @@ export default function ContactContent() {
   const validate = () => {
     const newErrors: Record<string, string> = {};
 
-    if (!feedbackType) {
-      newErrors.feedbackType = t("contact.validation.feedbackTypeRequired");
-    }
     if (email.trim() && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())) {
       newErrors.email = t("contact.validation.emailInvalid");
     }
@@ -98,36 +59,27 @@ export default function ContactContent() {
     setSending(true);
 
     try {
-      const res = await fetch("/api/contact", {
+      const res = await fetch("https://api-feedback.caiorodrigocev.com.br/feedbacks", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          feedback_type: feedbackType,
           name: name.trim() || undefined,
           email: email.trim() || undefined,
           message: message.trim(),
-          rating,
-          page_url: window.location.href,
-          language: localeUrl,
         }),
       });
 
-      const data = await res.json();
-
       if (!res.ok) {
-        const code: string = data.error || "send_error";
-        const i18nKey = errorCodeToKey[code] || "contact.validation.sendError";
-        setErrorMessage(t(i18nKey));
+        setErrorMessage(t("contact.validation.sendError"));
         return;
       }
 
       setSubmitted(true);
-      setFeedbackType("");
       setName("");
       setEmail("");
       setMessage("");
-      setRating(null);
       setErrors({});
+      setErrorMessage("");
     } catch {
       setErrorMessage(t("contact.validation.sendError"));
     } finally {
@@ -188,28 +140,6 @@ export default function ContactContent() {
                 )}
 
                 <div>
-                  <label htmlFor="feedback_type" className="block text-sm font-medium text-slate-700 dark:text-slate-300">
-                    {t("contact.feedbackType")} <span className="text-red-500">*</span>
-                  </label>
-                  <select
-                    id="feedback_type"
-                    value={feedbackType}
-                    onChange={(e) => { setFeedbackType(e.target.value); setErrors((prev) => ({ ...prev, feedbackType: "" })); }}
-                    className="mt-1.5 block w-full rounded-xl border border-slate-200/80 dark:border-slate-700 bg-white/80 dark:bg-slate-900/70 px-4 py-3 text-sm text-slate-900 dark:text-slate-100 shadow-sm focus:border-indigo-400 dark:focus:border-indigo-500 focus:outline-none focus:ring-4 focus:ring-indigo-50 dark:focus:ring-indigo-900/30 transition-all"
-                  >
-                    <option value="" disabled>{t("contact.feedbackTypePlaceholder")}</option>
-                    {FEEDBACK_TYPES.map((type) => (
-                      <option key={type} value={type}>
-                        {t(`contact.feedbackType${type.charAt(0).toUpperCase() + type.slice(1)}`)}
-                      </option>
-                    ))}
-                  </select>
-                  {errors.feedbackType && (
-                    <p className="mt-1.5 text-sm text-red-600 dark:text-red-400">{errors.feedbackType}</p>
-                  )}
-                </div>
-
-                <div>
                   <label htmlFor="name" className="block text-sm font-medium text-slate-700 dark:text-slate-300">
                     {t("contact.name")}
                   </label>
@@ -241,25 +171,6 @@ export default function ContactContent() {
                   {errors.email && (
                     <p className="mt-1.5 text-sm text-red-600 dark:text-red-400">{errors.email}</p>
                   )}
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-slate-700 dark:text-slate-300">
-                    {t("contact.rating")}
-                  </label>
-                  <div className="mt-1.5 flex gap-1">
-                    {[1, 2, 3, 4, 5].map((star) => (
-                      <button
-                        key={star}
-                        type="button"
-                        onClick={() => setRating(rating === star ? null : star)}
-                        className="p-0.5 transition-colors focus:outline-none"
-                        aria-label={`${star} star${star > 1 ? "s" : ""}`}
-                      >
-                        <StarIcon filled={star <= (rating ?? 0)} />
-                      </button>
-                    ))}
-                  </div>
                 </div>
 
                 <div>
