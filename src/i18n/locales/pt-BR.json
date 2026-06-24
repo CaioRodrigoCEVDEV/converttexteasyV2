@@ -801,6 +801,7 @@
     "validation": {
       "nameRequired": "Por favor, insira seu nome.",
       "nameTooLong": "O nome deve ter no máximo 120 caracteres.",
+      "emailRequired": "Por favor, insira seu e-mail.",
       "emailInvalid": "Por favor, insira um e-mail válido.",
       "emailTooLong": "O e-mail deve ter no máximo 180 caracteres.",
       "messageRequired": "Por favor, insira uma mensagem.",

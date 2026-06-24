@@ -36,7 +36,12 @@ export default function ContactContent() {
   const validate = () => {
     const newErrors: Record<string, string> = {};
 
-    if (email.trim() && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())) {
+    if (!name.trim()) {
+      newErrors.name = t("contact.validation.nameRequired");
+    }
+    if (!email.trim()) {
+      newErrors.email = t("contact.validation.emailRequired");
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())) {
       newErrors.email = t("contact.validation.emailInvalid");
     }
     if (!message.trim()) {
@@ -141,7 +146,7 @@ export default function ContactContent() {
 
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-slate-700 dark:text-slate-300">
-                    {t("contact.name")}
+                    {t("contact.name")} <span className="text-red-500">*</span>
                   </label>
                   <input
                     type="text"
@@ -158,7 +163,7 @@ export default function ContactContent() {
 
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-slate-700 dark:text-slate-300">
-                    {t("contact.email")}
+                    {t("contact.email")} <span className="text-red-500">*</span>
                   </label>
                   <input
                     type="email"
